@@ -1,0 +1,6 @@
+.cache/
+node_modules/
+web/node_modules/
+web/dist/
+web/src/dados/
+web/artifact/

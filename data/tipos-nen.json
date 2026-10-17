@@ -1,0 +1,8 @@
+[
+  { "id": "intensificacao", "nome": "Intensificação", "nome_wiki": "Enhancement", "posicao_hexagono": 0, "teste_da_agua": "O volume de água aumenta", "personalidade": "Simples e determinado" },
+  { "id": "transformacao", "nome": "Transformação", "nome_wiki": "Transmutation", "posicao_hexagono": 1, "teste_da_agua": "O sabor da água muda", "personalidade": "Caprichoso, imprevisível" },
+  { "id": "materializacao", "nome": "Materialização", "nome_wiki": "Conjuration", "posicao_hexagono": 2, "teste_da_agua": "Surgem impurezas na água", "personalidade": "Nervoso, cauteloso" },
+  { "id": "especializacao", "nome": "Especialização", "nome_wiki": "Specialization", "posicao_hexagono": 3, "teste_da_agua": "Qualquer outra mudança", "personalidade": "Individualista, carismático" },
+  { "id": "manipulacao", "nome": "Manipulação", "nome_wiki": "Manipulation", "posicao_hexagono": 4, "teste_da_agua": "A folha se move", "personalidade": "Lógico, defende suas ideias" },
+  { "id": "emissao", "nome": "Emissão", "nome_wiki": "Emission", "posicao_hexagono": 5, "teste_da_agua": "A cor da água muda", "personalidade": "Impaciente, explosivo" }
+]
