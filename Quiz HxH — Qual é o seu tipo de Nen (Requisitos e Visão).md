@@ -624,3 +624,27 @@ Essas regras substituem a tabela da fase 12: Riot, Mystic Land e Ikkiuchi! saír
 - [x] Faixas, traduções e grupos de `conteudo/trilha.mjs` revisados pelo Samuel (17/10/2026)
 - [x] Validado pelo Samuel no navegador, na jornada inteira: quiz da Trupe (a faixa muda por membro), resultado de Especialização com o tema do Chrollo, Hatsu com o tema do Killua, feitos (Gon, caçada, organização sem denunciar a opção, nome), licença Zoldyck, poder com o tema do Gon, créditos e quiz do Zodíaco (Kurapika, Zodíaco, Leorio)
 - [ ] Decidir como as Formigas Quimera entram (organização na licença, versão do quiz ou as duas)
+
+## Correção: player adaptável e links sem "#" (17/10/2026)
+
+**Problemas relatados.**
+
+1. No computador (Chrome, Edge, Firefox, Brave) e no Android do Samuel, a trilha só tocava com um toque no play e não trocava sozinha. No celular do irmão dele, funcionava.
+2. No notebook do irmão, um link compartilhado deu 404.
+
+**Causas.**
+
+1. O som toca dentro do player do Spotify, que é um iframe. A maioria dos navegadores só deixa um iframe começar o som depois de um toque dentro dele; o clique no botão "Trilha sonora" do site não conta. Trocar de faixa recarrega o player, e o toque se perde. O navegador de testes do Claude não tem essa regra, e por isso os testes anteriores passaram.
+2. O site navega por "#" (`.../quiz-hxh/#/poder`). Sem o "#" (`.../quiz-hxh/poder`), o GitHub Pages responde 404. Isso acontece quando alguém digita o endereço ou quando um aplicativo corta o "#" do link.
+
+**Correção.**
+
+- O player se adapta ao navegador. Ele pede o play e espera até 6 s. Se a música começa, segue trocando sozinho de faixa a cada tela.
+- Se não começa, o navegador bloqueou: o painel avisa "aperte ▶ no player" e, dali em diante, não interrompe a música ao mudar de tela. Mostra "Faixa desta tela" com o botão "Tocar esta", e a troca fica a um toque.
+- No fim da faixa, o player volta ao início sem recarregar (`seek` e `resume`), e assim o toque já dado continua valendo.
+- O player ignora avisos atrasados da faixa anterior, que antes apagavam o aviso de toque.
+- `web/public/404.html` leva qualquer endereço sem "#" para o mesmo caminho com "#" (ex.: `.../quiz-hxh/poder` → `.../quiz-hxh/#/poder`).
+
+- [x] Testado no navegador: com o bloqueio simulado, o aviso aparece, o toque no player começa a música, a troca de tela mantém a música e mostra "Tocar esta", e o toque troca a faixa; sem bloqueio, começa e troca sozinho; no fim da prévia, a faixa recomeça sem recarregar
+- [ ] Confirmar no celular e no computador do Samuel e do irmão, no site publicado
+- [ ] Confirmar que `.../quiz-hxh/poder` redireciona para `.../quiz-hxh/#/poder` no site publicado

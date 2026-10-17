@@ -1,0 +1,23 @@
+<!doctype html>
+<!--
+  O site navega por "#" (ex.: .../quiz-hxh/#/poder). Quando alguém abre o endereço sem o "#"
+  (digitado à mão, ou um aplicativo que cortou o "#" do link), o GitHub Pages devolve esta
+  página, que leva para o mesmo caminho com "#": .../quiz-hxh/poder → .../quiz-hxh/#/poder
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecionando…</title>
+    <script>
+      (function () {
+        var partes = location.pathname.split("/");
+        var base = partes.slice(0, 2).join("/") + "/"; // "/quiz-hxh/"
+        var resto = location.pathname.slice(base.length).replace(/\/+$/, "");
+        location.replace(base + (resto ? "#/" + resto : "") + location.search);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecionando para o <a href="./">Teste da Água</a>…</p>
+  </body>
+</html>

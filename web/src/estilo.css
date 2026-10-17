@@ -560,3 +560,10 @@ p { margin: 0 0 1rem; max-width: 36em; }
 /* com o player aberto, a página ganha espaço embaixo para ele não cobrir os botões */
 body:has(.trilha--aberta) { padding-bottom: 8.5rem; }
 .trilha__traducao { font-style: italic; }
+.trilha__troca { display: flex; gap: 0.5rem; align-items: center; padding-right: 0.5rem; }
+.trilha__troca .trilha__faixa { flex: 1; }
+.trilha__tocar {
+  font: inherit; font-weight: 700; font-size: 0.8rem; white-space: nowrap; cursor: pointer;
+  padding: 0.35rem 0.7rem; border-radius: 999px; border: 2px solid var(--acao); background: var(--acao); color: var(--texto-acao);
+}
+.trilha__aviso { margin: 0; padding: 0.4rem 0.75rem; font-size: 0.8rem; font-weight: 700; color: var(--acao); }
