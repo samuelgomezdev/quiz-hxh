@@ -38,6 +38,7 @@ export function membrosDoTipo(versao, tipo) {
 
 export const perguntasDa = (versao) => perguntas.filter((p) => p.versao === versao);
 export const tipoPorId = Object.fromEntries(tipos.map((t) => [t.id, t]));
+export const personagemPorId = Object.fromEntries(personagens.map((p) => [p.id, p]));
 export const nomesDosTipos = Object.fromEntries(tipos.map((t) => [t.id, t.nome]));
 
 export function personagensDoTipo(tipo) {

@@ -382,3 +382,45 @@ p { margin: 0 0 1rem; max-width: 36em; }
 
 .link-manual { display: grid; gap: 0.35rem; margin-top: 1rem; font-size: 0.9rem; color: var(--tinta-suave); }
 .link-manual input { font: inherit; padding: 0.6rem 0.75rem; border: 2px solid var(--linha); border-radius: 6px; background: var(--papel-2); color: var(--tinta); width: 100%; }
+
+/* Hatsu: chamada no resultado, perguntas e carta da habilidade */
+.chamada-hatsu {
+  margin-top: 2.5rem; padding: 1.25rem 1.4rem; border-radius: 6px;
+  border: 2px solid var(--acao); background: color-mix(in srgb, var(--acao) 10%, var(--papel));
+}
+.chamada-hatsu .subtitulo { margin-top: 0; }
+.hatsu__intro { color: var(--tinta-suave); }
+.opcoes--grade { grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+.opcao__titulo { display: block; font-weight: 700; margin-bottom: 0.1rem; }
+
+.carta {
+  position: relative; padding: 1.6rem 1.5rem 1.4rem; border-radius: 8px;
+  border: 2px solid var(--acao); background: color-mix(in srgb, var(--papel-2) 85%, transparent);
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--acao) 12%, transparent), 0 24px 40px -24px rgb(0 0 0 / 0.6);
+}
+.carta__nome { font-family: var(--titulo); font-weight: 700; font-size: clamp(2rem, 7vw, 2.8rem); line-height: 1.1; margin: 0 0 0.6rem; }
+.carta__etiquetas { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+.carta__etiquetas span {
+  font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700;
+  padding: 0.2rem 0.6rem; border-radius: 999px; border: 1px solid var(--acao); color: var(--destaque);
+}
+.carta__efeito { font-size: 1.15rem; line-height: 1.55; }
+.carta__detalhes { margin: 1.25rem 0 0; display: grid; gap: 0.9rem; }
+.carta__detalhes div { border-top: 1px solid var(--linha); padding-top: 0.75rem; }
+.carta__detalhes dt {
+  display: flex; align-items: center; gap: 0.6rem;
+  font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--tinta-suave); margin-bottom: 0.2rem;
+}
+.carta__detalhes dd { margin: 0; }
+.carta__voto dd { font-weight: 700; }
+.carta__ganho { display: block; font-weight: 400; color: var(--tinta-suave); font-size: 0.95rem; margin-top: 0.2rem; }
+.carta__peso { display: inline-flex; gap: 0.25rem; }
+.carta__peso span { width: 0.6rem; height: 0.6rem; border-radius: 50%; border: 1.5px solid var(--acao); }
+.carta__peso span.cheio { background: var(--acao); }
+
+.referencia { display: flex; gap: 1rem; align-items: flex-start; color: var(--tinta); text-decoration: none; }
+.referencia__retrato { width: 6rem; border-radius: 50%; border: 3px solid var(--acao); }
+.referencia__texto { display: grid; gap: 0.25rem; }
+.referencia__relacao { color: var(--destaque); font-weight: 700; }
+.referencia__nome { font-family: var(--titulo); font-weight: 700; font-size: 1.2rem; }
+.referencia:hover .referencia__nome { color: var(--destaque); }

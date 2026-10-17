@@ -81,6 +81,16 @@ export default function Resultado({ versao, codigo }) {
         </div>
       </div>
 
+      <section className="chamada-hatsu">
+        <p className="sobretitulo">Próximo passo</p>
+        <h2 className="subtitulo">Desenvolva o seu Hatsu</h2>
+        <p>
+          O tipo diz o que a sua aura faz; o Hatsu nasce do que você viveu. Responda quatro perguntas sobre a sua vida e
+          descubra a sua habilidade, com Voto e Limitação.
+        </p>
+        <button className="botao" onClick={() => ir(`hatsu/${versao}/${codigo}`)}>Criar meu Hatsu</button>
+      </section>
+
       {parceiros.length > 0 && (
         <section className="secao parceiros">
           <h2 className="subtitulo">{VERSOES[versao].grupo}, sua aura é a de</h2>

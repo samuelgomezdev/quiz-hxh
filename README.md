@@ -15,8 +15,10 @@ etl/
   index.mjs        pipeline completo, validação e gravação (L)
 conteudo/
   perguntas.mjs    autoral: 25 perguntas (Trupe e Zodíaco), só texto e tipo
+  hatsu.mjs        autoral: vivências × tipos (72 Hatsus), motivações, alcances, votos e referências da obra
 motor/
   pontuacao.mjs    algoritmo de pontuação e afinidade pelo hexágono
+  hatsu.mjs        monta o Hatsu a partir do tipo e das respostas sobre a vida
 scripts/
   gerar-perguntas.mjs  gera pesos, valida equilíbrio e simula 200 mil quizzes
 data/
@@ -26,7 +28,7 @@ data/
   fontes.json      gerado pelo ETL (URL, revisão da wiki, data da coleta, licença)
   imagens.json     gerado por npm run imagens: id do personagem → miniatura no CDN da Fandom
 web/               site em React (Vite)
-  src/telas/       Início, Quiz, Resultado e Créditos
+  src/telas/       Início, Quiz, Resultado, Hatsu e Créditos
   src/componentes/ CopoDagua (Teste da Água), Hexagono (afinidade), Aranha, Fundo (decoração por tema) e Retrato
   src/lib/         rota por hash, código do link de resultado, embaralhamento
 scripts/preparar-web.mjs  copia para web/src/dados só o que o site usa
@@ -39,7 +41,7 @@ test/              testes com node:test, a partir de casos reais da wiki
 Requer Node.js 18 ou superior. Não há dependências externas.
 
 ```bash
-npm test          # 26 testes: parser, transformação, motor, equilíbrio e link de resultado
+npm test          # 32 testes: parser, transformação, motor, Hatsu, equilíbrio e links
 npm run perguntas # gera data/perguntas.json e mostra o relatório de equilíbrio
 npm run etl       # gera data/personagens.json e data/fontes.json (usa cache)
 npm run etl:limpo # ignora o cache e consulta a wiki de novo
@@ -69,6 +71,19 @@ A primeira execução faz cerca de 15 requisições, uma por segundo.
 | Personagem em categoria de jogo, spin-off, anime ou filme | `fora_do_manga` |
 | Página na categoria "Unknown Nen type users" com tipo preenchido | `fora_do_manga` (tipo veio de nota) |
 | `Unknown`, vazio ou sem campo | `null` (personagem fica na base, fora do resultado) |
+
+## Hatsu: o poder que nasce do que você viveu
+
+Depois do resultado, a pessoa pode desenvolver o seu Hatsu. O tipo de Nen diz o que a aura faz; a vivência diz com o quê. Ex.: o Killua é de Transformação e cresceu levando choques, por isso a aura dele virou eletricidade.
+
+| Pergunta | Papel no Hatsu |
+| --- | --- |
+| Experiência que mais marcou (12 opções) | matéria-prima: com o tipo, define o nome e o efeito |
+| Por que quer ficar mais forte | quando o poder rende mais e contra quem age o voto |
+| Onde prefere estar num confronto | alcance |
+| Que preço aceitaria pagar | Voto e Limitação, de peso 1 a 3: quanto mais pesado, mais forte |
+
+O resultado mostra o personagem da obra com o caminho mais parecido: mesma vivência e mesmo tipo; senão, mesma vivência por outro tipo; senão, alguém do mesmo tipo. O link `#/hatsu/<versao>/<respostas do quiz>/<respostas do Hatsu>` recria tudo.
 
 ## Identidade visual
 
