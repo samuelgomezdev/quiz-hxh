@@ -25,7 +25,13 @@ export default function Creditos() {
       <h2 className="subtitulo">Perguntas e personalidades</h2>
       <p>
         As perguntas são autorais. A ligação entre personalidade e tipo de Nen segue a teoria que o Hisoka explica ao Gon
-        na luta da Arena Celestial. Nenhuma imagem da obra é usada: o copo e o hexágono foram desenhados para este site.
+        na luta da Arena Celestial. O copo, o hexágono, a aranha e a roda do Zodíaco foram desenhados para este site.
+      </p>
+      <h2 className="subtitulo">Imagens dos personagens</h2>
+      <p>
+        Os retratos são a imagem principal de cada artigo da Hunterpedia e continuam hospedados nos servidores da
+        Fandom: o site guarda só o endereço. As imagens pertencem a Yoshihiro Togashi, Shueisha e aos estúdios do
+        anime, e aparecem aqui apenas para identificar os personagens.
       </p>
       <button className="botao botao--secundario" onClick={() => ir("")}>Voltar ao início</button>
     </main>

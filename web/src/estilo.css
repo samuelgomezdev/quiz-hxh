@@ -1,58 +1,101 @@
-/* Paleta: papel, tinta índigo, água, folha (ações) e ouro (só no resultado) */
-:root {
-  --papel: #eef3f1;
-  --papel-2: #e2eae7;
-  --tinta: #1f2a44;
-  --tinta-suave: #4a5672;
-  --linha: #c9d6d2;
+/* Três identidades visuais, escolhidas por data-tema no <html>:
+   hunter  → Associação Hunter: pergaminho, tinta e o vermelho da licença (neutro, início e créditos)
+   trupe   → Trupe Fantasma: preto, carmesim e teia
+   zodiaco → Zodíaco: azul-noite, dourado e estrelas
+   --acao pinta botões e destaques; --agua e --folha ficam só no copo. */
+:root, :root[data-tema="hunter"] {
+  --papel: #f4efe4;
+  --papel-2: #ebe3d2;
+  --tinta: #1b1a17;
+  --tinta-suave: #5b554a;
+  --linha: #d8cdb7;
+  --acao: #b8232b;
+  --acao-escura: #8f1a20;
+  --texto-acao: #ffffff;
+  --destaque: #b8232b;
   --agua: #3e8fb0;
-  --agua-clara: #b9dbe8;
   --agua-emissao: #c8553d;
   --folha: #4e8a3e;
   --folha-escura: #3b6c2e;
-  --ouro: #e3b23c;
-  --foco: #3e8fb0;
-  --texto-botao: #ffffff;
-  --ouro-escuro: #b98a17;
+  --ouro: #c99a2e;
+  --ouro-escuro: #9a7215;
+  --foco: #b8232b;
+  --decoracao: #1b1a17;
+  --decoracao-opacidade: 0.05;
 
   --serifa: "Shippori Mincho", "Hiragino Mincho ProN", Georgia, serif;
   --sans: "Zen Kaku Gothic New", "Hiragino Sans", system-ui, sans-serif;
+  --marca: "Oswald", "Arial Narrow", Impact, sans-serif;
+  --titulo: var(--serifa);
 
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --papel: #141c2b;
-    --papel-2: #1c2638;
-    --tinta: #e6ece9;
-    --tinta-suave: #a9b4c6;
-    --linha: #33415a;
+  :root:not([data-theme="light"]):not([data-tema="trupe"]):not([data-tema="zodiaco"]) {
+    --papel: #16140f;
+    --papel-2: #221f18;
+    --tinta: #f1eadb;
+    --tinta-suave: #b5ab95;
+    --linha: #3b3529;
+    --acao: #e04b4f;
+    --acao-escura: #f06a6d;
+    --texto-acao: #1a0606;
+    --destaque: #f06a6d;
     --agua: #5aa9c9;
-    --agua-clara: #22394a;
     --agua-emissao: #e06a50;
     --folha: #7cbf68;
     --folha-escura: #9bd486;
-    --texto-botao: #10200b;
+    --ouro: #e3b23c;
     --ouro-escuro: #e3b23c;
-    --foco: #8fd0ea;
+    --foco: #f06a6d;
+    --decoracao: #f1eadb;
     color-scheme: dark;
   }
 }
-:root[data-theme="dark"] {
-  --papel: #141c2b;
-  --papel-2: #1c2638;
-  --tinta: #e6ece9;
-  --tinta-suave: #a9b4c6;
-  --linha: #33415a;
+
+:root[data-tema="trupe"] {
+  --papel: #0e0a0c;
+  --papel-2: #1b1216;
+  --tinta: #efe5df;
+  --tinta-suave: #a8989a;
+  --linha: #3a272e;
+  --acao: #b5122f;
+  --acao-escura: #d4203f;
+  --texto-acao: #ffffff;
+  --destaque: #ec5a70;
+  --agua: #6d8fa3;
+  --agua-emissao: #d4203f;
+  --folha: #8a9a6a;
+  --folha-escura: #a8b886;
+  --ouro: #d4203f;
+  --ouro-escuro: #ec5a70;
+  --foco: #ec5a70;
+  --decoracao: #efe5df;
+  --decoracao-opacidade: 0.09;
+  --titulo: "Cinzel", "Trajan Pro", Georgia, serif;
+  color-scheme: dark;
+}
+
+:root[data-tema="zodiaco"] {
+  --papel: #0a1428;
+  --papel-2: #13213d;
+  --tinta: #eef1f8;
+  --tinta-suave: #a9b5cd;
+  --linha: #26395e;
+  --acao: #d8b25a;
+  --acao-escura: #ecca7c;
+  --texto-acao: #1a1405;
+  --destaque: #e4c272;
   --agua: #5aa9c9;
-  --agua-clara: #22394a;
   --agua-emissao: #e06a50;
   --folha: #7cbf68;
   --folha-escura: #9bd486;
-  --texto-botao: #10200b;
-  --ouro-escuro: #e3b23c;
-  --foco: #8fd0ea;
+  --ouro: #d8b25a;
+  --ouro-escuro: #ecca7c;
+  --foco: #ecca7c;
+  --decoracao: #e4c272;
+  --decoracao-opacidade: 0.12;
   color-scheme: dark;
 }
 
@@ -66,11 +109,14 @@ body {
   font-size: 1.0625rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
+:root[data-tema="trupe"] body { background: radial-gradient(120% 70% at 100% 0%, #2a0a12 0%, var(--papel) 55%) fixed, var(--papel); }
+:root[data-tema="zodiaco"] body { background: radial-gradient(120% 80% at 80% 0%, #1b2f57 0%, var(--papel) 60%) fixed, var(--papel); }
 
-#raiz { min-height: 100vh; display: flex; flex-direction: column; }
+#raiz { min-height: 100vh; display: flex; flex-direction: column; position: relative; isolation: isolate; }
 
-a { color: var(--agua); text-underline-offset: 0.18em; }
+a { color: var(--destaque); text-underline-offset: 0.18em; }
 a:hover { color: var(--tinta); }
 
 :focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; border-radius: 4px; }
@@ -82,7 +128,15 @@ a:hover { color: var(--tinta); }
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
 .topo { padding-block: 1.25rem 0.5rem; }
-.topo__marca { font-family: var(--serifa); font-weight: 700; font-size: 1.05rem; color: var(--tinta); text-decoration: none; }
+.topo__marca { display: inline-flex; flex-direction: column; gap: 0.15rem; color: var(--tinta); text-decoration: none; }
+.topo__logo {
+  font-family: var(--marca); font-weight: 600; font-size: 1.35rem; line-height: 1;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.topo__x { color: var(--acao); margin: 0 0.08em; font-weight: 500; }
+.topo__sub { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tinta-suave); }
+.topo__marca:hover { color: var(--tinta); }
+.topo__marca:hover .topo__x { color: var(--tinta); }
 .pagina { flex: 1; padding-block: 1.5rem 3rem; }
 .rodape {
   display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: space-between;
@@ -92,64 +146,113 @@ a:hover { color: var(--tinta); }
 
 /* Tipografia: escala de quarta perfeita a partir de 17px */
 h1, h2, h3 { text-wrap: balance; }
+.sobretitulo {
+  font-family: var(--marca); font-size: 0.9rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--destaque); margin: 0 0 0.35rem;
+}
 .titulo {
-  font-family: var(--serifa); font-weight: 700; line-height: 1.15;
+  font-family: var(--titulo); font-weight: 700; line-height: 1.15;
   font-size: clamp(2.1rem, 7vw, 3rem); letter-spacing: -0.01em; margin: 0 0 1rem;
 }
 .titulo--resultado { font-size: clamp(2.3rem, 8vw, 3.4rem); }
-.subtitulo { font-family: var(--serifa); font-weight: 700; font-size: 1.45rem; line-height: 1.25; margin: 2.5rem 0 0.75rem; }
+.subtitulo { font-family: var(--titulo); font-weight: 700; font-size: 1.45rem; line-height: 1.25; margin: 2.5rem 0 0.75rem; }
 .subtitulo--menor { font-size: 1.15rem; margin-top: 1.75rem; }
 p { margin: 0 0 1rem; max-width: 36em; }
 
-/* Botões: verde-folha para avançar, contorno para o resto */
+/* Botões: cor de ação do tema para avançar, contorno para o resto */
 .botao {
   font: inherit; font-weight: 700; font-size: 1rem;
-  padding: 0.75rem 1.25rem; min-height: 3rem;
-  border: 2px solid var(--folha); border-radius: 999px;
-  background: var(--folha); color: var(--texto-botao); cursor: pointer;
+  padding: 0.75rem 1.4rem; min-height: 3rem;
+  border: 2px solid var(--acao); border-radius: 4px;
+  background: var(--acao); color: var(--texto-acao); cursor: pointer;
   transition: background-color 0.15s, transform 0.1s;
 }
-.botao:hover:not(:disabled) { background: var(--folha-escura); border-color: var(--folha-escura); }
+.botao:hover:not(:disabled) { background: var(--acao-escura); border-color: var(--acao-escura); }
 .botao:active:not(:disabled) { transform: translateY(1px); }
 .botao:disabled { opacity: 0.4; cursor: not-allowed; }
 .botao--secundario { background: transparent; color: var(--tinta); border-color: var(--linha); }
 .botao--secundario:hover:not(:disabled) { background: var(--papel-2); border-color: var(--tinta-suave); }
 
 /* Início */
-.inicio__copo { width: 8.5rem; margin: 0 0 1.25rem -0.5rem; }
-.inicio__intro { font-size: 1.125rem; color: var(--tinta-suave); }
-.versoes { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
-.versao {
-  width: 100%; text-align: left; font: inherit; color: inherit; cursor: pointer;
-  display: grid; gap: 0.15rem; padding: 1rem 1.25rem;
-  background: transparent; border: 2px solid var(--linha); border-left: 6px solid var(--agua); border-radius: 6px;
-  transition: border-color 0.15s, background-color 0.15s;
+.inicio__abertura { display: flex; align-items: flex-end; gap: 1.25rem; margin-bottom: 1rem; }
+.inicio__abertura .titulo { margin-bottom: 0; }
+.inicio__copo { width: 6.5rem; flex: none; margin-left: -0.5rem; }
+@media (max-width: 30rem) {
+  .inicio__abertura { flex-direction: column; align-items: flex-start; }
+  .inicio__copo { width: 5.5rem; }
 }
-.versao:hover { background: var(--papel-2); border-color: var(--agua); }
-.versao__nome { font-family: var(--serifa); font-weight: 700; font-size: 1.3rem; }
-.versao__descricao { color: var(--tinta-suave); font-size: 0.95rem; }
+.inicio__intro { font-size: 1.125rem; color: var(--tinta-suave); }
+.versoes { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.9rem; }
+
+/* Cartões das versões: cada um já antecipa a identidade do seu teste */
+.versao {
+  width: 100%; text-align: left; font: inherit; cursor: pointer; position: relative; overflow: hidden;
+  display: flex; align-items: center; gap: 1.1rem; padding: 1.1rem 1.25rem;
+  border: 2px solid transparent; border-radius: 6px;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+}
+.versao:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -14px rgb(0 0 0 / 0.65); }
+.versao__emblema { width: 3.6rem; flex: none; display: grid; place-items: center; }
+.versao__corpo { display: grid; gap: 0.1rem; }
+.versao__japones { font-size: 0.85rem; letter-spacing: 0.2em; opacity: 0.85; }
+.versao__nome { font-weight: 700; font-size: 1.4rem; line-height: 1.2; }
+.versao__descricao { font-size: 0.95rem; opacity: 0.82; }
+
+.versao--trupe { background: radial-gradient(120% 140% at 0% 0%, #3a0d17 0%, #120a0d 60%); color: #efe5df; border-color: #4a1622; }
+.versao--trupe .versao__nome { font-family: "Cinzel", Georgia, serif; }
+.versao--trupe .versao__japones { color: #ec5a70; opacity: 1; }
+.versao--trupe .versao__emblema { color: #d4203f; }
+.versao--trupe:hover { border-color: #d4203f; }
+
+.versao--zodiaco {
+  background:
+    radial-gradient(1.5px 1.5px at 78% 22%, #ffffff99 50%, transparent 51%),
+    radial-gradient(1px 1px at 88% 70%, #ffffffaa 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 64% 82%, #ffffff88 50%, transparent 51%),
+    radial-gradient(1px 1px at 95% 40%, #ffffff99 50%, transparent 51%),
+    linear-gradient(135deg, #13213d, #0a1428);
+  color: #eef1f8; border-color: #26395e;
+}
+.versao--zodiaco .versao__nome { font-family: var(--serifa); }
+.versao--zodiaco .versao__japones { color: #e4c272; opacity: 1; }
+.versao--zodiaco:hover { border-color: #d8b25a; }
+.versao__kanji {
+  font-family: var(--serifa); font-weight: 800; font-size: 1.45rem; color: #d8b25a;
+  width: 3.4rem; height: 3.4rem; display: grid; place-items: center;
+  border: 2px solid #d8b25a; border-radius: 50%; letter-spacing: -0.05em;
+}
 .aviso { margin-top: 1.75rem; font-size: 0.9rem; color: var(--tinta-suave); }
 
 /* Quiz */
 .progresso { height: 4px; background: var(--linha); border-radius: 2px; overflow: hidden; }
-.progresso__barra { height: 100%; background: var(--agua); transition: width 0.3s ease; }
+.progresso__barra { height: 100%; background: var(--acao); transition: width 0.3s ease; }
 .quiz__contagem { margin: 0.75rem 0 1.5rem; font-size: 0.9rem; color: var(--tinta-suave); }
 .quiz__pergunta { border: 0; margin: 0; padding: 0; min-width: 0; }
 .quiz__pergunta legend { padding: 0; margin-bottom: 1.25rem; }
-.quiz__tema { display: block; font-size: 0.9rem; color: var(--agua); margin-bottom: 0.4rem; }
 .quiz__texto {
   display: block; font-family: var(--serifa); font-weight: 700;
   font-size: clamp(1.45rem, 5vw, 1.85rem); line-height: 1.3; outline: none;
 }
+
+/* Quem inspira a pergunta */
+.membro { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1.1rem; }
+.membro__retrato { width: 4.25rem; border-radius: 50%; border: 2px solid var(--acao); }
+.membro__emblema { width: 2.6rem; flex: none; display: grid; place-items: center; color: var(--destaque); }
+.membro__emblema [lang="ja"] { font-family: var(--serifa); font-weight: 800; font-size: 2.1rem; line-height: 1; }
+.membro__texto { display: grid; line-height: 1.3; }
+.membro__rotulo, .membro__posicao { font-size: 0.78rem; color: var(--tinta-suave); text-transform: uppercase; letter-spacing: 0.08em; }
+.membro__nome { font-weight: 700; color: var(--tinta); }
+
 .opcoes { display: grid; gap: 0.6rem; }
 .opcao {
   display: flex; gap: 0.85rem; align-items: flex-start; cursor: pointer;
   padding: 0.9rem 1rem; border: 2px solid var(--linha); border-radius: 6px;
+  background: color-mix(in srgb, var(--papel-2) 70%, transparent);
   transition: border-color 0.15s, background-color 0.15s;
 }
 .opcao:hover { border-color: var(--tinta-suave); }
-.opcao--marcada { border-color: var(--agua); background: var(--agua-clara); }
-.opcao input { accent-color: var(--agua); width: 1.15rem; height: 1.15rem; margin: 0.2rem 0 0; flex: none; }
+.opcao--marcada { border-color: var(--acao); background: color-mix(in srgb, var(--acao) 18%, var(--papel)); }
+.opcao input { accent-color: var(--acao); width: 1.15rem; height: 1.15rem; margin: 0.2rem 0 0; flex: none; }
 .opcao:has(input:focus-visible) { outline: 3px solid var(--foco); outline-offset: 2px; }
 .quiz__acoes { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1.75rem; }
 
@@ -157,13 +260,13 @@ p { margin: 0 0 1rem; max-width: 36em; }
 .resultado__revelacao { display: grid; grid-template-columns: 9rem 1fr; gap: 1.25rem; align-items: center; }
 @media (max-width: 30rem) { .resultado__revelacao { grid-template-columns: 1fr; } .resultado__copo { width: 8rem; } }
 .resultado__sinal {
-  font-size: 1rem; color: var(--agua); margin-bottom: 0.4rem;
+  font-size: 1rem; color: var(--destaque); margin-bottom: 0.4rem;
   opacity: 0; transform: translateY(4px); transition: opacity 0.6s 0.9s, transform 0.6s 0.9s;
 }
 .resultado__sinal--visivel { opacity: 1; transform: none; }
 .resultado__personalidade { color: var(--tinta-suave); }
 .secao__intro, .secao__rodape { color: var(--tinta-suave); font-size: 0.95rem; }
-.secao__rodape { margin-top: 1rem; }
+.secao__rodape { margin-top: 1.25rem; }
 .hexagono { width: 100%; max-width: 30rem; height: auto; display: block; margin: 0.5rem 0; overflow: visible; }
 .hexagono__grade { fill: none; stroke: var(--linha); stroke-width: 1; }
 .hexagono__contorno { fill: none; stroke: var(--tinta-suave); stroke-width: 1.25; }
@@ -172,13 +275,48 @@ p { margin: 0 0 1rem; max-width: 36em; }
 .hexagono__rotulo .hexagono__valor { font-size: 12px; }
 .hexagono__rotulo--principal text { fill: var(--tinta); font-weight: 700; }
 
-.personagens { list-style: none; padding: 0; margin: 0; columns: 2 12rem; column-gap: 1.5rem; }
-.personagem { break-inside: avoid; padding: 0.3rem 0; }
-.personagem__nota { color: var(--tinta-suave); font-size: 0.875rem; }
+/* Retratos: imagem do CDN da Hunterpedia ou, se falhar, as iniciais */
+.retrato { display: block; flex: none; overflow: hidden; background: var(--papel-2); aspect-ratio: 1; position: relative; }
+.retrato img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
+.retrato__iniciais {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  font-family: var(--titulo); font-weight: 700; font-size: 1.4rem; color: var(--tinta-suave);
+}
+
+/* Membros da versão com o mesmo tipo */
+.parceiros__lista { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1.25rem; }
+.parceiro {
+  display: grid; justify-items: center; text-align: center; gap: 0.15rem; width: 8.5rem;
+  color: var(--tinta); text-decoration: none; position: relative;
+}
+.parceiro__retrato { width: 7rem; border-radius: 50%; border: 3px solid var(--acao); transition: transform 0.2s; }
+.parceiro:hover .parceiro__retrato { transform: scale(1.04); }
+.parceiro__emblema {
+  position: absolute; top: 4.7rem; right: 0.35rem; width: 2.5rem; height: 2.5rem;
+  display: grid; place-items: center; border-radius: 50%; background: var(--papel); border: 2px solid var(--acao);
+  color: var(--destaque);
+}
+.parceiro__emblema .aranha { width: 2.1rem; }
+.parceiro__emblema [lang="ja"] { font-family: var(--serifa); font-weight: 800; font-size: 1.3rem; line-height: 1; }
+.parceiro__nome { font-weight: 700; margin-top: 0.4rem; line-height: 1.25; }
+.parceiro__posicao { font-size: 0.78rem; color: var(--tinta-suave); text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* Personagens do mesmo tipo, em cartões com retrato */
+.personagens {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(7.25rem, 1fr)); gap: 1.1rem 0.85rem;
+}
+.personagem { display: grid; align-content: start; gap: 0.2rem; min-width: 0; }
+.personagem__cartao { display: grid; gap: 0.4rem; color: var(--tinta); text-decoration: none; }
+.personagem__retrato { width: 100%; border-radius: 6px; border: 1px solid var(--linha); transition: border-color 0.15s, transform 0.15s; }
+.personagem__cartao:hover { color: var(--destaque); }
+.personagem__cartao:hover .personagem__retrato { border-color: var(--acao); transform: translateY(-2px); }
+.personagem__nome { font-weight: 700; font-size: 0.95rem; line-height: 1.25; overflow-wrap: anywhere; }
+.personagem__nota { color: var(--tinta-suave); font-size: 0.8125rem; line-height: 1.3; }
 .personagem__fonte { font-size: 0.8125rem; color: var(--tinta-suave); }
 .personagem__fonte summary { cursor: pointer; width: fit-content; color: var(--tinta-suave); }
-.personagem__fonte summary::marker { color: var(--ouro); }
-.personagem__fonte p { margin: 0.25rem 0 0.25rem 1rem; }
+.personagem__fonte summary::marker { color: var(--acao); }
+.personagem__fonte p { margin: 0.25rem 0; }
 .resultado__acoes { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.5rem; }
 
 .texto-corrido p { max-width: 34em; }
@@ -216,6 +354,26 @@ p { margin: 0 0 1rem; max-width: 36em; }
   20% { opacity: 0.8; }
   100% { opacity: 0; transform: translateY(-110px); }
 }
+
+/* Aranha da Trupe: patas em traço, corpo cheio, número na cor do papel */
+.aranha { width: 100%; height: auto; display: block; color: inherit; }
+.aranha__patas path { fill: none; stroke: currentColor; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+.aranha__corpo { fill: currentColor; }
+.aranha__numero { fill: var(--papel); font-family: "Cinzel", Georgia, serif; font-weight: 700; font-size: 22px; }
+
+/* Decoração de fundo por tema */
+.fundo { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.fundo__desenho { position: absolute; color: var(--decoracao); opacity: var(--decoracao-opacidade); }
+.fundo__desenho--hunter { width: min(70vw, 34rem); right: -10rem; top: -6rem; }
+.fundo__desenho--hunter polygon { fill: none; stroke: currentColor; stroke-width: 2; }
+.fundo__desenho--trupe { width: min(90vw, 40rem); right: 0; top: 0; }
+.fundo__desenho--trupe line, .fundo__desenho--trupe path { fill: none; stroke: currentColor; stroke-width: 1.2; }
+.fundo__aranhinha { fill: currentColor; }
+.fundo__desenho--ceu { inset: 0; width: 100%; height: 100%; opacity: 0.55; }
+.fundo__desenho--ceu circle { fill: #ffffff; }
+.fundo__desenho--roda { width: min(110vw, 46rem); right: -14rem; top: -10rem; }
+.fundo__desenho--roda circle { fill: none; stroke: currentColor; stroke-width: 1.2; }
+.fundo__desenho--roda text { fill: currentColor; font-family: var(--serifa); font-weight: 800; font-size: 26px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }

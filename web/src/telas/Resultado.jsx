@@ -1,16 +1,23 @@
 import { useEffect, useMemo, useState } from "react";
 import { calcularResultado } from "../../../motor/pontuacao.mjs";
 import CopoDagua from "../componentes/CopoDagua.jsx";
+import Aranha from "../componentes/Aranha.jsx";
 import Hexagono from "../componentes/Hexagono.jsx";
+import Retrato from "../componentes/Retrato.jsx";
 import { decodificar } from "../lib/codigo.js";
-import { nomesDosTipos, perguntasDa, personagensDoTipo, SINAL_DA_AGUA, tipoPorId, VERSOES } from "../lib/dados.js";
+import {
+  KANJI_DO_SIGNO, membrosDoTipo, nomesDosTipos, perguntasDa, personagensDoTipo, SINAL_DA_AGUA, tipoPorId, VERSOES,
+} from "../lib/dados.js";
 import { ir, linkAbsoluto } from "../lib/rota.js";
 
 function Personagem({ p }) {
   return (
     <li className="personagem">
-      <a href={p.url} target="_blank" rel="noreferrer">{p.nome}</a>
-      {p.nota && <span className="personagem__nota"> ({p.nota})</span>}
+      <a className="personagem__cartao" href={p.url} target="_blank" rel="noreferrer">
+        <Retrato src={p.imagem} nome={p.nome} className="personagem__retrato" />
+        <span className="personagem__nome">{p.nome}</span>
+      </a>
+      {p.nota && <span className="personagem__nota">{p.nota}</span>}
       {p.foraDoManga && (
         <details className="personagem__fonte">
           <summary>fonte fora do mangá</summary>
@@ -46,6 +53,7 @@ export default function Resultado({ versao, codigo }) {
   const { principal, afinidade } = calcularResultado(perguntas, respostas);
   const tipo = tipoPorId[principal];
   const grupo = personagensDoTipo(principal);
+  const parceiros = membrosDoTipo(versao, principal);
 
   async function copiarLink() {
     try {
@@ -73,6 +81,26 @@ export default function Resultado({ versao, codigo }) {
         </div>
       </div>
 
+      {parceiros.length > 0 && (
+        <section className="secao parceiros">
+          <h2 className="subtitulo">{VERSOES[versao].grupo}, sua aura é a de</h2>
+          <ul className="parceiros__lista">
+            {parceiros.map((m) => (
+              <li key={m.nome}>
+                <a className="parceiro" href={m.url} target="_blank" rel="noreferrer">
+                  <Retrato src={m.imagem} nome={m.nome} className="parceiro__retrato" />
+                  <span className="parceiro__emblema" aria-hidden="true">
+                    {versao === "trupe" ? <Aranha numero={m.posicao.replace("#", "")} /> : <span lang="ja">{KANJI_DO_SIGNO[m.posicao]}</span>}
+                  </span>
+                  <span className="parceiro__nome">{m.nome}</span>
+                  <span className="parceiro__posicao">{versao === "trupe" ? `Aranha ${m.posicao}` : `Signo do ${m.posicao}`}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <section className="secao">
         <h2 className="subtitulo">Sua afinidade com cada tipo</h2>
         <p className="secao__intro">
@@ -98,7 +126,7 @@ export default function Resultado({ versao, codigo }) {
         )}
         <p className="secao__rodape">
           {grupo.manga.length} com o tipo confirmado no mangá e {grupo.foraDoManga.length} com o tipo vindo de livros,
-          jogos ou anime. Os nomes levam ao artigo na Hunterpedia.
+          jogos ou anime. Cada cartão leva ao artigo na Hunterpedia, de onde vem a imagem.
         </p>
       </section>
 

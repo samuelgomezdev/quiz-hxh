@@ -12,6 +12,7 @@
     "etl:limpo": "node etl/index.mjs --sem-cache",
     "test": "node --test test/*.test.mjs",
     "perguntas": "node scripts/gerar-perguntas.mjs",
+    "imagens": "node scripts/buscar-imagens.mjs",
     "site:dev": "npm --prefix web run dev",
     "site:build": "npm --prefix web run build"
   },

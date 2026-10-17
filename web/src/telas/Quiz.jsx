@@ -1,8 +1,28 @@
 import { useMemo, useRef, useEffect, useState } from "react";
+import Aranha from "../componentes/Aranha.jsx";
+import Retrato from "../componentes/Retrato.jsx";
 import { codificar } from "../lib/codigo.js";
-import { perguntasDa, VERSOES } from "../lib/dados.js";
+import { KANJI_DO_SIGNO, membroPorNome, perguntasDa, VERSOES } from "../lib/dados.js";
 import { embaralhar } from "../lib/embaralhar.js";
 import { ir } from "../lib/rota.js";
+
+// Quem inspira a pergunta: retrato + tatuagem da Aranha (Trupe) ou ideograma do signo (Zodíaco)
+function Membro({ versao, nome, posicao }) {
+  const membro = membroPorNome[nome];
+  return (
+    <div className="membro">
+      <Retrato src={membro?.imagem} nome={nome} className="membro__retrato" />
+      <span className="membro__emblema" aria-hidden="true">
+        {versao === "trupe" ? <Aranha numero={posicao.replace("#", "")} /> : <span lang="ja">{KANJI_DO_SIGNO[posicao]}</span>}
+      </span>
+      <span className="membro__texto">
+        <span className="membro__rotulo">Inspirada em</span>
+        <span className="membro__nome">{nome}</span>
+        <span className="membro__posicao">{versao === "trupe" ? `Aranha ${posicao}` : `Signo do ${posicao}`}</span>
+      </span>
+    </div>
+  );
+}
 
 export default function Quiz({ versao }) {
   const perguntas = useMemo(() => perguntasDa(versao), [versao]);
@@ -52,9 +72,7 @@ export default function Quiz({ versao }) {
       <form onSubmit={avancar}>
         <fieldset className="quiz__pergunta">
           <legend>
-            <span className="quiz__tema">
-              Inspirada em {pergunta.membro_tema} ({pergunta.membro_posicao})
-            </span>
+            <Membro versao={versao} nome={pergunta.membro_tema} posicao={pergunta.membro_posicao} />
             <span className="quiz__texto" tabIndex={-1} ref={tituloRef}>{pergunta.texto}</span>
           </legend>
 

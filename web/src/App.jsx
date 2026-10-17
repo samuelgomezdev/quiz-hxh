@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Fundo from "./componentes/Fundo.jsx";
+import { VERSOES } from "./lib/dados.js";
 import { useRota } from "./lib/rota.js";
 import Creditos from "./telas/Creditos.jsx";
 import Inicio from "./telas/Inicio.jsx";
@@ -6,6 +9,12 @@ import Resultado from "./telas/Resultado.jsx";
 
 export default function App() {
   const [tela, versao, codigo] = useRota();
+  // Quiz e resultado usam a identidade da versão; o resto fica no tema neutro da Associação Hunter
+  const tema = (tela === "quiz" || tela === "resultado") && VERSOES[versao] ? versao : "hunter";
+
+  useEffect(() => {
+    document.documentElement.dataset.tema = tema;
+  }, [tema]);
 
   let conteudo;
   if (tela === "quiz") conteudo = <Quiz key={versao} versao={versao} />;
@@ -15,13 +24,19 @@ export default function App() {
 
   return (
     <>
+      <Fundo tema={tema} />
       <header className="topo">
-        <a href="#/" className="topo__marca">Teste da Água</a>
+        <a href="#/" className="topo__marca" aria-label="Início: Teste da Água de Hunter × Hunter">
+          <span className="topo__logo">Hunter<span className="topo__x">×</span>Hunter</span>
+          <span className="topo__sub">
+            {tema === "hunter" ? "Teste da Água" : `${VERSOES[tema].nomeJapones} · ${VERSOES[tema].nome}`}
+          </span>
+        </a>
       </header>
       {conteudo}
       <footer className="rodape">
         <a href="#/creditos">Créditos e licença</a>
-        <span>Dados da Hunterpedia, sob CC BY-SA</span>
+        <span>Dados e imagens da Hunterpedia</span>
       </footer>
     </>
   );

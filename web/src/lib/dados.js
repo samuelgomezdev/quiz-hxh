@@ -2,17 +2,39 @@
 import perguntas from "../dados/perguntas.json";
 import personagens from "../dados/personagens.json";
 import tipos from "../dados/tipos.json";
+import membros from "../dados/membros.json";
 
+// Cada versão tem a sua identidade visual (data-tema no <html>)
 export const VERSOES = {
   trupe: {
     nome: "Trupe Fantasma",
+    nomeJapones: "幻影旅団",
+    grupo: "Na Trupe Fantasma",
     descricao: "13 perguntas, uma para cada número da Aranha, do #0 ao #12.",
   },
   zodiaco: {
     nome: "Zodíaco",
+    nomeJapones: "十二支ん",
+    grupo: "No Zodíaco",
     descricao: "12 perguntas, uma para cada signo dos doze conselheiros da Associação Hunter.",
   },
 };
+
+// Signo do Zodíaco → ideograma do zodíaco chinês
+export const KANJI_DO_SIGNO = {
+  Rato: "子", Boi: "丑", Tigre: "寅", Coelho: "卯", "Dragão": "辰", Serpente: "巳",
+  Cavalo: "午", Carneiro: "未", Macaco: "申", Galo: "酉", "Cão": "戌", Javali: "亥",
+};
+
+// { nome: { id, tipo, url, imagem } } dos membros que inspiram as perguntas
+export const membroPorNome = membros;
+
+// Membros da versão que têm o mesmo tipo de Nen do resultado
+export function membrosDoTipo(versao, tipo) {
+  return perguntasDa(versao)
+    .filter((p) => membros[p.membro_tema]?.tipo === tipo)
+    .map((p) => ({ nome: p.membro_tema, posicao: p.membro_posicao, ...membros[p.membro_tema] }));
+}
 
 export const perguntasDa = (versao) => perguntas.filter((p) => p.versao === versao);
 export const tipoPorId = Object.fromEntries(tipos.map((t) => [t.id, t]));
