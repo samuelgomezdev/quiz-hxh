@@ -4,7 +4,7 @@ Oct 16, 2026 · @Samuel
 
 ## Visão do produto
 
-Um site onde o fã de Hunter × Hunter responde 13 perguntas (versão Trupe Fantasma) ou 12 (versão Zodíaco) e descobre seu tipo de Nen, com personagens do mesmo tipo tirados da Hunterpedia.
+Um site onde o fã de Hunter × Hunter responde 13 perguntas (versão Trupe Fantasma) ou 12 (versão Zodíaco) e descobre seu tipo de Nen, com personagens do mesmo tipo tirados da Hunterpedia. Depois, pode desenvolver o seu Hatsu: uma habilidade pessoal que nasce do tipo de Nen combinado com o que a pessoa viveu.
 
 O projeto também é um laboratório de ADS: cobre requisitos, modelagem de dados, ETL, regras de negócio, testes, interface e deploy num escopo pequeno o bastante para terminar.
 
@@ -26,8 +26,11 @@ O MVP entrega um único quiz (tipo de Nen), em português, sem login, com dados 
 | 6 resultados: os tipos de Nen | Outros animes e outras wikis |
 | Afinidade secundária pelo hexágono | Contas de usuário e histórico |
 | Personagens do tipo resultante, com link à wiki | Ranking ou estatísticas públicas |
-| Página de créditos e licença CC BY-SA | Imagens oficiais da obra |
+| Página de créditos e licença CC BY-SA | Hatsu escrito livremente pelo usuário (exigiria servidor) |
 | Compartilhar o resultado por link | Versão em inglês |
+| Retratos dos personagens, carregados do CDN da Hunterpedia (pós-MVP) | |
+| Identidade visual por teste (pós-MVP) | |
+| Hatsu a partir do tipo e da vivência (pós-MVP) | |
 
 ## Regras de domínio
 
@@ -52,7 +55,7 @@ A posição no hexágono vira o campo `posicao_hexagono` (0 a 5), e a distância
 
 ## Requisitos funcionais
 
-São oito requisitos, cada um com um critério de aceite que pode virar teste.
+São oito requisitos do MVP e quatro adicionados depois (RF09 a RF12), cada um com um critério de aceite que pode virar teste.
 
 | ID | Requisito | Critério de aceite |
 | --- | --- | --- |
@@ -64,6 +67,10 @@ São oito requisitos, cada um com um critério de aceite que pode virar teste.
 | RF06 | Listar personagens do tipo resultante | Cada nome tem link para o artigo na Hunterpedia; tipo vindo de fora do mangá mostra a marca e a obra de origem |
 | RF07 | Compartilhar o resultado por link | O link abre direto na tela de resultado |
 | RF08 | Exibir página de créditos | Cita a Hunterpedia, a licença CC BY-SA e o autor da obra |
+| RF09 | Mostrar o retrato de cada personagem no resultado | Cada cartão tem a imagem da Hunterpedia; se ela falhar, aparecem as iniciais |
+| RF10 | Dar a cada teste a sua identidade visual | Início e créditos no tema neutro (Associação Hunter); quiz, resultado e Hatsu no tema da versão |
+| RF11 | Gerar o Hatsu a partir do tipo e de quatro perguntas sobre a vida | Mesmo tipo e mesmas respostas geram sempre o mesmo Hatsu; os 72 pares vivência × tipo têm nome e efeito |
+| RF12 | Mostrar o personagem da obra com o caminho mais parecido e compartilhar o Hatsu por link | Transformação + eletricidade leva ao Killua; o link abre direto na carta do Hatsu |
 
 ## Requisitos não funcionais e restrições
 
@@ -72,7 +79,7 @@ A restrição que mais pesa é a licença: todo texto vindo da Hunterpedia exige
 | ID | Tipo | Requisito |
 | --- | --- | --- |
 | RNF01 | Licença | Texto da wiki sob [CC BY-SA](https://community.fandom.com/wiki/Help:Licensing), com atribuição e link de origem por registro |
-| RNF02 | Licença | Sem imagens oficiais da obra; visual próprio (ícones dos tipos de Nen) |
+| RNF02 | Licença | Revisado: os retratos da obra não são copiados para o repositório; o site guarda só o endereço da miniatura no CDN da Fandom e credita os direitos na página de créditos. Copo, hexágono, aranha e roda do Zodíaco são desenhos próprios |
 | RNF03 | Coleta | Dados obtidos só pela API MediaWiki (`api.php`), nunca por scraping de HTML |
 | RNF04 | Coleta | Cliente da API com limite de taxa, cache local e User-Agent identificado |
 | RNF05 | Arquitetura | O site nunca consulta a wiki em tempo real; lê só a base gerada |
@@ -96,8 +103,13 @@ O modelo separa o que vem da wiki (Personagem, Fonte) do que é autoral (Pergunt
 | Opcao | Autoral | id, pergunta\_id, texto |
 | Peso | Autoral | opcao\_id, tipo\_nen\_id, valor (0 a 3) |
 | Resultado | Calculado | tipo\_principal, afinidades\[6\], respostas\[\] |
+| Imagem | Wiki (`npm run imagens`) | personagem\_id → url da miniatura (`data/imagens.json`) |
+| Vivencia | Autoral | id, nome, texto, hatsu\[tipo\] = (nome, efeito) |
+| Motivacao · Alcance · Voto | Autoral | id, texto, efeito; Voto também tem regra e peso (1 a 3) |
+| Referencia | Autoral | personagem\_id, vivencia\_id, tipo\_nen\_id, habilidade, historia |
+| Hatsu | Calculado | nome, tipo, efeito, vivência, motivação, alcance, voto, referência |
 
-Relações: uma Pergunta tem várias Opções; cada Opção tem um Peso para cada TipoNen; cada Personagem tem um TipoNen e uma Fonte.
+Relações: uma Pergunta tem várias Opções; cada Opção tem um Peso para cada TipoNen; cada Personagem tem um TipoNen e uma Fonte. Um Hatsu combina um TipoNen com uma Vivencia, uma Motivacao, um Alcance e um Voto.
 
 Formato do MVP: arquivos JSON versionados no repositório. Um banco (SQLite ou Postgres) entra só se surgir um requisito que peça.
 
@@ -292,3 +304,54 @@ O site em React (Vite) está pronto e passa em todos os requisitos funcionais; a
 - [ ] Revisar o texto das perguntas jogando o site
 
 **No ar:** [samuelgomezdev.github.io/quiz-hxh](https://samuelgomezdev.github.io/quiz-hxh/). Cada push na `main` roda os testes e só publica se todos passarem.
+
+## Fase 7: identidade visual e retratos
+
+Cada parte do site ganhou uma identidade própria, e o resultado passou a mostrar o rosto dos personagens. Feito em 17/10/2026.
+
+| Tema | Onde | Paleta e elementos |
+| --- | --- | --- |
+| Associação Hunter (neutro) | Início e créditos | Pergaminho, tinta preta e vermelho da licença Hunter; logo "HUNTER×HUNTER"; hexágono discreto ao fundo; segue o modo claro ou escuro do aparelho |
+| Trupe Fantasma | Quiz, resultado e Hatsu da Trupe | Preto e carmesim, títulos em Cinzel, teia no canto e a tatuagem da Aranha com o número de cada membro |
+| Zodíaco | Quiz, resultado e Hatsu do Zodíaco | Azul-noite e dourado, céu estrelado e a roda dos doze signos (子 丑 寅 卯 辰 巳 午 未 申 酉 戌 亥) |
+
+O tema é escolhido pela rota e aplicado com `data-tema` no `<html>`; cada tema só redefine as cores, então os componentes são os mesmos.
+
+**Retratos.** A extensão PageImages da API devolve a imagem principal de cada artigo. O script `npm run imagens` busca as 122 páginas necessárias (personagens com tipo e membros que inspiram as perguntas) e todas têm imagem. Os retratos aparecem:
+
+- nos cartões dos personagens do mesmo tipo, no resultado
+- no membro que inspira cada pergunta do quiz
+- numa seção nova, "Na Trupe Fantasma, sua aura é a de…", com os membros da versão que têm o mesmo tipo (no Zodíaco, só Kurapika e Leorio têm tipo conhecido)
+
+- [x] Testado no navegador nos três temas, inclusive a 375 px, sem rolagem lateral
+
+## Fase 8: Hatsu
+
+O tipo de Nen diz o que a aura faz; o Hatsu nasce do que a pessoa viveu. É a lógica do Killua: ele é de Transformação e cresceu levando choques, por isso a aura dele virou eletricidade. Feito em 17/10/2026.
+
+**Fluxo.** No resultado, a chamada "Desenvolva o seu Hatsu" leva a quatro perguntas. A resposta vira uma carta com nome, efeito, condições e o personagem da obra mais parecido.
+
+| Pergunta | Opções | Papel no Hatsu |
+| --- | --- | --- |
+| Qual experiência mais marcou a sua vida? | 12 vivências: eletricidade, corpo e treino, jogos, tecnologia, livros e estudo, música, cuidado e saúde, trabalho manual, perda e injustiça, trabalho e contas, natureza e bichos, fogo e cozinha | Matéria-prima. Com o tipo, define o nome e o efeito |
+| Por que você quer ficar mais forte? | 6 motivações | Quando o poder rende mais e contra quem age o voto |
+| Num confronto, onde você prefere estar? | 4 alcances | Onde o poder age |
+| Que preço aceitaria pagar? | 6 votos, de peso 1 a 3 | Voto e Limitação: quanto mais pesada a regra, mais forte o Hatsu |
+
+**Regra de negócio.** Cada vivência tem um Hatsu escrito para cada tipo, seguindo o que o tipo faz com a aura: Intensificação reforça, Transformação dá outras propriedades, Emissão envia longe, Materialização cria objetos, Manipulação controla e Especialização faz algo único. São 72 combinações autorais em `conteudo/hatsu.mjs`.
+
+**Personagem de referência**, em ordem de prioridade:
+
+1. Mesma vivência e mesmo tipo (ex.: Transformação + eletricidade → Killua, Godspeed)
+2. Mesma vivência por outro tipo (ex.: Intensificação + eletricidade → "mesmo ponto de partida do Killua")
+3. Alguém do mesmo tipo
+
+São 20 referências; o tipo de cada uma é conferido por teste contra a base da Hunterpedia.
+
+**Link.** `#/hatsu/<versao>/<respostas do quiz>/<respostas do Hatsu>`, com uma letra por resposta. O tipo é recalculado a partir das respostas do quiz.
+
+**Testes.** O motor (`motor/hatsu.mjs`) tem 6 testes novos: as 72 combinações, o caso do Killua, o voto ligado à motivação, as referências contra a base e o código do link. Total: 32 testes.
+
+- [x] Testado no navegador do resultado até a carta, nos temas Trupe e Zodíaco e a 375 px
+- [ ] Revisar os textos dos 72 Hatsus e das referências jogando o site
+- [ ] Decidir se a vivência pode ter mais de uma escolha (ex.: eletricidade + música)
