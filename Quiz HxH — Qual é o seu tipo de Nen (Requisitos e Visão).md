@@ -685,4 +685,4 @@ Essas regras substituem a tabela da fase 12: Riot, Mystic Land e Ikkiuchi! saír
 
 - [x] Testado no navegador: o clique em "Trupe Fantasma" começou o tema do Chrollo com o painel fechado; silenciar pausou e ficou guardado; depois de recarregar, cliques não pediram nada ao Spotify; ligar o som voltou a tocar
 - [ ] Confirmar no Opera e no Brave do Samuel
-- [ ] Teste da opção B (YouTube) para avaliar no Brave
+- [ ] Teste da opção B (YouTube) para avaliar no Brave: página `web/public/teste-trilha.html`, publicada em `.../quiz-hxh/teste-trilha.html`, fora do menu do site. Usa três faixas do canal oficial "Yoshihisa Hirano - Topic" (The World of Adventurers, Ansatsu Ikka no Yakata, Requiem Aranea), que aceitam ser incorporadas; o player troca o vídeo sem se recarregar e mostra um registro do que aconteceu
