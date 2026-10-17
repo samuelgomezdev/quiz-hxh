@@ -2,7 +2,7 @@
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { avaliarPoder, codificarPoder, decodificarPoder, eficiencia } from "../motor/poder.mjs";
+import { avaliarPoder, codificarPoder, decodificarPoder, eficiencia, nomeSugerido } from "../motor/poder.mjs";
 
 const base = { tipo: "transformacao", categoria: "transformacao", forma: "corpo", gatilho: "toque", vivencia: "eletricidade", votos: [] };
 
@@ -35,4 +35,11 @@ test("código do poder: ida e volta, sem vivência, e inválidos", () => {
   assert.deepEqual(decodificarPoder(codificarPoder(sem)), sem);
   assert.equal(decodificarPoder("aaaaa"), null);
   assert.equal(decodificarPoder("aaaaz1r"), null); // 6 votos: acima do máximo
+});
+
+test("sem nome, o poder recebe o Hatsu da vivência na categoria; sem vivência, sempre o mesmo", () => {
+  assert.equal(nomeSugerido({ ...base, tipo: "especializacao", categoria: "especializacao", vivencia: "artesanato" }).nome, "Kintsugi");
+  const sem = { ...base, vivencia: null };
+  assert.ok(nomeSugerido(sem).nome && nomeSugerido(sem).origem);
+  assert.deepEqual(nomeSugerido(sem), nomeSugerido({ ...sem }));
 });

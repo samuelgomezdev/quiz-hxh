@@ -65,7 +65,7 @@ test/              testes com node:test, a partir de casos reais da wiki
 Requer Node.js 18 ou superior. Não há dependências externas.
 
 ```bash
-npm test          # 44 testes: parser, transformação, motor, Hatsu, poder, licença, equilíbrio e links
+npm test          # 45 testes: parser, transformação, motor, Hatsu, poder, licença, equilíbrio e links
 npm run perguntas # gera data/perguntas.json e mostra o relatório de equilíbrio
 npm run etl       # gera data/personagens.json e data/fontes.json (usa cache)
 npm run etl:limpo # ignora o cache e consulta a wiki de novo
@@ -113,7 +113,7 @@ O resultado mostra o personagem da obra com o caminho mais parecido: mesma vivê
 
 ## Crie o seu poder
 
-Um construtor em `#/poder`: a pessoa escolhe o seu tipo, a categoria do poder, a forma, a vivência de origem, o gatilho e até três Votos e Limitações, e dá um nome. O motor calcula:
+Um construtor em `#/poder`: a pessoa escolhe o seu tipo, a categoria do poder, a forma, a vivência de origem, o gatilho e até três Votos e Limitações, e, se quiser, dá um nome (sem nome, o poder recebe o nome do Hatsu da vivência naquela categoria). O motor calcula:
 
 | Medida | Regra |
 | --- | --- |

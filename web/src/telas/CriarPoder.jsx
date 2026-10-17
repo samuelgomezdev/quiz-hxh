@@ -1,4 +1,5 @@
-// "Crie o seu poder": a pessoa monta o Hatsu peça por peça e dá nome a ele.
+// "Crie o seu poder": a pessoa monta o Hatsu peça por peça e, se quiser, dá nome a ele.
+// Sem nome, o poder recebe o nome sugerido pelo motor (nomeSugerido).
 // O site avalia a construção pela teoria do Nen (hexágono, forma, votos).
 //   #/poder                               → construtor vazio
 //   #/poder/novo/<codigo>[/<nome>[/<desc>]] → construtor preenchido (vindo do Hatsu ou da licença)
@@ -7,7 +8,7 @@ import { useState } from "react";
 import { VIVENCIAS, VOTOS } from "../../../conteudo/hatsu.mjs";
 import { FORMAS, GATILHOS } from "../../../conteudo/poder.mjs";
 import {
-  avaliarPoder, codificarPoder, decodificarPoder, descreverPoder, eficiencia, MAX_DESCRICAO, MAX_NOME, MAX_VOTOS,
+  avaliarPoder, codificarPoder, nomeSugerido, decodificarPoder, descreverPoder, eficiencia, MAX_DESCRICAO, MAX_NOME, MAX_VOTOS,
 } from "../../../motor/poder.mjs";
 import { HEXAGONO } from "../../../motor/pontuacao.mjs";
 import { nomesDosTipos } from "../lib/dados.js";
@@ -76,6 +77,7 @@ function Construtor({ inicial, nomeInicial, descricaoInicial }) {
   const [nome, setNome] = useState(nomeInicial);
   const [descricao, setDescricao] = useState(descricaoInicial);
   const avaliacao = avaliarPoder(e);
+  const sugerido = nomeSugerido(e);
   const mudar = (campo) => (valor) => setE((atual) => ({ ...atual, [campo]: valor }));
 
   function alternarVoto(id) {
@@ -87,7 +89,7 @@ function Construtor({ inicial, nomeInicial, descricaoInicial }) {
 
   function gerar(evento) {
     evento.preventDefault();
-    if (!nome.trim() || !avaliacao.possivel) return;
+    if (!avaliacao.possivel) return;
     ir(caminhoDoPoder("poder", e, nome, descricao));
   }
 
@@ -96,7 +98,7 @@ function Construtor({ inicial, nomeInicial, descricaoInicial }) {
       <p className="sobretitulo">Hatsu · Crie o seu poder</p>
       <h1 className="titulo">Monte a sua habilidade</h1>
       <p className="inicio__intro">
-        Escolha cada peça e dê um nome ao seu poder. A ficha ao fim mostra como o Nen reage: quanto da aura você
+        Escolha cada peça e, se quiser, dê um nome ao seu poder. A ficha ao fim mostra como o Nen reage: quanto da aura você
         aproveita, quanto a forma combina e o que os votos acrescentam.
       </p>
 
@@ -151,9 +153,10 @@ function Construtor({ inicial, nomeInicial, descricaoInicial }) {
 
         <div className="chips">
           <label className="campo" htmlFor="nome-poder">
-            <span className="chips__legenda">7. Nome do poder</span>
-            <input id="nome-poder" className="campo__entrada" value={nome} maxLength={MAX_NOME} required autoComplete="off"
-              placeholder="Ex.: Kintsugi, Zugzwang, Tatara" onChange={(ev) => setNome(ev.target.value)} />
+            <span className="chips__legenda">7. Nome do poder (opcional)</span>
+            <span className="chips__ajuda">Sem nome, ele se chama {sugerido.nome}: {sugerido.origem}.</span>
+            <input id="nome-poder" className="campo__entrada" value={nome} maxLength={MAX_NOME} autoComplete="off"
+              placeholder={sugerido.nome} onChange={(ev) => setNome(ev.target.value)} />
           </label>
           <label className="campo" htmlFor="descricao-poder">
             <span className="chips__ajuda">Descrição, opcional. Sem ela, o site escreve uma a partir das peças.</span>
@@ -174,7 +177,7 @@ function Construtor({ inicial, nomeInicial, descricaoInicial }) {
 
         <div className="quiz__acoes">
           <button type="button" className="botao botao--secundario" onClick={() => ir("")}>Sair</button>
-          <button type="submit" className="botao" disabled={!nome.trim() || !avaliacao.possivel}>Gerar a carta do poder</button>
+          <button type="submit" className="botao" disabled={!avaliacao.possivel}>Gerar a carta do poder</button>
         </div>
       </form>
     </main>
@@ -185,6 +188,7 @@ function Carta({ escolhas, nome, descricao }) {
   const [copiado, setCopiado] = useState(false);
   const avaliacao = avaliarPoder(escolhas);
   const caminho = caminhoDoPoder("poder", escolhas, nome, descricao);
+  const sugerido = nomeSugerido(escolhas);
 
   async function copiarLink() {
     try {
@@ -200,7 +204,8 @@ function Carta({ escolhas, nome, descricao }) {
     <main className="pagina hatsu">
       <p className="sobretitulo">Poder criado · {nomesDosTipos[escolhas.categoria]}</p>
       <article className="carta" aria-labelledby="nome-poder">
-        <h1 id="nome-poder" className="carta__nome">{nome}</h1>
+        <h1 id="nome-poder" className="carta__nome">{nome || sugerido.nome}</h1>
+        {!nome && <p className="carta__origem">{sugerido.origem}</p>}
         <p className="carta__etiquetas">
           <span>{nomesDosTipos[escolhas.categoria]}</span>
           <span>{avaliacao.forma.nome}</span>
@@ -256,7 +261,7 @@ export default function CriarPoder({ partes }) {
   const nomeLimpo = nome === "-" ? "" : nome.slice(0, MAX_NOME);
   const descricaoLimpa = descricao.slice(0, MAX_DESCRICAO);
 
-  if (!escolhas || (!novo && (!nomeLimpo || !avaliarPoder(escolhas)?.possivel))) {
+  if (!escolhas || (!novo && !avaliarPoder(escolhas)?.possivel)) {
     return (
       <main className="pagina">
         <h1 className="titulo">Este link de poder está incompleto</h1>

@@ -73,7 +73,7 @@ São oito requisitos do MVP e nove adicionados depois (RF09 a RF17), cada um com
 | RF10 | Dar a cada teste a sua identidade visual | Início e créditos no tema neutro (Associação Hunter); quiz, resultado e Hatsu no tema da versão |
 | RF11 | Gerar o Hatsu a partir do tipo e de quatro perguntas sobre a vida | Mesmo tipo e mesmas respostas geram sempre o mesmo Hatsu; os 72 pares vivência × tipo têm nome e efeito |
 | RF12 | Mostrar o personagem da obra com o caminho mais parecido e compartilhar o Hatsu por link | Transformação + eletricidade leva ao Killua; o link abre direto na carta do Hatsu |
-| RF13 | Montar um poder peça por peça e dar nome a ele | Categoria, forma, origem, gatilho, até 3 votos, nome (até 40 caracteres) e descrição opcional (até 200); o link abre a carta com o mesmo nome |
+| RF13 | Montar um poder peça por peça e, se quiser, dar nome a ele | Categoria, forma, origem, gatilho, até 3 votos, nome e descrição opcionais (até 40 e 200 caracteres); sem nome, o poder recebe um nome sugerido com a origem explicada; o link abre a carta com o mesmo nome |
 | RF14 | Avaliar o poder pela teoria do Nen | Eficiência segue o hexágono; Especialização fica bloqueada para quem não é especialista; votos e forma natural aumentam a potência |
 | RF15 | Marcar feitos e gerar a Licença Hunter | Especialidade, estrelas e organização são sempre as mesmas para as mesmas respostas; o cartão mostra o que falta para a próxima estrela |
 | RF16 | Mostrar Hunters reais da especialidade e membros da organização | Os Hunters vêm do campo `occupation` da Hunterpedia, com retrato e estrelas |
@@ -394,7 +394,7 @@ O Hatsu gerado é um ponto de partida; agora a pessoa também pode montar o pró
 | Origem | 12 vivências do Hatsu, opcional | só descrição |
 | Gatilho | tocar, dizer o nome, olhar nos olhos, ferido, ritual, sempre ativo | "sempre ativo" gera um aviso de gasto de aura |
 | Votos | os 6 votos do Hatsu, até 3 | +6 de potência por ponto de peso; risco baixo, médio (3+) ou alto (5+) |
-| Nome e descrição | texto livre (40 e 200 caracteres) | sem descrição, o site escreve uma a partir das peças |
+| Nome e descrição | texto livre e opcional (40 e 200 caracteres) | sem nome, recebe um nome sugerido; sem descrição, o site escreve uma a partir das peças |
 
 O nome e a descrição vão no próprio link (`#/poder/<código>/<nome>/<descrição>`); o site não guarda nada.
 
@@ -481,4 +481,12 @@ Cada Hatsu agora tem três campos: nome, efeito e a origem do nome, que aparece 
 
 - [x] Testado a 375 px: as 13 imagens da Trupe baixam na primeira pergunta; uma falha simulada tenta de novo e carrega; com duas falhas aparecem as iniciais, e a pergunta seguinte volta a mostrar a imagem
 - [x] Confirmado pelo Samuel no celular, no site publicado (17/10/2026)
+
+## Fase 11: nome do poder opcional (17/10/2026)
+
+No "Crie o seu poder", o nome deixou de ser obrigatório. Sem nome, o poder recebe o nome do Hatsu da vivência escolhida na categoria do poder (ex.: trabalho manual + Especialização = Kintsugi), e a carta mostra a origem do nome logo abaixo, como no Hatsu. Sem vivência, as peças escolhem uma, sempre a mesma para as mesmas peças. O campo mostra antes qual será o nome sugerido.
+
+Regra em `motor/poder.mjs` (`nomeSugerido`), com 1 teste novo. Total: 45 testes.
+
+- [x] Testado no navegador: carta gerada sem nome sai como "Raiken", com a origem
 

@@ -53,6 +53,16 @@ export function avaliarPoder(escolhas) {
   };
 }
 
+// Nome automático, para quem não der nome ao poder: o Hatsu da vivência escolhida
+// na categoria do poder. Sem vivência, as peças escolhem uma (sempre a mesma).
+export function nomeSugerido(escolhas) {
+  let h = 0;
+  for (const c of codificarPoder(escolhas)) h = (h * 31 + c.charCodeAt(0)) % 9973;
+  const vivencia = VIVENCIAS.find((v) => v.id === escolhas.vivencia) ?? VIVENCIAS[h % VIVENCIAS.length];
+  const [nome, , origem] = vivencia.hatsu[escolhas.categoria];
+  return { nome, origem };
+}
+
 // Texto automático, para quem não escrever a própria descrição
 export function descreverPoder(escolhas, avaliacao, nomesDosTipos) {
   const origem = avaliacao.vivencia ? `, nascido de ${avaliacao.vivencia.nome.toLowerCase()}` : "";
