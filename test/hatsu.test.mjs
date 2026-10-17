@@ -9,14 +9,19 @@ import { codificarHatsu, decodificarHatsu, gerarHatsu, PERGUNTAS_HATSU } from ".
 
 const base = { motivacao: "proteger", alcance: "perto", voto: "nome" };
 
-test("cada vivência tem Hatsu com nome e efeito para os seis tipos", () => {
+test("cada vivência tem Hatsu com nome, efeito e origem do nome para os seis tipos", () => {
   for (const v of VIVENCIAS) {
     for (const tipo of HEXAGONO) {
       const h = gerarHatsu(tipo, { ...base, vivencia: v.id });
-      assert.ok(h?.nome && h.efeito, `${v.id} × ${tipo}`);
+      assert.ok(h?.nome && h.efeito && h.origemDoNome, `${v.id} × ${tipo}`);
       assert.ok(h.referencia, `${v.id} × ${tipo} sem referência`);
     }
   }
+});
+
+test("os 72 nomes de Hatsu são diferentes entre si", () => {
+  const nomes = VIVENCIAS.flatMap((v) => Object.values(v.hatsu).map(([nome]) => nome));
+  assert.equal(new Set(nomes).size, nomes.length);
 });
 
 test("Transformação + eletricidade → mesmo caminho do Killua", () => {

@@ -61,7 +61,7 @@ test/              testes com node:test, a partir de casos reais da wiki
 Requer Node.js 18 ou superior. Não há dependências externas.
 
 ```bash
-npm test          # 43 testes: parser, transformação, motor, Hatsu, poder, licença, equilíbrio e links
+npm test          # 44 testes: parser, transformação, motor, Hatsu, poder, licença, equilíbrio e links
 npm run perguntas # gera data/perguntas.json e mostra o relatório de equilíbrio
 npm run etl       # gera data/personagens.json e data/fontes.json (usa cache)
 npm run etl:limpo # ignora o cache e consulta a wiki de novo
@@ -102,6 +102,8 @@ Depois do resultado, a pessoa pode desenvolver o seu Hatsu. O tipo de Nen diz o 
 | Por que quer ficar mais forte | quando o poder rende mais e contra quem age o voto |
 | Onde prefere estar num confronto | alcance |
 | Que preço aceitaria pagar | Voto e Limitação, de peso 1 a 3: quanto mais pesado, mais forte |
+
+Os nomes seguem o estilo da obra (Bungee Gum, Chain Jail, Deep Purple): várias línguas e referências culturais, como Kintsugi, Gleipnir e Smoke on the Water, com a origem do nome explicada na carta.
 
 O resultado mostra o personagem da obra com o caminho mais parecido: mesma vivência e mesmo tipo; senão, mesma vivência por outro tipo; senão, alguém do mesmo tipo. O link `#/hatsu/<versao>/<respostas do quiz>/<respostas do Hatsu>` recria tudo.
 

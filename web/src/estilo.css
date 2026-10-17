@@ -399,6 +399,8 @@ p { margin: 0 0 1rem; max-width: 36em; }
   box-shadow: 0 0 0 6px color-mix(in srgb, var(--acao) 12%, transparent), 0 24px 40px -24px rgb(0 0 0 / 0.6);
 }
 .carta__nome { font-family: var(--titulo); font-weight: 700; font-size: clamp(2rem, 7vw, 2.8rem); line-height: 1.1; margin: 0 0 0.6rem; }
+.carta__origem { margin: -0.3rem 0 0.8rem; font-size: 0.9rem; font-style: italic; color: var(--tinta-suave); }
+.carta__origem::first-letter { text-transform: uppercase; }
 .carta__etiquetas { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
 .carta__etiquetas span {
   font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700;

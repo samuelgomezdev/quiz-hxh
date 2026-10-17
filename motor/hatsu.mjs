@@ -52,9 +52,10 @@ export function gerarHatsu(tipo, escolhas) {
   const voto = achar(VOTOS, escolhas.voto);
   if (!vivencia || !motivacao || !alcance || !voto || !vivencia.hatsu[tipo]) return null;
 
-  const [nome, efeito] = vivencia.hatsu[tipo];
+  const [nome, efeito, origemDoNome] = vivencia.hatsu[tipo];
   return {
     nome,
+    origemDoNome,
     tipo,
     efeito,
     vivencia: { id: vivencia.id, nome: vivencia.nome, texto: vivencia.texto },

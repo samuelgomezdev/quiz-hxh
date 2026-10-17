@@ -111,7 +111,7 @@ O modelo separa o que vem da wiki (Personagem, Fonte) do que é autoral (Pergunt
 | Peso | Autoral | opcao\_id, tipo\_nen\_id, valor (0 a 3) |
 | Resultado | Calculado | tipo\_principal, afinidades\[6\], respostas\[\] |
 | Imagem | Wiki (`npm run imagens`) | personagem\_id → url da miniatura (`data/imagens.json`) |
-| Vivencia | Autoral | id, nome, texto, hatsu\[tipo\] = (nome, efeito) |
+| Vivencia | Autoral | id, nome, texto, hatsu\[tipo\] = (nome, efeito, origem do nome) |
 | Motivacao · Alcance · Voto | Autoral | id, texto, efeito; Voto também tem regra e peso (1 a 3) |
 | Referencia | Autoral | personagem\_id, vivencia\_id, tipo\_nen\_id, habilidade, historia |
 | Hatsu | Calculado | nome, tipo, efeito, vivência, motivação, alcance, voto, referência |
@@ -434,6 +434,24 @@ Organização: a mais escolhida entre Associação Hunter, Zodíaco, Expedição
 **Testes.** 11 novos (7 da licença, 4 do poder): leitura da ocupação, aspirante, cada nível de estrela, especialidade e desempate, organização, códigos dos links, personagens citados existem na base, eficiência, bloqueio da Especialização e potência. Total: 43 testes.
 
 - [x] Testado no navegador: feitos pela jornada do Killua até o cartão (2 estrelas, Informação, Associação Hunter), construtor preenchido pelo Hatsu e carta do poder, inclusive a 375 px
-- [ ] Revisar os textos dos 21 feitos e dos paralelos jogando o site
-- [ ] Decidir se o nome no cartão deve continuar indo no link
+- [x] Textos dos 21 feitos e dos paralelos revisados pelo Samuel (17/10/2026)
+- [x] Decidido: o nome no cartão continua indo no link
 - [ ] Atualizar as capturas do README com a licença e o construtor
+
+## Fase 10: nomes dos Hatsus
+
+Os 72 nomes em português soavam como tradução literal ("Corrente Viva", "Fio Condutor"). Na obra, os Hatsus têm nomes em inglês, japonês e referências à cultura pop: Bungee Gum, Chain Jail, Hakoware, Deep Purple (a banda), Doctor Blythe (a boneca), Godspeed. Os nomes novos seguem esse estilo, com várias línguas e referências. Feito em 17/10/2026.
+
+| Língua ou fonte | Exemplos |
+| --- | --- |
+| Japonês | Raijin, Kongōshin, Kintsugi, Bunraku, Hanabi, Dokodemo Door (Doraemon), Black Jack (Tezuka) |
+| Latim | Plus Ultra, Alea Iacta Est, Deus ex Machina, Ex Cathedra, Scientia Potentia Est |
+| Alemão | Kugelblitz, Zugzwang, Doppelgänger, Leitmotiv |
+| Mitologia | Gleipnir (nórdica), Geas (irlandesa), Argus, Ariadne, Orpheus, Hephaestus (grega), Agni (védica) |
+| Música, livros e cinema | Smoke on the Water (Deep Purple, o mesmo do Hatsu do Morel), Eye of the Tiger, Ace of Spades, Poppy Field (O Mágico de Oz), Shylock, Babette's Feast |
+| Outras | Rien ne Va Plus (francês), Quattro Stagioni (italiano), Skrik (norueguês), Ofrenda (espanhol do México), Pranayama (sânscrito), sudo e Ctrl+Z (computação) |
+
+Cada Hatsu agora tem três campos: nome, efeito e a origem do nome, que aparece em itálico logo abaixo do nome na carta (ex.: "Kintsugi: a arte japonesa de consertar cerâmica quebrada com ouro"). Um teste novo garante que os 72 nomes são diferentes entre si. Total: 44 testes.
+
+- [ ] Revisar os 72 nomes e origens jogando o site
+

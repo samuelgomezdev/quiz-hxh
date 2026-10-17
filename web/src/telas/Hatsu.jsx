@@ -113,6 +113,7 @@ function Carta({ versao, codigo, codigoHatsu, hatsu }) {
       <p className="sobretitulo">Seu Hatsu · {nomesDosTipos[hatsu.tipo]}</p>
       <article className="carta" aria-labelledby="nome-hatsu">
         <h1 id="nome-hatsu" className="carta__nome">{hatsu.nome}</h1>
+        <p className="carta__origem">{hatsu.origemDoNome}</p>
         <p className="carta__etiquetas">
           <span>{nomesDosTipos[hatsu.tipo]}</span>
           <span>{hatsu.vivencia.nome}</span>

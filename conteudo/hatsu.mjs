@@ -9,6 +9,10 @@
 //   Materialização → cria um objeto de aura
 //   Manipulação    → controla seres ou objetos
 //   Especialização → algo que só aquela pessoa consegue
+//
+// Formato: tipo: [nome, efeito, origem do nome]. Os nomes seguem o estilo da obra
+// (Bungee Gum, Deep Purple, Chain Jail, Hakoware): várias línguas e referências
+// culturais em vez de uma tradução literal. A origem aparece na carta.
 
 export const VIVENCIAS = [
   {
@@ -16,12 +20,12 @@ export const VIVENCIAS = [
     nome: "Eletricidade",
     texto: "Levei choques, mexo com fios ou cresci perto de máquinas e tomadas.",
     hatsu: {
-      intensificacao: ["Punho Sobrecarga", "Seu corpo aprende com cada choque: nervos e músculos aguentam descargas, e seus socos travam o adversário como um curto-circuito."],
-      transformacao: ["Corrente Viva", "Sua aura ganha as propriedades da eletricidade. Um toque paralisa, e a corrente nos seus próprios nervos acelera os reflexos além do humano."],
-      emissao: ["Raio Desgarrado", "Você solta esferas de aura carregada que viajam sozinhas até o alvo e descarregam ao contato."],
-      materializacao: ["Cabo Terra", "Você materializa um cabo de aço com um plugue em cada ponta: ligado a dois pontos, ele sobrecarrega tudo o que estiver no meio."],
-      manipulacao: ["Fio Condutor", "Ao fincar um pino de aura num aparelho ou numa pessoa, você comanda os movimentos dela como quem opera uma máquina pelo painel."],
-      especializacao: ["Apagão", "Quando você toca um quadro de energia, todo Nen num raio de vinte metros se desliga por alguns segundos, menos o seu."],
+      intensificacao: ["Raiken", "Seu corpo aprende com cada choque: nervos e músculos aguentam descargas, e seus socos travam o adversário como um curto-circuito.", "雷拳, “punho do trovão” em japonês"],
+      transformacao: ["Raijin", "Sua aura ganha as propriedades da eletricidade. Um toque paralisa, e a corrente nos seus próprios nervos acelera os reflexos além do humano.", "o deus do trovão do xintoísmo, que toca tambores entre as nuvens"],
+      emissao: ["Kugelblitz", "Você solta esferas de aura carregada que viajam sozinhas até o alvo e descarregam ao contato.", "“raio em bola” em alemão: o raio globular, que flutua antes de explodir"],
+      materializacao: ["Live Wire", "Você materializa um cabo de aço com um plugue em cada ponta: ligado a dois pontos, ele sobrecarrega tudo o que estiver no meio.", "“fio desencapado” em inglês, e também quem não para quieto"],
+      manipulacao: ["Galvani", "Ao fincar um pino de aura num aparelho ou numa pessoa, você comanda os movimentos dela como quem opera uma máquina pelo painel.", "Luigi Galvani, que em 1780 fez pernas de rã se moverem com eletricidade"],
+      especializacao: ["Kill Switch", "Quando você toca um quadro de energia, todo Nen num raio de vinte metros se desliga por alguns segundos, menos o seu.", "o botão de desligamento de emergência das máquinas"],
     },
   },
   {
@@ -29,12 +33,12 @@ export const VIVENCIAS = [
     nome: "Corpo e treino",
     texto: "Treinei pesado: esporte, luta ou trabalho braçal. Meu corpo é a minha ferramenta.",
     hatsu: {
-      intensificacao: ["Corpo Inquebrável", "Toda a aura vai para o corpo: ossos e músculos ficam mais duros que aço, e um golpe concentrado no punho derruba paredes."],
-      transformacao: ["Ferro Fundido", "Sua aura imita o metal quente: você endurece ou amolece partes do corpo para absorver golpes e devolver o impacto."],
-      emissao: ["Golpe Fantasma", "Seu soco continua viajando depois que o braço para: a aura sai em forma de punho e acerta alvos a dezenas de metros."],
-      materializacao: ["Equipamento de Treino", "Você materializa pesos, luvas e faixas de aura; quem estiver preso a eles fica lento e pesado, menos você."],
-      manipulacao: ["Treinador", "Com um tapa no ombro de alguém, você controla o ritmo do corpo dele: pode fazê-lo correr além do limite ou cansar na hora."],
-      especializacao: ["Recorde Pessoal", "Toda vez que você supera um limite físico em combate, a aura grava a marca, e ela vira o seu novo ponto de partida."],
+      intensificacao: ["Kongōshin", "Toda a aura vai para o corpo: ossos e músculos ficam mais duros que aço, e um golpe concentrado no punho derruba paredes.", "金剛身, o “corpo de diamante” do budismo, que nada consegue quebrar"],
+      transformacao: ["Damascus", "Sua aura imita o metal quente: você endurece ou amolece partes do corpo para absorver golpes e devolver o impacto.", "o aço de Damasco, forjado em camadas e famoso por não quebrar"],
+      emissao: ["Tōate", "Seu soco continua viajando depois que o braço para: a aura sai em forma de punho e acerta alvos a dezenas de metros.", "遠当て, o golpe à distância das lendas das artes marciais japonesas"],
+      materializacao: ["Sisyphus", "Você materializa pesos, luvas e faixas de aura; quem estiver preso a eles fica lento e pesado, menos você.", "Sísifo, condenado a empurrar uma pedra morro acima para sempre"],
+      manipulacao: ["Eye of the Tiger", "Com um tapa no ombro de alguém, você controla o ritmo do corpo dele: pode fazê-lo correr além do limite ou cansar na hora.", "a música do treino de Rocky Balboa"],
+      especializacao: ["Plus Ultra", "Toda vez que você supera um limite físico em combate, a aura grava a marca, e ela vira o seu novo ponto de partida.", "“mais além” em latim, o lema de quem passou do limite do mundo conhecido"],
     },
   },
   {
@@ -42,12 +46,12 @@ export const VIVENCIAS = [
     nome: "Jogos",
     texto: "Passei horas jogando: cartas, tabuleiro, videogame ou apostas.",
     hatsu: {
-      intensificacao: ["Peça Pesada", "Você reforça qualquer carta, dado ou peça até virar arma: uma carta corta como lâmina e um dado pesa como uma pedra."],
-      transformacao: ["Regra da Casa", "Sua aura imita as propriedades de uma peça de jogo: gruda como fita, escorrega como sabão ou quica como bola, conforme a jogada."],
-      emissao: ["Partida Online", "Você lança avatares de aura que lutam a distância seguindo os seus comandos, como personagens de um jogo."],
-      materializacao: ["Roleta do Destino", "Você materializa uma roleta: cada número sorteia uma arma diferente, que só some depois de usada."],
-      manipulacao: ["Tabuleiro", "Quem pisar no quadrado que você desenhou no chão vira uma peça e só pode se mover do jeito que aquela peça se move."],
-      especializacao: ["Aposta", "Você propõe uma aposta e, se o adversário aceitar, quem perder entrega o que foi apostado, nem que seja o próprio Nen."],
+      intensificacao: ["Ace of Spades", "Você reforça qualquer carta, dado ou peça até virar arma: uma carta corta como lâmina e um dado pesa como uma pedra.", "o ás de espadas, a carta mais forte do baralho, e a música do Motörhead"],
+      transformacao: ["Wild Card", "Sua aura imita as propriedades de uma peça de jogo: gruda como fita, escorrega como sabão ou quica como bola, conforme a jogada.", "o curinga, que vale o que o jogador quiser"],
+      emissao: ["Player 2", "Você lança avatares de aura que lutam a distância seguindo os seus comandos, como personagens de um jogo.", "o segundo controle, que entra no jogo para ajudar"],
+      materializacao: ["Rien ne Va Plus", "Você materializa uma roleta: cada número sorteia uma arma diferente, que só some depois de usada.", "“nada mais vai” em francês, o aviso do crupiê quando a roleta gira"],
+      manipulacao: ["Zugzwang", "Quem pisar no quadrado que você desenhou no chão vira uma peça e só pode se mover do jeito que aquela peça se move.", "termo alemão do xadrez: ser obrigado a mover mesmo que todo lance piore a posição"],
+      especializacao: ["Alea Iacta Est", "Você propõe uma aposta e, se o adversário aceitar, quem perder entrega o que foi apostado, nem que seja o próprio Nen.", "“a sorte está lançada”, o que Júlio César disse ao cruzar o Rubicão"],
     },
   },
   {
@@ -55,12 +59,12 @@ export const VIVENCIAS = [
     nome: "Tecnologia",
     texto: "Vivo conectado: celular, computador, programação.",
     hatsu: {
-      intensificacao: ["Bateria Cheia", "Você reforça qualquer aparelho com aura: o celular vira escudo, o notebook vira aríete, e nada descarrega no meio da luta."],
-      transformacao: ["Sinal de Rede", "Sua aura imita um sinal sem fio: se espalha pelo ambiente e avisa de qualquer coisa que se mova dentro do alcance."],
-      emissao: ["Drone de Aura", "Você solta pequenos drones de aura que voam sozinhos, filmam o que veem e transmitem para a sua mente."],
-      materializacao: ["Aplicativo", "Você materializa um celular de aura com aplicativos que funcionam de verdade: rastrear, gravar uma técnica, trancar uma porta."],
-      manipulacao: ["Controle Remoto", "Você crava uma antena de aura no alvo e o controla pelo celular, comando por comando."],
-      especializacao: ["Backup", "Antes de lutar, você salva o seu estado; uma vez por dia, pode restaurar o corpo como estava no último backup."],
+      intensificacao: ["Overclock", "Você reforça qualquer aparelho com aura: o celular vira escudo, o notebook vira aríete, e nada descarrega no meio da luta.", "forçar um processador além da velocidade de fábrica"],
+      transformacao: ["Ping", "Sua aura imita um sinal sem fio: se espalha pelo ambiente e avisa de qualquer coisa que se mova dentro do alcance.", "o sinal que a rede manda para saber quem está do outro lado"],
+      emissao: ["Argus", "Você solta pequenos drones de aura que voam sozinhos, filmam o que veem e transmitem para a sua mente.", "Argos Panoptes, o gigante grego de cem olhos que nunca dormia"],
+      materializacao: ["Deus ex Machina", "Você materializa um celular de aura com aplicativos que funcionam de verdade: rastrear, gravar uma técnica, trancar uma porta.", "“o deus que sai da máquina” em latim, a solução que aparece do nada"],
+      manipulacao: ["sudo", "Você crava uma antena de aura no alvo e o controla pelo celular, comando por comando.", "o comando que dá poder de superusuário: quem o usa manda em tudo"],
+      especializacao: ["Ctrl+Z", "Antes de lutar, você salva o seu estado; uma vez por dia, pode restaurar o corpo como estava no último backup.", "o atalho de desfazer"],
     },
   },
   {
@@ -68,12 +72,12 @@ export const VIVENCIAS = [
     nome: "Livros e estudo",
     texto: "Cresci entre livros, aulas e perguntas. Quero entender tudo.",
     hatsu: {
-      intensificacao: ["Enciclopédia", "Quanto mais você sabe do adversário, mais forte fica: cada fraqueza estudada vira reforço no golpe certo."],
-      transformacao: ["Tinta Viva", "Sua aura imita tinta: escreve no ar e mancha o adversário, e o que você escrever nele vira uma marca que não sai."],
-      emissao: ["Biblioteca Voadora", "Livros de aura saem voando e se abrem sobre o alvo; cada página que encosta pesa mais do que a anterior."],
-      materializacao: ["Caderno de Respostas", "Você materializa um caderno que responde a uma pergunta por dia, desde que ela seja escrita à mão e com sinceridade."],
-      manipulacao: ["Sala de Aula", "Quem ouvir a sua explicação até o fim fica obrigado a seguir a regra que você ensinou durante um minuto."],
-      especializacao: ["Ladrão de Páginas", "Ao ler uma técnica com atenção total, você a copia para um livro de aura e pode usá-la enquanto ele estiver aberto."],
+      intensificacao: ["Scientia Potentia Est", "Quanto mais você sabe do adversário, mais forte fica: cada fraqueza estudada vira reforço no golpe certo.", "“conhecimento é poder” em latim, atribuído a Francis Bacon"],
+      transformacao: ["Sumi-e", "Sua aura imita tinta: escreve no ar e mancha o adversário, e o que você escrever nele vira uma marca que não sai.", "墨絵, a pintura japonesa com tinta preta e pincel"],
+      emissao: ["Alexandria", "Livros de aura saem voando e se abrem sobre o alvo; cada página que encosta pesa mais do que a anterior.", "a grande biblioteca da Antiguidade, no Egito"],
+      materializacao: ["Akashic Notes", "Você materializa um caderno que responde a uma pergunta por dia, desde que ela seja escrita à mão e com sinceridade.", "os registros akáshicos, uma biblioteca de tudo o que já aconteceu (akasha, “céu” em sânscrito)"],
+      manipulacao: ["Ex Cathedra", "Quem ouvir a sua explicação até o fim fica obrigado a seguir a regra que você ensinou durante um minuto.", "“da cátedra” em latim: falar com uma autoridade que não se discute"],
+      especializacao: ["Palimpsest", "Ao ler uma técnica com atenção total, você a copia para um livro de aura e pode usá-la enquanto ele estiver aberto.", "o palimpsesto, pergaminho raspado e reescrito por cima do texto antigo"],
     },
   },
   {
@@ -81,12 +85,12 @@ export const VIVENCIAS = [
     nome: "Música",
     texto: "A música me salvou: canto, toco ou vivo de fone de ouvido.",
     hatsu: {
-      intensificacao: ["Batida", "Sua aura pulsa no ritmo da música na sua cabeça: cada golpe dado no tempo certo bate com o dobro de força."],
-      transformacao: ["Frequência", "Sua aura vibra como som: atravessa paredes, estoura vidros e tira o equilíbrio de quem ouve."],
-      emissao: ["Melodia Distante", "As notas que você toca viajam como aura até quem precisa ouvir: acalmam aliados e desorientam inimigos a distância."],
-      materializacao: ["Instrumento Fantasma", "Você materializa um instrumento: cada música tocada nele tem um efeito, e você só conhece os efeitos das que compôs."],
-      manipulacao: ["Maestro", "Quem escutar o seu assobio passa a se mover no compasso que você escolher."],
-      especializacao: ["Trilha Sonora", "Você ouve a música do coração de quem está perto e sabe se a pessoa mente, tem medo ou vai atacar."],
+      intensificacao: ["Taiko", "Sua aura pulsa no ritmo da música na sua cabeça: cada golpe dado no tempo certo bate com o dobro de força.", "太鼓, os grandes tambores japoneses"],
+      transformacao: ["Banshee", "Sua aura vibra como som: atravessa paredes, estoura vidros e tira o equilíbrio de quem ouve.", "o espírito da lenda irlandesa cujo grito anuncia desgraça"],
+      emissao: ["Orpheus", "As notas que você toca viajam como aura até quem precisa ouvir: acalmam aliados e desorientam inimigos a distância.", "Orfeu, que acalmava feras e pedras tocando a lira"],
+      materializacao: ["Stradivarius", "Você materializa um instrumento: cada música tocada nele tem um efeito, e você só conhece os efeitos das que compôs.", "os violinos de Antonio Stradivari, os mais valiosos do mundo"],
+      manipulacao: ["Hamelin", "Quem escutar o seu assobio passa a se mover no compasso que você escolher.", "o flautista de Hamelin, que levou a cidade inteira atrás da sua música"],
+      especializacao: ["Leitmotiv", "Você ouve a música do coração de quem está perto e sabe se a pessoa mente, tem medo ou vai atacar.", "termo alemão: o tema musical que anuncia cada personagem numa ópera"],
     },
   },
   {
@@ -94,12 +98,12 @@ export const VIVENCIAS = [
     nome: "Cuidado e saúde",
     texto: "Cuidei de alguém doente ou trabalho com saúde e cuidado.",
     hatsu: {
-      intensificacao: ["Mãos que Curam", "Você reforça a cura natural do corpo: seu toque acelera a recuperação de ferimentos, seus e dos outros."],
-      transformacao: ["Óleo Morno", "Sua aura imita um óleo de massagem que regenera: tira o cansaço de aliados e devolve a energia como uma noite de sono."],
-      emissao: ["Atendimento a Distância", "Você abre um pequeno portal de aura, e a sua mão ou o seu soco sai do outro lado, onde estiver o paciente ou o inimigo."],
-      materializacao: ["Kit de Socorro", "Você materializa curativos, talas e linha de sutura de aura que fecham feridas enquanto existirem."],
-      manipulacao: ["Pulso", "Ao tocar alguém, você controla o coração e a respiração dele: acalma um ferido ou derruba um inimigo."],
-      especializacao: ["Cirurgião de Aura", "Uma figura de aura surge às suas costas e reconstrói qualquer corpo que você tocar, enquanto você não se afastar."],
+      intensificacao: ["Reiki", "Você reforça a cura natural do corpo: seu toque acelera a recuperação de ferimentos, seus e dos outros.", "霊気, a prática japonesa de cuidar pela imposição das mãos"],
+      transformacao: ["Onsen", "Sua aura imita um óleo de massagem que regenera: tira o cansaço de aliados e devolve a energia como uma noite de sono.", "温泉, as fontes termais japonesas"],
+      emissao: ["Dokodemo Door", "Você abre um pequeno portal de aura, e a sua mão ou o seu soco sai do outro lado, onde estiver o paciente ou o inimigo.", "どこでもドア, a “porta para qualquer lugar” do Doraemon"],
+      materializacao: ["Asclepius", "Você materializa curativos, talas e linha de sutura de aura que fecham feridas enquanto existirem.", "Asclépio, o deus grego da medicina, e o bastão com a serpente"],
+      manipulacao: ["Pranayama", "Ao tocar alguém, você controla o coração e a respiração dele: acalma um ferido ou derruba um inimigo.", "o controle da respiração no yoga, do sânscrito prana (fôlego vital)"],
+      especializacao: ["Black Jack", "Uma figura de aura surge às suas costas e reconstrói qualquer corpo que você tocar, enquanto você não se afastar.", "o cirurgião sem licença do mangá de Osamu Tezuka"],
     },
   },
   {
@@ -107,12 +111,12 @@ export const VIVENCIAS = [
     nome: "Trabalho manual",
     texto: "Faço coisas com as mãos: costura, desenho, artesanato ou consertos.",
     hatsu: {
-      intensificacao: ["Ferramenta Perfeita", "Qualquer ferramenta na sua mão vira extensão do corpo: uma agulha fura aço e um martelo racha pedra."],
-      transformacao: ["Linha de Aura", "Sua aura vira fios finos e resistentes: costura feridas, prende inimigos e puxa objetos de longe."],
-      emissao: ["Rascunho Vivo", "O que você desenha ganha vida longe de você e cumpre uma única tarefa antes de sumir."],
-      materializacao: ["Cópia Fiel", "Você materializa cópias perfeitas de qualquer objeto que tocar; elas somem depois de um dia."],
-      manipulacao: ["Marionete", "Com fios de aura presos às juntas, você move bonecos, objetos e até pessoas como marionetes."],
-      especializacao: ["Restauração", "Você conserta qualquer coisa quebrada que juntar com as mãos, inclusive uma técnica de Nen danificada."],
+      intensificacao: ["Hephaestus", "Qualquer ferramenta na sua mão vira extensão do corpo: uma agulha fura aço e um martelo racha pedra.", "Hefesto, o ferreiro dos deuses gregos"],
+      transformacao: ["Ariadne", "Sua aura vira fios finos e resistentes: costura feridas, prende inimigos e puxa objetos de longe.", "o fio de Ariadne, que tirou Teseu do labirinto do Minotauro"],
+      emissao: ["Purple Crayon", "O que você desenha ganha vida longe de você e cumpre uma única tarefa antes de sumir.", "o giz de cera roxo de Harold, cujo desenho virava realidade"],
+      materializacao: ["Doppelgänger", "Você materializa cópias perfeitas de qualquer objeto que tocar; elas somem depois de um dia.", "o duplo das lendas alemãs, idêntico ao original"],
+      manipulacao: ["Bunraku", "Com fios de aura presos às juntas, você move bonecos, objetos e até pessoas como marionetes.", "文楽, o teatro japonês de bonecos manipulados à vista do público"],
+      especializacao: ["Kintsugi", "Você conserta qualquer coisa quebrada que juntar com as mãos, inclusive uma técnica de Nen danificada.", "金継ぎ, a arte japonesa de consertar cerâmica quebrada com ouro"],
     },
   },
   {
@@ -120,12 +124,12 @@ export const VIVENCIAS = [
     nome: "Perda e injustiça",
     texto: "Perdi alguém ou algo importante por uma injustiça, e não esqueço.",
     hatsu: {
-      intensificacao: ["Promessa no Punho", "A lembrança do que você perdeu vira força pura: seus golpes ficam muito mais fortes contra quem fere inocentes."],
-      transformacao: ["Luto Gelado", "Sua aura imita o frio do luto: congela o que toca e deixa o adversário lento, como quem perdeu a vontade."],
-      emissao: ["Grito", "Você solta toda a dor de uma vez num disparo de aura que explode no alvo e deixa você exausto."],
-      materializacao: ["Correntes do Juízo", "Você materializa correntes de aura, cada uma com uma regra: prender, curar, julgar ou arrancar a verdade."],
-      manipulacao: ["Juramento", "Você crava uma lâmina de aura no coração do alvo junto com uma regra; se ele quebrar a regra, a lâmina age."],
-      especializacao: ["Herança", "Por um tempo, você usa a técnica de alguém que perdeu como se fosse sua."],
+      intensificacao: ["Requiem", "A lembrança do que você perdeu vira força pura: seus golpes ficam muito mais fortes contra quem fere inocentes.", "a missa pelos mortos"],
+      transformacao: ["Cocytus", "Sua aura imita o frio do luto: congela o que toca e deixa o adversário lento, como quem perdeu a vontade.", "o lago congelado no fundo do Inferno de Dante"],
+      emissao: ["Skrik", "Você solta toda a dor de uma vez num disparo de aura que explode no alvo e deixa você exausto.", "o título original, em norueguês, de “O Grito”, de Edvard Munch"],
+      materializacao: ["Gleipnir", "Você materializa correntes de aura, cada uma com uma regra: prender, curar, julgar ou arrancar a verdade.", "a corrente mágica da mitologia nórdica que prendeu o lobo Fenrir"],
+      manipulacao: ["Geas", "Você crava uma lâmina de aura no coração do alvo junto com uma regra; se ele quebrar a regra, a lâmina age.", "o juramento mágico das lendas irlandesas: quem o quebra cai em desgraça"],
+      especializacao: ["Ofrenda", "Por um tempo, você usa a técnica de alguém que perdeu como se fosse sua.", "o altar do Dia de Muertos, no México, que chama de volta quem partiu"],
     },
   },
   {
@@ -133,12 +137,12 @@ export const VIVENCIAS = [
     nome: "Trabalho e contas",
     texto: "Trabalho desde cedo e lido com contas, dívidas ou negócios.",
     hatsu: {
-      intensificacao: ["Hora Extra", "Quanto mais a luta dura, mais forte você fica: a aura se acumula como hora extra."],
-      transformacao: ["Moeda Dura", "Sua aura imita o metal das moedas: endurece o corpo e ricocheteia em ângulos que só você calcula."],
-      emissao: ["Entrega Expressa", "Você envia pacotes de aura que viajam até o alvo e só se abrem na hora combinada."],
-      materializacao: ["Juros Compostos", "Cada golpe seu empresta aura ao adversário, e um cobrador de aura o segue cobrando juros até ele pagar ou falir."],
-      manipulacao: ["Contrato", "Quem assinar um contrato com você fica preso às cláusulas: se descumprir, você controla o corpo dele por um minuto."],
-      especializacao: ["Parcelamento", "Você adia o dano que recebe e paga em parcelas depois, desde que nunca atrase uma."],
+      intensificacao: ["Zangyō", "Quanto mais a luta dura, mais forte você fica: a aura se acumula como hora extra.", "残業, “hora extra” em japonês"],
+      transformacao: ["Midas Touch", "Sua aura imita o metal das moedas: endurece o corpo e ricocheteia em ângulos que só você calcula.", "o toque do rei Midas, que transformava tudo em ouro"],
+      emissao: ["Pony Express", "Você envia pacotes de aura que viajam até o alvo e só se abrem na hora combinada.", "o correio a cavalo que cruzava o Velho Oeste americano"],
+      materializacao: ["Shylock", "Cada golpe seu empresta aura ao adversário, e um cobrador de aura o segue cobrando juros até ele pagar ou falir.", "o agiota de “O Mercador de Veneza”, que cobrava uma libra de carne"],
+      manipulacao: ["Mephisto", "Quem assinar um contrato com você fica preso às cláusulas: se descumprir, você controla o corpo dele por um minuto.", "Mefistófeles, o demônio do pacto com Fausto"],
+      especializacao: ["Buy Now, Pay Later", "Você adia o dano que recebe e paga em parcelas depois, desde que nunca atrase uma.", "“compre agora, pague depois”, o lema do crediário"],
     },
   },
   {
@@ -146,12 +150,12 @@ export const VIVENCIAS = [
     nome: "Natureza e bichos",
     texto: "Cresci no mato, perto do mar ou cercado de bichos.",
     hatsu: {
-      intensificacao: ["Instinto Selvagem", "Seus sentidos e seu corpo ficam como os de um animal: você fareja, ouve e salta muito além do normal."],
-      transformacao: ["Pólen", "Sua aura imita pólen: se espalha no ar e deixa quem respira sonolento e confuso."],
-      emissao: ["Bando", "Você solta animais de aura que caçam sozinhos e voltam com o que encontraram."],
-      materializacao: ["Isca", "Você materializa uma vara de pescar: o anzol fisga o Nen do adversário, e você puxa."],
-      manipulacao: ["Colmeia", "Insetos e animais de verdade obedecem aos seus pedidos e servem de olhos para você."],
-      especializacao: ["Estação", "Seu Nen muda com o clima: no sol você ataca, na chuva se cura, no frio some da vista."],
+      intensificacao: ["Call of the Wild", "Seus sentidos e seu corpo ficam como os de um animal: você fareja, ouve e salta muito além do normal.", "“O Chamado Selvagem”, de Jack London"],
+      transformacao: ["Poppy Field", "Sua aura imita pólen: se espalha no ar e deixa quem respira sonolento e confuso.", "o campo de papoulas de “O Mágico de Oz”, que fazia todos dormirem"],
+      emissao: ["Wild Hunt", "Você solta animais de aura que caçam sozinhos e voltam com o que encontraram.", "a Caçada Selvagem das lendas europeias, uma matilha fantasma no céu"],
+      materializacao: ["Taikōbō", "Você materializa uma vara de pescar: o anzol fisga o Nen do adversário, e você puxa.", "太公望, o sábio chinês que pescava com anzol reto e mesmo assim fisgou um reino"],
+      manipulacao: ["Dolittle", "Insetos e animais de verdade obedecem aos seus pedidos e servem de olhos para você.", "o doutor Dolittle, que conversava com os animais"],
+      especializacao: ["Quattro Stagioni", "Seu Nen muda com o clima: no sol você ataca, na chuva se cura, no frio some da vista.", "“As Quatro Estações”, de Vivaldi"],
     },
   },
   {
@@ -159,12 +163,12 @@ export const VIVENCIAS = [
     nome: "Fogo e cozinha",
     texto: "Cozinho, adoro um churrasco ou cresci perto de fogo e fumaça.",
     hatsu: {
-      intensificacao: ["Brasa", "Seu corpo esquenta com a aura: os golpes queimam, e você aguenta um calor que derreteria qualquer um."],
-      transformacao: ["Chama", "Sua aura vira calor puro; quanto mais dor você recebe, mais quente fica o contra-ataque."],
-      emissao: ["Fagulha", "Você atira fagulhas de aura que explodem como pequenas bombas ao tocar o alvo."],
-      materializacao: ["Panela de Pressão", "Você materializa uma panela de aura: o que entra nela sai mais fraco ou mais forte, você decide."],
-      manipulacao: ["Fumaça", "Você controla a fumaça: cria soldados, muros e prisões que obedecem às suas ordens."],
-      especializacao: ["Receita", "Quem comer o que você cozinhou recebe por uma hora o efeito que você escreveu na receita."],
+      intensificacao: ["Agni", "Seu corpo esquenta com a aura: os golpes queimam, e você aguenta um calor que derreteria qualquer um.", "o deus do fogo dos Vedas, na Índia"],
+      transformacao: ["Salamander", "Sua aura vira calor puro; quanto mais dor você recebe, mais quente fica o contra-ataque.", "a salamandra, o espírito do fogo na alquimia"],
+      emissao: ["Hanabi", "Você atira fagulhas de aura que explodem como pequenas bombas ao tocar o alvo.", "花火, “flor de fogo”: os fogos de artifício japoneses"],
+      materializacao: ["Kamado", "Você materializa uma panela de aura: o que entra nela sai mais fraco ou mais forte, você decide.", "かまど, o fogão de barro tradicional japonês"],
+      manipulacao: ["Smoke on the Water", "Você controla a fumaça: cria soldados, muros e prisões que obedecem às suas ordens.", "a música do Deep Purple, mesmo nome do Hatsu do Morel"],
+      especializacao: ["Babette's Feast", "Quem comer o que você cozinhou recebe por uma hora o efeito que você escreveu na receita.", "“A Festa de Babette”, em que um jantar muda quem o come"],
     },
   },
 ];
