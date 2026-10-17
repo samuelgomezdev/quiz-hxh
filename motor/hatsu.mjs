@@ -60,7 +60,8 @@ export function gerarHatsu(tipo, escolhas) {
     vivencia: { id: vivencia.id, nome: vivencia.nome, texto: vivencia.texto },
     motivacao: motivacao.efeito,
     alcance: alcance.efeito,
-    voto: { regra: voto.regra.replace("{alvo}", motivacao.alvo), peso: voto.peso, ganho: GANHO_DO_VOTO[voto.peso] },
+    alcanceId: alcance.id,
+    voto: { id: voto.id, regra: voto.regra.replace("{alvo}", motivacao.alvo), peso: voto.peso, ganho: GANHO_DO_VOTO[voto.peso] },
     referencia: referenciaPara(tipo, vivencia.id),
   };
 }

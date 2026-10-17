@@ -2,8 +2,15 @@
 // estáticos, então o hash evita erro 404 ao recarregar uma página interna.
 import { useEffect, useState } from "react";
 
+// Cada parte vem decodificada: nomes digitados (ex.: o nome no cartão) vão com encodeURIComponent
 function lerHash() {
-  return window.location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+  return window.location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map((parte) => {
+    try {
+      return decodeURIComponent(parte);
+    } catch {
+      return parte;
+    }
+  });
 }
 
 export function useRota() {

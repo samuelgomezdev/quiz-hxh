@@ -5,6 +5,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { FEITOS, ORGANIZACOES } from "../conteudo/feitos.mjs";
 
 const raiz = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ler = async (arq) => JSON.parse(await readFile(path.join(raiz, "data", arq), "utf8"));
@@ -38,10 +39,35 @@ const membros = Object.fromEntries(
   }),
 );
 
+// Licença Hunter: Hunters com especialidade ou estrelas, membros de cada
+// organização e os personagens citados nos feitos. Só o necessário para o cartão.
+const ficha = (p) => ({ id: p.id, nome: p.nome, url: urlPorId[p.fonte_id], imagem: imagens[p.id] ?? null, tipo: p.tipo_nen_id });
+const hunters = personagens
+  .filter((p) => p.especialidades?.length || p.estrelas)
+  .map((p) => ({ ...ficha(p), especialidades: p.especialidades, estrelas: p.estrelas }))
+  .sort((a, b) => (b.estrelas ?? 0) - (a.estrelas ?? 0) || a.nome.localeCompare(b.nome));
+
+// Até 8 por organização: com estrelas primeiro, depois quem tem tipo de Nen; sempre com retrato
+const MEMBROS_POR_ORGANIZACAO = 8;
+const membrosDasOrganizacoes = Object.fromEntries(
+  ORGANIZACOES.map((o) => [
+    o.id,
+    personagens
+      .filter((p) => imagens[p.id] && p.afiliacao.some((a) => o.afiliacoes.some((pre) => a.startsWith(pre))))
+      .sort((a, b) => (b.estrelas ?? 0) - (a.estrelas ?? 0) || !!b.tipo_nen_id - !!a.tipo_nen_id || a.nome.localeCompare(b.nome))
+      .slice(0, MEMBROS_POR_ORGANIZACAO)
+      .map(ficha),
+  ]),
+);
+
+const idsCitados = new Set(FEITOS.map((f) => f.paralelo.id));
+const citados = personagens.filter((p) => idsCitados.has(p.id)).map(ficha);
+
 const destino = path.join(raiz, "web", "src", "dados");
 await mkdir(destino, { recursive: true });
 await writeFile(path.join(destino, "personagens.json"), JSON.stringify(comTipo));
 await writeFile(path.join(destino, "tipos.json"), JSON.stringify(tipos));
 await writeFile(path.join(destino, "perguntas.json"), JSON.stringify(perguntas));
 await writeFile(path.join(destino, "membros.json"), JSON.stringify(membros));
-console.log(`dados do site: ${comTipo.length} personagens (${comTipo.filter((p) => p.imagem).length} com imagem), ${perguntas.length} perguntas, ${tipos.length} tipos`);
+await writeFile(path.join(destino, "licenca.json"), JSON.stringify({ hunters, organizacoes: membrosDasOrganizacoes, citados }));
+console.log(`dados do site: ${comTipo.length} personagens (${comTipo.filter((p) => p.imagem).length} com imagem), ${perguntas.length} perguntas, ${tipos.length} tipos, ${hunters.length} Hunters com especialidade ou estrelas`);

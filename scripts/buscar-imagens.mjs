@@ -1,5 +1,6 @@
 // Gera data/imagens.json: { idDoPersonagem: urlDaMiniatura }.
-// Busca o retrato dos personagens com tipo de Nen e dos membros que inspiram as perguntas.
+// Busca o retrato de todos os personagens da base e dos membros que inspiram as perguntas
+// (o site usa os de tipo de Nen, os Hunters e os membros das organizações).
 // Uso: npm run imagens (usa o cache em .cache/, como o ETL)
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -17,7 +18,7 @@ const [personagens, fontes, perguntas] = await Promise.all([
 ]);
 
 const tituloPorId = Object.fromEntries(fontes.map((f) => [f.id, f.titulo_wiki]));
-const titulos = new Set(personagens.filter((p) => p.tipo_nen_id).map((p) => tituloPorId[p.fonte_id]));
+const titulos = new Set(personagens.map((p) => tituloPorId[p.fonte_id]));
 for (const p of perguntas) titulos.add(p.membro_tema);
 
 const cliente = criarCliente({ pastaCache: path.join(raiz, ".cache") });

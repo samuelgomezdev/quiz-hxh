@@ -8,6 +8,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -24,6 +27,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Personagem exclusivo de spin-off",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Moritonio Troupe"
     ],
@@ -40,6 +46,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 125,
     "status": "Alive",
@@ -54,6 +63,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 22,
     "status": "Deceased",
@@ -68,6 +80,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Alive",
@@ -82,6 +97,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Nanika (Parasite)"
     ],
@@ -98,6 +116,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 154,
     "status": "Deceased",
@@ -112,6 +133,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family"
     ],
@@ -128,6 +152,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Personagem exclusivo de jogo; Hunter × Hunter: Altar of Dragon Vein",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -142,6 +169,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -158,6 +188,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Amori Brothers"
     ],
@@ -174,6 +207,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -191,6 +227,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -205,6 +244,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tyson Hui Guo Rou"
@@ -222,6 +264,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -236,6 +281,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Personagem exclusivo de jogo",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -250,6 +298,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 130,
     "status": "Deceased",
@@ -264,6 +315,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 95,
     "status": "Deceased",
@@ -278,6 +332,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 95,
     "status": "Deceased",
@@ -292,6 +349,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 95,
     "status": "Deceased",
@@ -306,6 +366,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 95,
     "status": "Deceased",
@@ -320,6 +383,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 95,
     "status": "Deceased",
@@ -334,6 +400,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 95,
     "status": "Deceased",
@@ -348,6 +417,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Deceased",
@@ -362,6 +434,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Southernpiece Auction House"
     ],
@@ -378,6 +453,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -395,6 +473,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Fugetsu Hui Guo Rou"
@@ -412,6 +493,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 8, Chapter 68",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 67,
     "status": "Deceased",
@@ -426,6 +510,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 205,
     "status": "Deceased",
@@ -440,6 +527,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 62,
     "status": "Alive",
@@ -454,6 +544,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 189,
     "status": "Deceased",
@@ -468,6 +561,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -485,6 +581,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kite",
       "Amateur Hunters"
@@ -502,6 +601,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Genner (Husband)"
     ],
@@ -518,6 +620,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 143,
     "status": "Alive",
@@ -532,6 +637,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 195,
     "status": "Deceased",
@@ -546,6 +654,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 368,
     "status": "Deceased",
@@ -560,6 +671,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -576,6 +690,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Nostrade Family",
@@ -595,6 +712,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 231,
     "status": "Unknown",
@@ -609,6 +729,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 69,
     "status": "Alive",
@@ -623,6 +746,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 174,
     "status": "Deceased",
@@ -637,6 +763,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 74,
     "status": "Deceased",
@@ -651,6 +780,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -668,6 +800,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Marayam Hui Guo Rou"
@@ -685,6 +820,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Trick Tower"
     ],
@@ -701,6 +839,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -717,6 +858,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 85,
     "status": "Deceased",
@@ -731,6 +875,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Dark Continent Expedition Team"
     ],
@@ -747,6 +894,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Luzurus Hui Guo Rou"
@@ -764,6 +914,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Alive",
@@ -778,6 +931,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 37, Chapter 388",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Beyond Netero",
@@ -796,6 +952,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -812,6 +971,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -828,6 +990,11 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 16, Chapter 158; Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "tesouros"
+    ],
+    "estrelas": 2,
     "afiliacao": [
       "Hunter Association",
       "Shingen-ryu School/Dojo",
@@ -847,6 +1014,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 250,
     "status": "Alive",
@@ -861,6 +1031,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tang Zhao Li Hui Guo Rou"
@@ -878,6 +1051,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Manual (livro oficial de personagens de Yu Yu Hakusho, do mesmo autor); Hunter × Hunter - Omnibus Version: Treasure 9 (pg. 410)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Alive",
@@ -892,6 +1068,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 22,
     "status": "Deceased",
@@ -906,6 +1085,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Gyudondond Tribe",
       "Phantom Troupe"
@@ -923,6 +1105,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 155,
     "status": "Deceased",
@@ -937,6 +1122,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Moritonio Troupe"
     ],
@@ -953,6 +1141,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 39, Chapter 408",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Royal Army",
       "Heil-Ly Family (unwilling)"
@@ -970,6 +1161,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "lista-negra"
+    ],
+    "estrelas": 3,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Defense Team)"
@@ -987,6 +1183,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -1003,6 +1202,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 5,
     "status": "Deceased",
@@ -1017,6 +1219,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Cha-R Family"
     ],
@@ -1033,6 +1238,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -1051,6 +1259,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "gourmet"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -1067,6 +1280,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -1085,6 +1301,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 320,
     "status": "Deceased",
@@ -1099,6 +1318,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -1116,6 +1338,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -1132,6 +1357,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family (Employers)"
     ],
@@ -1148,6 +1376,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 2,
     "status": "Alive",
@@ -1162,6 +1393,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 236,
     "status": "Unknown",
@@ -1176,6 +1410,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -1192,6 +1429,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -1210,6 +1450,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 192,
     "status": "Deceased",
@@ -1224,6 +1467,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "saude"
+    ],
+    "estrelas": 3,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Science Team)"
@@ -1241,6 +1489,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Manual (livro oficial de personagens de Yu Yu Hakusho, do mesmo autor)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 189,
     "status": "Deceased",
@@ -1255,6 +1506,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 5,
     "status": "Deceased",
@@ -1269,6 +1523,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 45,
     "status": "Alive",
@@ -1283,6 +1540,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -1299,6 +1559,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -1313,6 +1576,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 185,
     "status": "Deceased",
@@ -1327,6 +1593,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 204,
     "status": "Deceased",
@@ -1341,6 +1610,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -1358,6 +1630,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 11, Chapter 98",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Phantom Troupe",
       "Heavens Arena"
@@ -1375,6 +1650,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -1389,6 +1667,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -1405,6 +1686,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 112,
     "status": "Alive",
@@ -1419,6 +1703,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "natureza"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Flora/Fauna Team)"
@@ -1436,6 +1725,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -1452,6 +1744,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 39,
     "status": "Alive",
@@ -1466,6 +1761,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Alive",
@@ -1480,6 +1778,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Mafia Community"
     ],
@@ -1496,6 +1797,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Xi-Yu Family"
     ],
@@ -1512,6 +1816,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 131,
     "status": "Deceased",
@@ -1526,6 +1833,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -1543,6 +1853,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 187,
     "status": "Unknown",
@@ -1557,6 +1870,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Varvard University",
       "Beyond Netero",
@@ -1575,6 +1891,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "natureza"
+    ],
+    "estrelas": 1,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -1591,6 +1912,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -1607,6 +1931,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "natureza"
+    ],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Unknown",
@@ -1621,6 +1950,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -1637,6 +1969,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 67,
     "status": "Deceased",
@@ -1651,6 +1986,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -1667,6 +2005,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tserriednich Hui Guo Rou",
@@ -1685,6 +2026,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -1699,6 +2043,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -1716,6 +2063,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 224,
     "status": "Deceased",
@@ -1730,6 +2080,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -1746,6 +2099,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 344,
     "status": "Unknown",
@@ -1760,6 +2116,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Gappai Family"
     ],
@@ -1776,6 +2135,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Rorgo (boss)"
     ],
@@ -1792,6 +2154,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Unknown",
@@ -1806,6 +2171,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Rorgo (Boss)"
     ],
@@ -1822,6 +2190,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -1838,6 +2209,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 215,
     "status": "Alive",
@@ -1852,6 +2226,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -1868,6 +2245,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Greed Island"
@@ -1885,6 +2265,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 243,
     "status": "Deceased",
@@ -1899,6 +2282,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 216,
     "status": "Deceased",
@@ -1913,6 +2299,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 243,
     "status": "Deceased",
@@ -1927,6 +2316,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -1941,6 +2333,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Greed Island"
     ],
@@ -1957,6 +2352,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 67,
     "status": "Alive",
@@ -1971,6 +2369,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -1985,6 +2386,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou",
@@ -2003,6 +2407,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Greed Island"
     ],
@@ -2019,6 +2426,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Duazul Hui Guo Rou",
@@ -2037,6 +2447,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 129); Hunter x Hunter - Episode 55 (2011)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Phantom Troupe"
     ],
@@ -2053,6 +2466,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 192,
     "status": "Deceased",
@@ -2067,6 +2483,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 9, Chapter 76",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Phantom Troupe"
     ],
@@ -2083,6 +2502,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Deceased",
@@ -2097,6 +2519,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -2113,6 +2538,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -2131,6 +2559,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Southernpiece Auction House"
     ],
@@ -2147,6 +2578,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -2164,6 +2598,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter, Chapter 413",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -2181,6 +2618,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -2197,6 +2637,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Duazul Hui Guo Rou",
@@ -2215,6 +2658,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 205,
     "status": "Deceased",
@@ -2229,6 +2675,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -2243,6 +2692,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 96,
     "status": "Alive",
@@ -2257,6 +2709,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -2273,6 +2728,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tamazo"
@@ -2290,6 +2748,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -2304,6 +2765,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -2320,6 +2784,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -2336,6 +2803,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "saude"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Science Team)"
@@ -2353,6 +2825,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -2369,6 +2844,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -2383,6 +2861,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -2397,6 +2878,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-; Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 136); Hunter × Hunter Manual (livro oficial de personagens de Yu Yu Hakusho, do mesmo autor)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 130,
     "status": "Alive",
@@ -2411,6 +2895,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 5,
     "status": "Deceased",
@@ -2425,6 +2912,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -2444,6 +2934,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 7, Chapter 60",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 48,
     "status": "Alive",
@@ -2458,6 +2951,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -2475,6 +2971,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 1,
     "status": "Alive",
@@ -2489,6 +2988,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "tesouros"
+    ],
+    "estrelas": 2,
     "afiliacao": [
       "Hunter Association",
       "Greed Island",
@@ -2507,6 +3011,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "lista-negra"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Flora/Fauna Team)"
@@ -2524,6 +3033,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Royal Army",
       "Tserriednich Hui Guo Rou"
@@ -2541,6 +3053,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Tyson Hui Guo Rou"
@@ -2558,6 +3073,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Glam Clan",
       "Glam Gas Land"
@@ -2575,6 +3093,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Stone Wall",
       "Beyond Netero",
@@ -2593,6 +3114,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 7, Chapter 60",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -2609,6 +3133,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 205,
     "status": "Deceased",
@@ -2623,6 +3150,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -2639,6 +3169,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 225,
     "status": "Deceased",
@@ -2653,6 +3186,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 218,
     "status": "Alive",
@@ -2667,6 +3203,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 40,
     "status": "Deceased",
@@ -2681,6 +3220,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 22,
     "status": "Deceased",
@@ -2695,6 +3237,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -2711,6 +3256,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -2728,6 +3276,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 189,
     "status": "Deceased",
@@ -2742,6 +3293,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 192,
     "status": "Deceased (Human) <br /> Alive (Chimera Ant)",
@@ -2756,6 +3310,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 204,
     "status": "Deceased",
@@ -2770,6 +3327,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -2786,6 +3346,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -2802,6 +3365,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -2818,6 +3384,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 392,
     "status": "Alive",
@@ -2832,6 +3401,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 154,
     "status": "Deceased",
@@ -2846,6 +3418,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Cloud-Hidden Style",
       "Hunter Association",
@@ -2865,6 +3440,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -2879,6 +3457,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 215,
     "status": "Alive",
@@ -2893,6 +3474,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Zhang Lei Hui Guo Rou"
@@ -2910,6 +3494,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 322,
     "status": "Deceased",
@@ -2924,6 +3511,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -2940,6 +3530,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -2956,6 +3549,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -2973,6 +3569,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -2991,6 +3590,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tyson Hui Guo Rou"
@@ -3008,6 +3610,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Omnibus Version: Treasure 9 (pg. 410)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 192,
     "status": "Alive",
@@ -3022,6 +3627,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 37, Chapter 390",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Xi-Yu Family"
     ],
@@ -3038,6 +3646,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 43,
     "status": "Deceased",
@@ -3052,6 +3663,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 7, Chapter 62",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Heavens Arena"
@@ -3069,6 +3683,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 113,
     "status": "Alive",
@@ -3083,6 +3700,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 231,
     "status": "Unknown",
@@ -3097,6 +3717,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -3113,6 +3736,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 70,
     "status": "Computer Generation",
@@ -3127,6 +3753,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tyson Hui Guo Rou"
@@ -3144,6 +3773,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "informacao"
+    ],
+    "estrelas": 1,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -3160,6 +3794,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 236,
     "status": "Alive",
@@ -3174,6 +3811,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Fugetsu Hui Guo Rou"
@@ -3191,6 +3831,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family",
       "Hunter Association",
@@ -3209,6 +3852,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Amori Brothers"
     ],
@@ -3225,6 +3871,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 261,
     "status": "Deceased",
@@ -3239,6 +3888,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "V6",
       "IPA",
@@ -3257,6 +3909,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 130,
     "status": "Deceased",
@@ -3271,6 +3926,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 12,
     "status": "Deceased",
@@ -3285,6 +3943,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Cha-R Family"
     ],
@@ -3301,6 +3962,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 71,
     "status": "Deceased",
@@ -3315,6 +3979,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 151,
     "status": "Alive",
@@ -3329,6 +3996,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Kurapika",
@@ -3347,6 +4017,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Duazul Hui Guo Rou",
@@ -3365,6 +4038,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": "ex-usuário de Nen",
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -3379,6 +4055,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 125,
     "status": "Deceased",
@@ -3393,6 +4072,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -3409,6 +4091,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Unknown",
@@ -3423,6 +4108,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 131,
     "status": "Deceased",
@@ -3437,6 +4125,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Yorknew City",
       "Mafia Community"
@@ -3454,6 +4145,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 16,
     "status": "Deceased",
@@ -3468,6 +4162,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 348,
     "status": "Alive",
@@ -3482,6 +4179,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 349,
     "status": "Deceased (body) <br />Form and consciousness fused with her Guardian Spirit Beast",
@@ -3496,6 +4196,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Justice Bureau Investigation Department"
     ],
@@ -3512,6 +4215,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -3528,6 +4234,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 349,
     "status": "Deceased",
@@ -3542,6 +4251,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -3560,6 +4272,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-; Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 145)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Phantom Troupe"
     ],
@@ -3576,6 +4291,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -3592,6 +4310,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou",
@@ -3610,6 +4331,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -3626,6 +4350,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "tesouros"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Defense Team)"
@@ -3643,6 +4372,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 7, Chapter 60",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 52,
     "status": "Deceased",
@@ -3657,6 +4389,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 322,
     "status": "Deceased",
@@ -3671,6 +4406,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -3687,6 +4425,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Captain"
     ],
@@ -3703,6 +4444,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Deceased",
@@ -3717,6 +4461,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 374,
     "status": "Deceased",
@@ -3731,6 +4478,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Cha-R Family"
     ],
@@ -3747,6 +4497,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -3761,6 +4514,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 23,
     "status": "Alive",
@@ -3775,6 +4531,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 329,
     "status": "Deceased",
@@ -3789,6 +4548,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -3805,6 +4567,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -3821,6 +4586,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 141)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family"
     ],
@@ -3837,6 +4605,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 7, Chapter 60",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -3853,6 +4624,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Moritonio Troupe"
     ],
@@ -3869,6 +4643,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": "habilidade perdida",
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Amateur Hunters"
     ],
@@ -3885,6 +4662,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -3902,6 +4682,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Palm Siberia (Pupil)"
@@ -3919,6 +4702,11 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "natureza"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Morel Mackernasey (Master)"
@@ -3936,6 +4724,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kite"
     ],
@@ -3952,6 +4743,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -3969,6 +4763,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -3986,6 +4783,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 244,
     "status": "Deceased",
@@ -4000,6 +4800,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 1,
     "status": "Alive",
@@ -4014,6 +4817,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -4031,6 +4837,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -4048,6 +4857,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tang Zhao Li Hui Guo Rou"
@@ -4065,6 +4877,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 11, Chapter 103",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 71,
     "status": "Deceased",
@@ -4079,6 +4894,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 132,
     "status": "Deceased",
@@ -4093,6 +4911,11 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 9, Chapter 83",
     "nota_tipo": "quando os olhos estão escarlates",
+    "hunter": true,
+    "especialidades": [
+      "lista-negra"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Nostrade Family",
@@ -4112,6 +4935,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -4126,6 +4952,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -4140,6 +4969,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 187,
     "status": "Deceased",
@@ -4154,6 +4986,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -4168,6 +5003,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 35, Chapter 361",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 358,
     "status": "Deceased",
@@ -4182,6 +5020,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 23,
     "status": "Alive",
@@ -4196,6 +5037,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Fugetsu Hui Guo Rou"
@@ -4213,6 +5057,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Katrono Hui Guo Rou"
@@ -4230,6 +5077,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 128,
     "status": "Deceased",
@@ -4244,6 +5094,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 329,
     "status": "Deceased",
@@ -4258,6 +5111,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 216,
     "status": "Deceased",
@@ -4272,6 +5128,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Characters Book: World × Character × Blessing (2001); Hunter × Hunter: Battle Collection",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 75,
     "status": "Deceased",
@@ -4286,6 +5145,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Manual (livro oficial de personagens de Yu Yu Hakusho, do mesmo autor)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 192,
     "status": "Deceased",
@@ -4300,6 +5162,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 31, Chapter 326",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Science Team)"
@@ -4317,6 +5182,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Trick Tower"
     ],
@@ -4333,6 +5201,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Nostrade Family",
       "Ritz Family"
@@ -4350,6 +5221,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -4366,6 +5240,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kite"
     ],
@@ -4382,6 +5259,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -4396,6 +5276,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "gourmet"
+    ],
+    "estrelas": 2,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -4412,6 +5297,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Nostrade Family",
@@ -4430,6 +5318,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "lista-negra"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Trick Tower"
@@ -4447,6 +5340,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -4466,6 +5362,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 395,
     "status": "Unknown",
@@ -4480,6 +5379,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Greed Island"
@@ -4497,6 +5399,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Kacho Hui Guo Rou"
@@ -4514,6 +5419,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Kacho Hui Guo Rou"
@@ -4531,6 +5439,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -4548,6 +5459,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 225,
     "status": "Deceased",
@@ -4562,6 +5476,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "informacao"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Pure Paladin Squad"
@@ -4579,6 +5498,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -4593,6 +5515,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 393",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 378,
     "status": "Deceased",
@@ -4607,6 +5532,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -4623,6 +5551,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Cha-R Family"
@@ -4640,6 +5571,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 37, Chapter 390",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 390,
     "status": "Deceased",
@@ -4654,6 +5588,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 9, Chapter 78",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Phantom Troupe"
     ],
@@ -4670,6 +5607,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Luzurus Hui Guo Rou"
@@ -4687,6 +5627,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tyson Hui Guo Rou"
@@ -4704,6 +5647,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 261,
     "status": "Deceased",
@@ -4718,6 +5664,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Mafia Community"
     ],
@@ -4734,6 +5683,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 143)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family"
     ],
@@ -4750,6 +5702,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 45,
     "status": "Alive",
@@ -4764,6 +5719,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Royal Army"
     ],
@@ -4780,6 +5738,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Trick Tower"
     ],
@@ -4796,6 +5757,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -4812,6 +5776,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -4828,6 +5795,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Duazul Hui Guo Rou"
@@ -4845,6 +5815,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 154,
     "status": "Deceased",
@@ -4859,6 +5832,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Alive",
@@ -4873,6 +5849,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -4890,6 +5869,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -4906,6 +5888,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 231,
     "status": "Alive",
@@ -4920,6 +5905,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Beyond Netero",
       "Hunter Association"
@@ -4937,6 +5925,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Tserriednich Hui Guo Rou"
     ],
@@ -4953,6 +5944,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Beyond Netero",
       "Hunter Association"
@@ -4970,6 +5964,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -4986,6 +5983,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 3,
     "status": "Unknown",
@@ -5000,6 +6000,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -5016,6 +6019,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Manual (livro oficial de personagens de Yu Yu Hakusho, do mesmo autor)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 189,
     "status": "Alive",
@@ -5030,6 +6036,11 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 13, Chapter 121",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "musica"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Nostrade Family",
@@ -5049,6 +6060,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "gourmet"
+    ],
+    "estrelas": 1,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -5065,6 +6081,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 202,
     "status": "Deceased",
@@ -5079,6 +6098,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 197,
     "status": "Deceased",
@@ -5093,6 +6115,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -5112,6 +6137,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 352,
     "status": "Deceased",
@@ -5126,6 +6154,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 148,
     "status": "Alive",
@@ -5140,6 +6171,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 153,
     "status": "Alive",
@@ -5154,6 +6188,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family (Owners)"
     ],
@@ -5170,6 +6207,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 126,
     "status": "Deceased",
@@ -5184,6 +6224,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-; Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 145)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family"
     ],
@@ -5200,6 +6243,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 315,
     "status": "Alive",
@@ -5214,6 +6260,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 216,
     "status": "Deceased",
@@ -5228,6 +6277,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Xi-Yu Family"
     ],
@@ -5244,6 +6296,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 1,
     "status": "Alive",
@@ -5258,6 +6313,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 322,
     "status": "Deceased",
@@ -5272,6 +6330,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "lista-negra"
+    ],
+    "estrelas": 2,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Intelligence Team)"
@@ -5289,6 +6352,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -5306,6 +6372,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -5320,6 +6389,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Royal Army"
     ],
@@ -5336,6 +6408,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -5353,6 +6428,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tserriednich Hui Guo Rou"
@@ -5370,6 +6448,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 349,
     "status": "Deceased",
@@ -5384,6 +6465,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kite"
     ],
@@ -5400,6 +6484,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -5416,6 +6503,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 16, Chapter 157",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 154,
     "status": "Deceased",
@@ -5430,6 +6520,11 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 80); Hunter × Hunter Manual (livro oficial de personagens de Yu Yu Hakusho, do mesmo autor); Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "natureza"
+    ],
+    "estrelas": 3,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -5446,6 +6541,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 39, Chapter 408",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family",
       "Tserriednich Hui Guo Rou"
@@ -5463,6 +6561,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Personagem exclusivo de spin-off",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -5477,6 +6578,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Nasubi Hui Guo Rou"
@@ -5494,6 +6598,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 192,
     "status": "Deceased",
@@ -5508,6 +6615,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -5526,6 +6636,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -5540,6 +6653,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -5559,6 +6675,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou",
@@ -5577,6 +6696,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Beyond Netero"
     ],
@@ -5593,6 +6715,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -5609,6 +6734,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -5623,6 +6751,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 86,
     "status": "Unknown",
@@ -5637,6 +6768,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 323,
     "status": "Deceased",
@@ -5651,6 +6785,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Swinko-swinko Hui Guo Rou"
@@ -5668,6 +6805,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 363,
     "status": "Deceased",
@@ -5682,6 +6822,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 348,
     "status": "Deceased",
@@ -5696,6 +6839,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -5713,6 +6859,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Seiko Hui Guo Rou"
@@ -5730,6 +6879,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -5747,6 +6899,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Marayam Hui Guo Rou"
@@ -5764,6 +6919,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Alluka Zoldyck (Host)"
     ],
@@ -5780,6 +6938,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 406,
     "status": "Alive",
@@ -5794,6 +6955,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -5810,6 +6974,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Illumi Zoldyck (Manipulator)"
     ],
@@ -5826,6 +6993,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 19, Chapter 198",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Deceased",
@@ -5840,6 +7010,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 12, Chapter 110",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Nostrade Family"
     ],
@@ -5856,6 +7029,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "NGL Government"
     ],
@@ -5872,6 +7048,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 5,
     "status": "Alive",
@@ -5886,6 +7065,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 151,
     "status": "Deceased",
@@ -5900,6 +7082,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 129,
     "status": "Deceased",
@@ -5914,6 +7099,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -5931,6 +7119,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Don Gappai"
     ],
@@ -5947,6 +7138,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Queen Duazul Hui Guo Rou"
@@ -5964,6 +7158,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Phantom Troupe"
     ],
@@ -5980,6 +7177,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 1,
     "status": "Alive",
@@ -5994,6 +7194,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 130,
     "status": "Deceased",
@@ -6008,6 +7211,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Norwell Fund"
     ],
@@ -6024,6 +7230,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 67,
     "status": "Deceased",
@@ -6038,6 +7247,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -6054,6 +7266,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Nasubi Hui Guo Rou"
@@ -6071,6 +7286,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -6089,6 +7307,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Alive",
@@ -6103,6 +7324,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Duazul Hui Guo Rou",
@@ -6121,6 +7345,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "tesouros"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -6137,6 +7366,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -6153,6 +7385,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Personagem exclusivo de filme",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -6167,6 +7402,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Xi-Yu Family"
     ],
@@ -6183,6 +7421,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -6199,6 +7440,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -6216,6 +7460,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 238,
     "status": "Deceased",
@@ -6230,6 +7477,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Unma Hui Guo Rou",
@@ -6248,6 +7498,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tserriednich Hui Guo Rou"
@@ -6265,6 +7518,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 11, Chapter 99",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 74,
     "status": "Unknown",
@@ -6279,6 +7535,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 391",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 378,
     "status": "Deceased",
@@ -6293,6 +7552,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 117,
     "status": "Deceased",
@@ -6307,6 +7569,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 12, Chapter 105",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 71,
     "status": "Deceased",
@@ -6321,6 +7586,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 20, Chapter 200",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Knov (Master)"
@@ -6338,6 +7606,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": 3,
     "afiliacao": [
       "Hunter Association",
       "Beyond Netero's Dark Continent Expedition Team"
@@ -6355,6 +7626,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Deceased",
@@ -6369,6 +7643,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Beyond Netero",
       "Hunter Association"
@@ -6386,6 +7663,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 189,
     "status": "Deceased",
@@ -6400,6 +7680,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 225,
     "status": "Deceased",
@@ -6414,6 +7697,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -6430,6 +7716,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "IPA's Special Task Force",
       "RVAs",
@@ -6448,6 +7737,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 128); Hunter x Hunter - Episode 51 (2011)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Phantom Troupe"
     ],
@@ -6464,6 +7756,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 7,
     "status": "Deceased",
@@ -6478,6 +7773,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 197,
     "status": "Unknown",
@@ -6492,6 +7790,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 190,
     "status": "Deceased",
@@ -6506,6 +7807,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 16, Chapter 157",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Greed Island",
       "Death Row Convicts"
@@ -6523,6 +7827,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Greed Island",
       "Death Row Convicts"
@@ -6540,6 +7847,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 132,
     "status": "Deceased",
@@ -6554,6 +7864,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -6571,6 +7884,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kite"
     ],
@@ -6587,6 +7903,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 22,
     "status": "Deceased",
@@ -6601,6 +7920,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 205,
     "status": "Deceased",
@@ -6615,6 +7937,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -6629,6 +7954,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 22,
     "status": "Deceased",
@@ -6643,6 +7971,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Characters Book: World × Character × Blessing (2001); Hunter × Hunter: Battle Collection",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 75,
     "status": "Deceased",
@@ -6657,6 +7988,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tyson Hui Guo Rou"
@@ -6674,6 +8008,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 72,
     "status": "Deceased",
@@ -6688,6 +8025,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 125,
     "status": "Deceased",
@@ -6702,6 +8042,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "tesouros"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Intelligence Team)"
@@ -6719,6 +8064,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 3,
     "status": "Alive",
@@ -6733,6 +8081,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 391",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -6749,6 +8100,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 179); Hunter × Hunter Characters Book: World × Character × Blessing (2001)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 75,
     "status": "Deceased",
@@ -6763,6 +8117,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 19, Chapter 198",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 191,
     "status": "Deceased",
@@ -6777,6 +8134,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Greed Island",
       "G.I. Convicts"
@@ -6794,6 +8154,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 132,
     "status": "Deceased",
@@ -6808,6 +8171,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 204,
     "status": "Deceased",
@@ -6822,6 +8188,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 187,
     "status": "Deceased",
@@ -6836,6 +8205,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 238,
     "status": "Unknown",
@@ -6850,6 +8222,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -6864,6 +8239,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Extras",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 397,
     "status": "Unknown",
@@ -6878,6 +8256,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -6892,6 +8273,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -6909,6 +8293,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 195,
     "status": "Deceased",
@@ -6923,6 +8310,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Luzurus Hui Guo Rou",
@@ -6941,6 +8331,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 151,
     "status": "Alive",
@@ -6955,6 +8348,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Luzurus Hui Guo Rou"
@@ -6972,6 +8368,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Riehlvelt was classified as a 'Emitter' in Hunter × Hunter Battle Collection and Battle All-Stars",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 48,
     "status": "Alive",
@@ -6986,6 +8385,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -7003,6 +8405,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 395,
     "status": "Deceased",
@@ -7017,6 +8422,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Kacho Hui Guo Rou"
@@ -7034,6 +8442,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -7050,6 +8461,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Midonite Government Environment Protection Bureau"
     ],
@@ -7066,6 +8480,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Personagem exclusivo de jogo",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Don Gappai"
     ],
@@ -7082,6 +8499,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Mafia Community"
     ],
@@ -7098,6 +8518,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 192,
     "status": "Deceased",
@@ -7112,6 +8535,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Fugetsu Hui Guo Rou"
@@ -7129,6 +8555,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 22,
     "status": "Alive",
@@ -7143,6 +8572,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou"
@@ -7160,6 +8592,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Personagem exclusivo de jogo",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -7174,6 +8609,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 173,
     "status": "Deceased",
@@ -7188,6 +8626,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "lista-negra"
+    ],
+    "estrelas": 2,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Intelligence Team)"
@@ -7205,6 +8648,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 204)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 48,
     "status": "Alive",
@@ -7219,6 +8665,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "lista-negra"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Zodiacs (Defense Team)",
@@ -7237,6 +8688,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Zhang Lei Hui Guo Rou"
@@ -7254,6 +8708,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 126,
     "status": "Alive",
@@ -7268,6 +8725,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 349,
     "status": "Deceased",
@@ -7282,6 +8742,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tserriednich Hui Guo Rou",
@@ -7300,6 +8763,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "saude"
+    ],
+    "estrelas": 1,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -7316,6 +8784,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 358,
     "status": "Deceased",
@@ -7330,6 +8801,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Personagem exclusivo de jogo",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -7344,6 +8818,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -7361,6 +8838,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 70,
     "status": "Deceased",
@@ -7375,6 +8855,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -7393,6 +8876,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 395,
     "status": "Deceased",
@@ -7407,6 +8893,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Duazul Hui Guo Rou",
@@ -7425,6 +8914,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "tesouros"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -7441,6 +8935,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 35, Chapter 361",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Beyond Netero"
@@ -7458,6 +8955,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Luzurus Hui Guo Rou"
@@ -7475,6 +8975,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "lista-negra"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Zoldyck Family (Employers)",
@@ -7493,6 +8998,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Trick Tower"
     ],
@@ -7509,6 +9017,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -7525,6 +9036,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Sengi Guild"
     ],
@@ -7541,6 +9055,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -7557,6 +9074,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 8, Chapter 68",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 67,
     "status": "Deceased",
@@ -7571,6 +9091,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Manual (livro oficial de personagens de Yu Yu Hakusho, do mesmo autor); Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Deceased",
@@ -7585,6 +9108,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 11, Chapter 102",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 71,
     "status": "Deceased",
@@ -7599,6 +9125,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 238,
     "status": "Deceased",
@@ -7613,6 +9142,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -7630,6 +9162,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 395,
     "status": "Unknown",
@@ -7644,6 +9179,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 261,
     "status": "Alive",
@@ -7658,6 +9196,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 132,
     "status": "Deceased",
@@ -7672,6 +9213,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 37, Chapter 388",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 363,
     "status": "Deceased",
@@ -7686,6 +9230,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Oito Hui Guo Rou"
@@ -7703,6 +9250,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 22,
     "status": "Alive",
@@ -7717,6 +9267,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Rorgo (Boss)"
     ],
@@ -7733,6 +9286,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 9, Chapter 77",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Phantom Troupe"
     ],
@@ -7749,6 +9305,11 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Hunter Association Official Issue: Hunter's Guide; Character & World Official Databook (pg. 78)",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "natureza"
+    ],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Morel Mackernasey (Master)"
@@ -7766,6 +9327,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -7780,6 +9344,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Unknown"
     ],
@@ -7796,6 +9363,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family"
     ],
@@ -7812,6 +9382,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 22,
     "status": "Deceased",
@@ -7826,6 +9399,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Zhang Lei Hui Guo Rou",
@@ -7844,6 +9420,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Alive",
@@ -7858,6 +9437,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 22, Chapter 226",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 226,
     "status": "Deceased",
@@ -7872,6 +9454,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 231,
     "status": "Unknown",
@@ -7886,6 +9471,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -7902,6 +9490,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -7916,6 +9507,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 23,
     "status": "Alive",
@@ -7930,6 +9524,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 72,
     "status": "Unknown",
@@ -7944,6 +9541,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -7960,6 +9560,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 151,
     "status": "Deceased",
@@ -7974,6 +9577,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kite"
     ],
@@ -7990,6 +9596,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 192,
     "status": "Deceased",
@@ -8004,6 +9613,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 8, Chapter 68",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 67,
     "status": "Deceased",
@@ -8018,6 +9630,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "V6",
       "IPA Special Task Force",
@@ -8037,6 +9652,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kite"
     ],
@@ -8053,6 +9671,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 143,
     "status": "Alive",
@@ -8067,6 +9688,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -8081,6 +9705,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -8098,6 +9725,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Cha-R Family"
     ],
@@ -8114,6 +9744,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Rorgo (Boss)"
     ],
@@ -8130,6 +9763,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -8146,6 +9782,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -8163,6 +9802,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Cha-R Family",
       "Luzurus Hui Guo Rou"
@@ -8180,6 +9822,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -8198,6 +9843,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Preview Market"
     ],
@@ -8214,6 +9862,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Gantai"
@@ -8231,6 +9882,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -8247,6 +9901,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 251,
     "status": "Deceased",
@@ -8261,6 +9918,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 394,
     "status": "Deceased",
@@ -8275,6 +9935,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Zhang Lei Hui Guo Rou"
@@ -8292,6 +9955,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 320,
     "status": "Deceased",
@@ -8306,6 +9972,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -8322,6 +9991,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 391",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -8338,6 +10010,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tserriednich Hui Guo Rou",
@@ -8356,6 +10031,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 5,
     "status": "Alive",
@@ -8370,6 +10048,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 14,
     "status": "Deceased",
@@ -8384,6 +10065,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -8398,6 +10082,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -8414,6 +10101,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Team Tokharone"
     ],
@@ -8430,6 +10120,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Fugetsu Hui Guo Rou"
@@ -8447,6 +10140,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 5,
     "status": "Alive",
@@ -8461,6 +10157,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -8477,6 +10176,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -8493,6 +10195,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Mafia Community"
     ],
@@ -8509,6 +10214,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Personagem exclusivo de jogo",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -8523,6 +10231,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 36, Chapter 376",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -8539,6 +10250,11 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [
+      "tesouros"
+    ],
+    "estrelas": 1,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -8555,6 +10271,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family"
     ],
@@ -8571,6 +10290,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Cha-R Family"
     ],
@@ -8587,6 +10309,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 224,
     "status": "Alive",
@@ -8601,6 +10326,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -8617,6 +10345,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 366,
     "status": "Deceased",
@@ -8631,6 +10362,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Deceased",
@@ -8645,6 +10379,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -8661,6 +10398,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Have-Nots",
@@ -8679,6 +10419,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Amori Brothers"
     ],
@@ -8695,6 +10438,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Underground Clinic"
     ],
@@ -8711,6 +10457,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -8727,6 +10476,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Beyond Netero",
       "Hunter Association"
@@ -8744,6 +10496,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 9, Chapter 79",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 71,
     "status": "Deceased",
@@ -8758,6 +10513,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tserriednich Hui Guo Rou"
@@ -8775,6 +10533,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Sevanti Hui Guo Rou",
@@ -8793,6 +10554,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 380,
     "status": "Deceased",
@@ -8807,6 +10571,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 133,
     "status": "Alive",
@@ -8821,6 +10588,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -8838,6 +10608,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 358,
     "status": "Deceased",
@@ -8852,6 +10625,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 393",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -8868,6 +10644,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Manual (livro oficial de personagens de Yu Yu Hakusho, do mesmo autor)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 188,
     "status": "Alive",
@@ -8882,6 +10661,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 7, Chapter 60",
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association",
       "Shingen-ryu School/Dojo",
@@ -8900,6 +10682,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -8916,6 +10701,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -8932,6 +10720,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 373,
     "status": "Deceased",
@@ -8946,6 +10737,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire"
     ],
@@ -8962,6 +10756,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 151,
     "status": "Alive",
@@ -8976,6 +10773,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 154,
     "status": "Deceased",
@@ -8990,6 +10790,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 358,
     "status": "Deceased",
@@ -9004,6 +10807,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Justice Bureau",
       "Halkenburg Hui Guo Rou"
@@ -9021,6 +10827,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -9035,6 +10844,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Characters Book: World × Character × Blessing (2001); Hunter × Hunter: Battle Collection",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 75,
     "status": "Deceased",
@@ -9049,6 +10861,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 154,
     "status": "Deceased",
@@ -9063,6 +10878,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heavens Arena"
     ],
@@ -9079,6 +10897,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Alive",
@@ -9093,6 +10914,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 322,
     "status": "Unknown (Presumed deceased)",
@@ -9107,6 +10931,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 38, Chapter 394",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Heil-Ly Family"
     ],
@@ -9123,6 +10950,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Weekly Shōnen Jump Magazine"
     ],
@@ -9139,6 +10969,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Halkenburg Hui Guo Rou"
@@ -9156,6 +10989,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 192,
     "status": "Deceased",
@@ -9170,6 +11006,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Kacho Hui Guo Rou"
@@ -9187,6 +11026,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Benjamin Hui Guo Rou"
@@ -9204,6 +11046,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 37, Chapter 390",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Xi-Yu Family"
     ],
@@ -9220,6 +11065,9 @@
     "fonte_tipo": "fora_do_manga",
     "fonte_tipo_detalhe": "Hunter × Hunter Manual (livro oficial de personagens de Yu Yu Hakusho, do mesmo autor)",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 189,
     "status": "Deceased",
@@ -9234,6 +11082,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family",
       "Seaquant (Co-worker)"
@@ -9251,6 +11102,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": null,
     "status": "Deceased",
@@ -9265,6 +11119,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 16, Chapter 156",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 154,
     "status": "Deceased",
@@ -9279,6 +11136,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 205,
     "status": "Deceased",
@@ -9293,6 +11153,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Ten Dons"
     ],
@@ -9309,6 +11172,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -9325,6 +11191,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Exhibition: Togashi Yoshihiro -Puzzle-",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family"
     ],
@@ -9341,6 +11210,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [],
     "capitulo_estreia": 86,
     "status": "Alive",
@@ -9355,6 +11227,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Hunter Association"
     ],
@@ -9371,6 +11246,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Xi-Yu Family"
@@ -9388,6 +11266,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family"
     ],
@@ -9404,6 +11285,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Zoldyck Family"
     ],
@@ -9420,6 +11304,9 @@
     "fonte_tipo": null,
     "fonte_tipo_detalhe": null,
     "nota_tipo": null,
+    "hunter": true,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Kakin Empire",
       "Tubeppa Hui Guo Rou",
@@ -9438,6 +11325,9 @@
     "fonte_tipo": "manga",
     "fonte_tipo_detalhe": "Hunter × Hunter - Volume 7, Chapter 60",
     "nota_tipo": null,
+    "hunter": false,
+    "especialidades": [],
+    "estrelas": null,
     "afiliacao": [
       "Wing (Master)",
       "Heavens Arena"

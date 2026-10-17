@@ -2,6 +2,7 @@
 // (Personagem e Fonte). Função pura: mesma entrada, mesma saída.
 
 import { urlDoArtigo } from "./api.mjs";
+import { interpretarOcupacao } from "./hunter.mjs";
 import { interpretarTipoNen } from "./tipo-nen.mjs";
 import { categoriasDoTexto, dividirValores, lerInfobox, lerReferenciasNomeadas, numeroDoCapitulo, textoLimpo } from "./wikitext.mjs";
 
@@ -49,6 +50,12 @@ export function ajustarFonteDoTipo(tipo, categorias, origem) {
   return tipo;
 }
 
+// Campos da licença Hunter no modelo: hunter, especialidades, estrelas
+function licencaHunter(ocupacao) {
+  const { hunter, especialidades, estrelas } = interpretarOcupacao(ocupacao);
+  return { hunter, especialidades, estrelas };
+}
+
 export function transformarPagina({ titulo, revisao, wikitext }, dataColeta) {
   const campos = lerInfobox(wikitext);
   const refs = lerReferenciasNomeadas(wikitext);
@@ -61,6 +68,7 @@ export function transformarPagina({ titulo, revisao, wikitext }, dataColeta) {
     nome: textoLimpo(campos.name ?? "") || titulo,
     origem_personagem: origem.origem,
     ...ajustarFonteDoTipo(interpretarTipoNen(campos.type, refs), categorias, origem),
+    ...licencaHunter(campos.occupation),
     afiliacao: dividirValores(campos.affiliation ?? "").map(textoLimpo).filter(Boolean),
     capitulo_estreia: numeroDoCapitulo(campos["manga debut"]),
     status: textoLimpo(campos.status ?? "") || null,

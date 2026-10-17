@@ -4,7 +4,7 @@ Oct 16, 2026 · @Samuel
 
 ## Visão do produto
 
-Um site onde o fã de Hunter × Hunter responde 13 perguntas (versão Trupe Fantasma) ou 12 (versão Zodíaco) e descobre seu tipo de Nen, com personagens do mesmo tipo tirados da Hunterpedia. Depois, pode desenvolver o seu Hatsu: uma habilidade pessoal que nasce do tipo de Nen combinado com o que a pessoa viveu.
+Um site onde o fã de Hunter × Hunter responde 13 perguntas (versão Trupe Fantasma) ou 12 (versão Zodíaco) e descobre seu tipo de Nen, com personagens do mesmo tipo tirados da Hunterpedia. Depois, pode desenvolver o seu Hatsu (uma habilidade pessoal que nasce do tipo de Nen combinado com o que a pessoa viveu), montar um poder próprio peça por peça e tirar a sua Licença Hunter a partir dos feitos da sua vida.
 
 O projeto também é um laboratório de ADS: cobre requisitos, modelagem de dados, ETL, regras de negócio, testes, interface e deploy num escopo pequeno o bastante para terminar.
 
@@ -22,7 +22,7 @@ O MVP entrega um único quiz (tipo de Nen), em português, sem login, com dados 
 
 | Dentro do MVP | Fora do MVP (versões futuras) |
 | --- | --- |
-| Duas versões: 13 perguntas (Trupe Fantasma) e 12 (Zodíaco) | Quiz de feitos (licença, estrelas, organizações) |
+| Duas versões: 13 perguntas (Trupe Fantasma) e 12 (Zodíaco) | Salvar licenças e poderes numa conta |
 | 6 resultados: os tipos de Nen | Outros animes e outras wikis |
 | Afinidade secundária pelo hexágono | Contas de usuário e histórico |
 | Personagens do tipo resultante, com link à wiki | Ranking ou estatísticas públicas |
@@ -31,6 +31,8 @@ O MVP entrega um único quiz (tipo de Nen), em português, sem login, com dados 
 | Retratos dos personagens, carregados do CDN da Hunterpedia (pós-MVP) | |
 | Identidade visual por teste (pós-MVP) | |
 | Hatsu a partir do tipo e da vivência (pós-MVP) | |
+| Crie o seu poder: construtor com nome e descrição livres (pós-MVP) | |
+| Licença Hunter: feitos, especialidade, estrelas e organização (pós-MVP) | |
 
 ## Regras de domínio
 
@@ -55,7 +57,7 @@ A posição no hexágono vira o campo `posicao_hexagono` (0 a 5), e a distância
 
 ## Requisitos funcionais
 
-São oito requisitos do MVP e quatro adicionados depois (RF09 a RF12), cada um com um critério de aceite que pode virar teste.
+São oito requisitos do MVP e nove adicionados depois (RF09 a RF17), cada um com um critério de aceite que pode virar teste.
 
 | ID | Requisito | Critério de aceite |
 | --- | --- | --- |
@@ -71,6 +73,11 @@ São oito requisitos do MVP e quatro adicionados depois (RF09 a RF12), cada um c
 | RF10 | Dar a cada teste a sua identidade visual | Início e créditos no tema neutro (Associação Hunter); quiz, resultado e Hatsu no tema da versão |
 | RF11 | Gerar o Hatsu a partir do tipo e de quatro perguntas sobre a vida | Mesmo tipo e mesmas respostas geram sempre o mesmo Hatsu; os 72 pares vivência × tipo têm nome e efeito |
 | RF12 | Mostrar o personagem da obra com o caminho mais parecido e compartilhar o Hatsu por link | Transformação + eletricidade leva ao Killua; o link abre direto na carta do Hatsu |
+| RF13 | Montar um poder peça por peça e dar nome a ele | Categoria, forma, origem, gatilho, até 3 votos, nome (até 40 caracteres) e descrição opcional (até 200); o link abre a carta com o mesmo nome |
+| RF14 | Avaliar o poder pela teoria do Nen | Eficiência segue o hexágono; Especialização fica bloqueada para quem não é especialista; votos e forma natural aumentam a potência |
+| RF15 | Marcar feitos e gerar a Licença Hunter | Especialidade, estrelas e organização são sempre as mesmas para as mesmas respostas; o cartão mostra o que falta para a próxima estrela |
+| RF16 | Mostrar Hunters reais da especialidade e membros da organização | Os Hunters vêm do campo `occupation` da Hunterpedia, com retrato e estrelas |
+| RF17 | Ligar as etapas numa jornada | A licença tem cartão próprio na página inicial e também abre depois do Hatsu; vinda do Hatsu, o cartão mostra o tipo e o nome do Hatsu |
 
 ## Requisitos não funcionais e restrições
 
@@ -97,7 +104,7 @@ O modelo separa o que vem da wiki (Personagem, Fonte) do que é autoral (Pergunt
 | Entidade | Origem | Campos principais |
 | --- | --- | --- |
 | TipoNen | Autoral | id, nome, posicao\_hexagono (0 a 5), descricao, personalidade |
-| Personagem | Wiki (ETL) | id, nome, tipo\_nen\_id (pode ser vazio), tipo\_nen\_secundario\_id, fonte\_tipo (manga ou fora\_do\_manga), fonte\_tipo\_detalhe, nota\_tipo, origem\_personagem, afiliacao, capitulo\_estreia, status, fonte\_id |
+| Personagem | Wiki (ETL) | id, nome, tipo\_nen\_id (pode ser vazio), tipo\_nen\_secundario\_id, fonte\_tipo (manga ou fora\_do\_manga), fonte\_tipo\_detalhe, nota\_tipo, origem\_personagem, hunter, especialidades\[\], estrelas (1 a 3 ou vazio), afiliacao, capitulo\_estreia, status, fonte\_id |
 | Fonte | Wiki (ETL) | id, titulo\_wiki, url\_artigo, revisao\_wiki, data\_coleta, licenca |
 | Pergunta | Autoral | id, versao (trupe ou zodiaco), ordem, membro\_tema, texto |
 | Opcao | Autoral | id, pergunta\_id, texto |
@@ -108,8 +115,14 @@ O modelo separa o que vem da wiki (Personagem, Fonte) do que é autoral (Pergunt
 | Motivacao · Alcance · Voto | Autoral | id, texto, efeito; Voto também tem regra e peso (1 a 3) |
 | Referencia | Autoral | personagem\_id, vivencia\_id, tipo\_nen\_id, habilidade, historia |
 | Hatsu | Calculado | nome, tipo, efeito, vivência, motivação, alcance, voto, referência |
+| Forma · Gatilho | Autoral | id, nome, frase; Forma também tem as categorias em que é natural |
+| Poder | Calculado + nome e descrição do usuário | tipo, categoria, forma, gatilho, vivência, votos (até 3), eficiência, potência, risco, comentários |
+| Especialidade | Autoral | id, nome, sigla, descrição, caçada; agrupa as especialidades da wiki |
+| Feito | Autoral | id, texto, troféu, especialidade (opcional), conquista, papel (licença, mentor, cargo, várias áreas), paralelo na obra |
+| Organizacao | Autoral | id, nome, descrição, afiliações da wiki que a representam |
+| Licenca | Calculado | especialidade, licenciado, estrelas, faltam\[\], organização, troféus |
 
-Relações: uma Pergunta tem várias Opções; cada Opção tem um Peso para cada TipoNen; cada Personagem tem um TipoNen e uma Fonte. Um Hatsu combina um TipoNen com uma Vivencia, uma Motivacao, um Alcance e um Voto.
+Relações: uma Pergunta tem várias Opções; cada Opção tem um Peso para cada TipoNen; cada Personagem tem um TipoNen e uma Fonte. Um Hatsu combina um TipoNen com uma Vivencia, uma Motivacao, um Alcance e um Voto. Um Poder combina dois TipoNen (o do usuário e a categoria) com uma Forma, um Gatilho, uma Vivencia opcional e até três Votos. Uma Licenca combina Feitos com uma Especialidade e uma Organizacao; Personagens com a mesma especialidade ou afiliação aparecem no cartão.
 
 Formato do MVP: arquivos JSON versionados no repositório. Um banco (SQLite ou Postgres) entra só se surgir um requisito que peça.
 
@@ -364,3 +377,63 @@ O README abre com o link do site e três capturas de tela, e o "About" do GitHub
 - Nenhuma mudança de comportamento no sistema; testes seguem em 32
 
 - [ ] Atualizar as capturas quando o visual mudar
+
+## Fase 9: Crie o seu poder e Licença Hunter
+
+Duas entregas pedidas juntas: um construtor para o Hatsu e o processo de feitos, que estava fora do MVP. Feito em 17/10/2026.
+
+### Crie o seu poder
+
+O Hatsu gerado é um ponto de partida; agora a pessoa também pode montar o próprio poder e dar nome a ele. O construtor abre pela página inicial ou pelo botão "Personalizar este poder" na carta do Hatsu, que já preenche as peças.
+
+| Peça | Opções | Efeito na avaliação |
+| --- | --- | --- |
+| Seu tipo | 6 tipos (vem do quiz quando há jornada) | base da eficiência |
+| Categoria | 6 tipos | eficiência = afinidade pelo hexágono (100, 80, 60, 40%); Especialização só para especialistas |
+| Forma | arma ou objeto, criatura, corpo, disparo, campo, regra | +15 de potência quando é natural para a categoria |
+| Origem | 12 vivências do Hatsu, opcional | só descrição |
+| Gatilho | tocar, dizer o nome, olhar nos olhos, ferido, ritual, sempre ativo | "sempre ativo" gera um aviso de gasto de aura |
+| Votos | os 6 votos do Hatsu, até 3 | +6 de potência por ponto de peso; risco baixo, médio (3+) ou alto (5+) |
+| Nome e descrição | texto livre (40 e 200 caracteres) | sem descrição, o site escreve uma a partir das peças |
+
+O nome e a descrição vão no próprio link (`#/poder/<código>/<nome>/<descrição>`); o site não guarda nada.
+
+### Licença Hunter
+
+**Dados novos no ETL.** O campo `occupation` da infobox diz se o personagem é Hunter, qual a especialidade e quantas estrelas tem (ex.: Ging, "Ruins Hunter (Double-Star)"). A regra está em `etl/hunter.mjs`, com testes a partir de casos reais. Resultado: 89 Hunters, 30 com especialidade e 14 com estrelas. As dezenas de especialidades da wiki, quase todas com um ou dois membros, viraram 7 grupos:
+
+| Especialidade no quiz | Especialidades da wiki |
+| --- | --- |
+| Lista Negra | Blacklist, Crime, Terrorist, Poacher, Problem |
+| Gourmet | Gourmet |
+| Tesouros e Ruínas | Ruins, Treasure, Stone, Paleograph, Jackpot, Card |
+| Bestas e Mares | Beast, Unidentified Beast, Dino, Cute, Botanical, Sea |
+| Doenças | Disease, Virus, Poison |
+| Informação | Hacker, Lost |
+| Música | Music |
+
+O ETL também passou a rodar no Windows: a checagem de "arquivo principal" comparava com `file://` + caminho, o que não bate com barras invertidas. Os retratos agora cobrem os 610 personagens (574 têm imagem), para incluir Hunters e membros de organizações.
+
+**Fluxo.** Seis passos: marcar os feitos (21, em "Sua trajetória" e "O que você já fez"), escolher a caçada que mais atrai, três perguntas de organização e o nome no cartão (opcional, só no link). Os feitos da área e as opções aparecem embaralhados, para a ordem não denunciar a especialidade.
+
+**Regras.** Especialidade pela soma dos feitos de cada área (conquista vale 2) mais 2 para a caçada escolhida, que também desempata. Estrelas pela regra da Associação, simplificada:
+
+| Nível | Exige |
+| --- | --- |
+| Licença | uma prova difícil, o Exame Hunter; sem ela, "Aspirante a Hunter" |
+| 1 estrela | licença + uma conquista de peso na especialidade ou um prêmio |
+| 2 estrelas | 1 estrela + liderou algo + formou alguém que se destacou |
+| 3 estrelas | 2 estrelas + conquistas em mais de uma área |
+
+Organização: a mais escolhida entre Associação Hunter, Zodíaco, Expedição de Beyond Netero, Guarda Real de Kakin, Família Zoldyck e Trupe Fantasma.
+
+**Resultado.** Um cartão de licença com emblema próprio (hexágono, H e ×), as estrelas e o que falta para a próxima, um troféu por feito com o paralelo na obra (ex.: "Como o Gon, que passou no Exame Hunter aos 12 anos"), os Hunters reais da especialidade e até 8 membros da organização. Vindo do Hatsu, o cartão mostra também o tipo e o nome do Hatsu.
+
+**Jornada.** Quiz → Hatsu → licença ou poder. Cada link carrega as respostas anteriores (`#/licenca/<código>/<nome>/<versão>/<quiz>/<Hatsu>`), e as telas recalculam o tipo e o Hatsu a partir delas.
+
+**Testes.** 11 novos (7 da licença, 4 do poder): leitura da ocupação, aspirante, cada nível de estrela, especialidade e desempate, organização, códigos dos links, personagens citados existem na base, eficiência, bloqueio da Especialização e potência. Total: 43 testes.
+
+- [x] Testado no navegador: feitos pela jornada do Killua até o cartão (2 estrelas, Informação, Associação Hunter), construtor preenchido pelo Hatsu e carta do poder, inclusive a 375 px
+- [ ] Revisar os textos dos 21 feitos e dos paralelos jogando o site
+- [ ] Decidir se o nome no cartão deve continuar indo no link
+- [ ] Atualizar as capturas do README com a licença e o construtor

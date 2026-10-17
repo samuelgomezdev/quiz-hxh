@@ -3,6 +3,7 @@ import perguntas from "../dados/perguntas.json";
 import personagens from "../dados/personagens.json";
 import tipos from "../dados/tipos.json";
 import membros from "../dados/membros.json";
+import licenca from "../dados/licenca.json";
 
 // Cada versão tem a sua identidade visual (data-tema no <html>)
 export const VERSOES = {
@@ -38,7 +39,14 @@ export function membrosDoTipo(versao, tipo) {
 
 export const perguntasDa = (versao) => perguntas.filter((p) => p.versao === versao);
 export const tipoPorId = Object.fromEntries(tipos.map((t) => [t.id, t]));
-export const personagemPorId = Object.fromEntries(personagens.map((p) => [p.id, p]));
+// Todos os personagens que o site conhece: os de tipo de Nen e os da Licença Hunter
+export const personagemPorId = Object.fromEntries(
+  [...licenca.citados, ...licenca.hunters, ...Object.values(licenca.organizacoes).flat(), ...personagens].map((p) => [p.id, p]),
+);
+
+// Licença Hunter
+export const huntersDaEspecialidade = (id) => licenca.hunters.filter((h) => h.especialidades.includes(id));
+export const membrosDaOrganizacao = (id) => licenca.organizacoes[id] ?? [];
 export const nomesDosTipos = Object.fromEntries(tipos.map((t) => [t.id, t.nome]));
 
 export function personagensDoTipo(tipo) {

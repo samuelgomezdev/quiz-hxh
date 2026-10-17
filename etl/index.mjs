@@ -3,6 +3,7 @@
 //      npm run etl:limpo      (ignora o cache e consulta a wiki de novo)
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { pathToFileURL } from "node:url";
 import { criarCliente } from "./api.mjs";
 import { buscarWikitext, listarPersonagens } from "./extrair.mjs";
 import { transformarPagina } from "./transformar.mjs";
@@ -66,10 +67,13 @@ async function main() {
   console.log(`\n${personagens.length} personagens · ${comTipo.length} com tipo de Nen`);
   console.log(`  mangá: ${comTipo.filter((p) => p.fonte_tipo === "manga").length} · fora do mangá: ${comTipo.filter((p) => p.fonte_tipo === "fora_do_manga").length}`);
   console.log(`  com tipo secundário: ${personagens.filter((p) => p.tipo_nen_secundario_id).length}`);
+  const hunters = personagens.filter((p) => p.hunter);
+  console.log(`  Hunters: ${hunters.length} · com especialidade: ${hunters.filter((p) => p.especialidades.length).length} · com estrelas: ${hunters.filter((p) => p.estrelas).length}`);
   for (const [nome, n] of Object.entries(porTipo)) console.log(`  ${nome}: ${n}`);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+// pathToFileURL: no Windows o caminho tem barras invertidas e letra de unidade
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((erro) => {
     console.error("ETL falhou:", erro.message);
     process.exit(1);

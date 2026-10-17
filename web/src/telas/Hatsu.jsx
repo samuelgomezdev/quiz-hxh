@@ -9,6 +9,7 @@ import Retrato from "../componentes/Retrato.jsx";
 import { decodificar } from "../lib/codigo.js";
 import { nomesDosTipos, perguntasDa, personagemPorId } from "../lib/dados.js";
 import { ir, linkAbsoluto } from "../lib/rota.js";
+import { prefillDoHatsu } from "./CriarPoder.jsx";
 
 function Perguntas({ versao, codigo, tipo }) {
   const [indice, setIndice] = useState(0);
@@ -158,6 +159,21 @@ function Carta({ versao, codigo, codigoHatsu, hatsu }) {
           </a>
         </section>
       )}
+
+      <section className="chamada-hatsu">
+        <p className="sobretitulo">Continue a jornada</p>
+        <h2 className="subtitulo">Licença Hunter ou um poder só seu</h2>
+        <p>
+          Tire a sua licença com os feitos da sua vida (o tipo e o Hatsu vão no cartão) ou use este Hatsu como ponto
+          de partida para montar o seu próprio poder.
+        </p>
+        <div className="resultado__acoes resultado__acoes--junto">
+          <button className="botao" onClick={() => ir(`feitos/${versao}/${codigo}/${codigoHatsu}`)}>Tirar minha Licença Hunter</button>
+          <button className="botao botao--secundario" onClick={() => ir(`poder/novo/${prefillDoHatsu(hatsu.tipo, hatsu)}`)}>
+            Personalizar este poder
+          </button>
+        </div>
+      </section>
 
       <div className="resultado__acoes">
         <button className="botao" onClick={copiarLink} aria-live="polite">
