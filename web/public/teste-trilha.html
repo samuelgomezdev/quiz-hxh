@@ -77,7 +77,7 @@
               registrar("Estado: " + (nomes[e.data] || e.data));
               if (e.data === 1) {
                 estado("Tocando " + FAIXAS[tela].nome);
-                registrar("Tocando " + FAIXAS[tela].nome + " sem clique no player", "ok");
+                registrar("Tocando " + FAIXAS[tela].nome + " (a página não vê toques dentro do player)", "ok");
               }
               if (e.data === 0) { player.seekTo(0); player.playVideo(); } // recomeça no fim
             },

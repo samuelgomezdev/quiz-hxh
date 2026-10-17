@@ -12,8 +12,12 @@
 // Quando a faixa acaba (sem conta do Spotify, é uma prévia de uns 30 s), ela volta ao início
 // sem recarregar o player, o que funciona nos dois casos.
 // Nenhum navegador deixa o som começar antes do primeiro toque na página. Por isso a música
-// começa no primeiro clique ou tecla em qualquer lugar do site (antes disso, nada é pedido
-// ao Spotify). O botão de silenciar fica sempre à vista, e a escolha fica guardada no aparelho.
+// começa no primeiro clique ou tecla em qualquer lugar do site. O play precisa sair durante o
+// clique: um play que chega segundos depois (o tempo de carregar o player) já não conta como
+// pedido pela pessoa, e o navegador bloqueia. Por isso o player é carregado em silêncio assim
+// que o site abre, e o primeiro clique só dá o play.
+// O botão de silenciar fica sempre à vista, e a escolha fica guardada no aparelho; silenciado,
+// o player nem é carregado.
 // Esconder só tira o player da vista: com display: none, o Spotify para de responder.
 import { useEffect, useRef, useState } from "react";
 import { faixaDaSituacao } from "../../../motor/trilha.mjs";
@@ -73,14 +77,16 @@ export default function Trilha({ tela, versao }) {
   const alvo = useRef(null);
   const controle = useRef(null);
   const tocando = useRef(false);
-  const deveTocar = useRef(true); // dar o play quando a faixa carregar (evento "ready")
-  const espera = useRef({ timer: null, tocou: false });
+  const deveTocar = useRef(false); // dar o play quando a faixa carregar (evento "ready")
+  const espera = useRef({ timer: null, tocou: false, aguardando: false }); // aguardando: play pedido, ainda não confirmado
   const fim = useRef({ timer: null, posicao: 0, duracao: 0 });
   const uriAtual = useRef(atual.uri);
   const podeSozinho = useRef(null); // null: ainda não se sabe; true; false
   const uriNoPlayer = useRef(atual.uri); // para ignorar avisos atrasados da faixa anterior
   const caixa = useRef(null);
-  const iniciado = useRef(false);
+  const iniciado = useRef(false); // o player já foi pedido ao Spotify
+  const pronto = useRef(false); // o player terminou de carregar e aceita o play
+  const comecou = useRef(false); // o primeiro play já foi pedido
   const silenciado = useRef(mudo);
   const faixaAtual = useRef(atual);
   faixaAtual.current = atual;
@@ -90,7 +96,9 @@ export default function Trilha({ tela, versao }) {
     c.play();
     clearTimeout(espera.current.timer);
     espera.current.tocou = false;
+    espera.current.aguardando = true;
     espera.current.timer = setTimeout(() => {
+      espera.current.aguardando = false;
       if (espera.current.tocou) {
         podeSozinho.current ??= true;
         return;
@@ -118,11 +126,10 @@ export default function Trilha({ tela, versao }) {
     c.resume();
   }
 
-  // Cria o player (uma vez só) e, se o som não foi silenciado, já dá o play
-  function iniciar() {
+  // Carrega o player em silêncio (uma vez só); o play vem de pedirPlay
+  function preparar() {
     if (iniciado.current) return;
     iniciado.current = true;
-    deveTocar.current = !silenciado.current;
     setCarregado(true);
     carregarApi().then((IFrameAPI) => {
       // a API troca o elemento pelo iframe; por isso ele é criado fora do React
@@ -132,13 +139,18 @@ export default function Trilha({ tela, versao }) {
       uriNoPlayer.current = uriAtual.current;
       IFrameAPI.createController(el, { uri: uriAtual.current, width: "100%", height: 80 }, (c) => {
         controle.current = c;
+        // o controle já aceita o play; o "ready" do Spotify só chega depois de um play ou de uma troca
+        pronto.current = true;
+        if (deveTocar.current && !silenciado.current) tentarTocar(c);
         c.addListener("ready", () => {
+          pronto.current = true;
           if (deveTocar.current && !silenciado.current) tentarTocar(c);
         });
         c.addListener("playback_update", ({ data }) => {
           if (data.playingURI && data.playingURI !== uriNoPlayer.current) return;
           if (!data.isPaused && data.position > 0) {
             espera.current.tocou = true;
+            espera.current.aguardando = false;
             setPedirToque(false);
           }
           const f = fim.current;
@@ -160,9 +172,20 @@ export default function Trilha({ tela, versao }) {
     });
   }
 
+  // Play pedido por um clique: com o player pronto, sai na hora, ainda dentro do clique;
+  // senão, sai quando o player terminar de carregar
+  function pedirPlay() {
+    comecou.current = true;
+    const c = controle.current;
+    if (c && pronto.current) return tentarTocar(c);
+    deveTocar.current = true;
+    preparar();
+  }
+
   function alternar() {
     setAberto((a) => !a);
-    iniciar();
+    if (!comecou.current && !silenciado.current) pedirPlay();
+    else preparar();
   }
 
   function alternarSom() {
@@ -177,20 +200,19 @@ export default function Trilha({ tela, versao }) {
       deveTocar.current = false;
       setPedirToque(false);
       c?.pause();
-    } else if (c) {
-      tentarTocar(c);
     } else {
-      iniciar();
+      pedirPlay();
     }
   }
 
-  // A música começa no primeiro clique ou tecla em qualquer lugar do site
-  // (menos nos botões da própria trilha, que cuidam de si)
+  // O player carrega em silêncio quando o site abre (menos com o som silenciado), e a música
+  // começa no primeiro clique ou tecla em qualquer lugar (menos nos botões da trilha, que cuidam de si)
   useEffect(() => {
     if (mudo) return;
+    preparar();
     function primeiroToque(evento) {
-      if (caixa.current?.contains(evento.target)) return;
-      iniciar();
+      if (comecou.current || caixa.current?.contains(evento.target)) return;
+      pedirPlay();
     }
     const opcoes = { capture: true };
     document.addEventListener("pointerdown", primeiroToque, opcoes);
@@ -211,8 +233,10 @@ export default function Trilha({ tela, versao }) {
       uriNoPlayer.current = atual.uri;
       return setNoPlayer(atual);
     }
-    if (podeSozinho.current === false && tocando.current) return;
-    carregar(c, atual, tocando.current && !silenciado.current);
+    // "tocando" inclui o play recém-pedido: o primeiro clique costuma pedir o play e trocar de tela juntos
+    const tocandoOuPedido = tocando.current || espera.current.aguardando || deveTocar.current;
+    if (podeSozinho.current === false && tocandoOuPedido) return;
+    carregar(c, atual, tocandoOuPedido && !silenciado.current);
   }, [atual.uri]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const outraFaixa = carregado && noPlayer.uri !== atual.uri;

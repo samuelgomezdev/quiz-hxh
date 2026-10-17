@@ -686,3 +686,23 @@ Essas regras substituem a tabela da fase 12: Riot, Mystic Land e Ikkiuchi! saír
 - [x] Testado no navegador: o clique em "Trupe Fantasma" começou o tema do Chrollo com o painel fechado; silenciar pausou e ficou guardado; depois de recarregar, cliques não pediram nada ao Spotify; ligar o som voltou a tocar
 - [ ] Confirmar no Opera e no Brave do Samuel
 - [ ] Teste da opção B (YouTube) para avaliar no Brave: página `web/public/teste-trilha.html`, publicada em `.../quiz-hxh/teste-trilha.html`, fora do menu do site. Usa três faixas do canal oficial "Yoshihisa Hirano - Topic" (The World of Adventurers, Ansatsu Ikka no Yakata, Requiem Aranea), que aceitam ser incorporadas; o player troca o vídeo sem se recarregar e mostra um registro do que aconteceu
+
+**Resultado do teste da opção B (17/10/2026).**
+
+- **Opera no computador:** o primeiro clique começou a música e todas as trocas de tela tocaram sozinhas em menos de 1 s, sem nenhum bloqueio.
+- **Celular:** cada troca foi bloqueada pelo navegador e só tocou de 5 a 6 s depois, o tempo de um toque no player. O rótulo "sem clique no player" da página de teste era enganoso, porque a página não vê toques dentro do player; agora diz isso.
+- Falta o resultado no Brave do computador.
+
+**Correção da opção A: dois cliques para tocar.** O Samuel precisava de dois cliques para ouvir. A diferença para o teste do YouTube explicou a causa: lá o player já estava carregado, e o play saía durante o clique. Na opção A, o primeiro clique só começava a carregar o player, e o play chegava segundos depois, quando o navegador já não o contava como pedido pela pessoa. Dois problemas a mais apareceram no teste:
+
+1. O Spotify só manda o aviso "ready" do primeiro carregamento depois de um play, então o site não sabia que o player estava pronto.
+2. O primeiro clique costuma pedir o play e trocar de tela ao mesmo tempo, e a troca apagava o pedido de play.
+
+Correção:
+
+- O player é carregado em silêncio assim que o site abre (menos com o som silenciado). O primeiro clique só dá o play, ainda durante o clique. Isso muda uma decisão anterior: o site agora fala com o Spotify ao abrir, e não mais só depois do primeiro clique.
+- O player conta como pronto assim que o controle do Spotify é criado.
+- Um play pedido e ainda não confirmado conta como "tocando" na troca de tela.
+
+- [x] Testado no navegador: ao abrir, o player carrega e nada toca; o clique em "Trupe Fantasma" toca o tema do Chrollo com o painel fechado
+- [ ] Confirmar no Opera e no Brave do Samuel que um clique basta
