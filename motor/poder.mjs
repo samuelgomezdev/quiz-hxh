@@ -4,6 +4,7 @@
 // Especialização só é possível para quem é especialista, como na obra.
 
 import { VIVENCIAS, VOTOS } from "../conteudo/hatsu.mjs";
+import { ESTILOS } from "../conteudo/estilos.mjs";
 import { COMENTARIOS, FORMAS, GATILHOS } from "../conteudo/poder.mjs";
 import { distancia, HEXAGONO } from "./pontuacao.mjs";
 
@@ -61,6 +62,30 @@ export function nomeSugerido(escolhas) {
   const vivencia = VIVENCIAS.find((v) => v.id === escolhas.vivencia) ?? VIVENCIAS[h % VIVENCIAS.length];
   const [nome, , origem] = vivencia.hatsu[escolhas.categoria];
   return { nome, origem };
+}
+
+// Hatsus da obra com o estilo mais parecido, pelos pontos em comum:
+// categoria 3, forma 2, gatilho 1, cada voto em comum 1 e o mesmo tipo do usuário 1.
+// Empate fica com a ordem de conteudo/estilos.mjs; um personagem aparece uma vez só.
+export const PONTOS_ESTILO = { categoria: 3, forma: 2, gatilho: 1, voto: 1, tipo: 1 };
+
+export function estilosParecidos(escolhas, quantos = 3) {
+  const P = PONTOS_ESTILO;
+  const ranking = ESTILOS.map((estilo, ordem) => {
+    const emComum = {
+      categoria: estilo.categoria === escolhas.categoria,
+      forma: estilo.forma === escolhas.forma,
+      gatilho: estilo.gatilho !== null && estilo.gatilho === escolhas.gatilho,
+      votos: estilo.votos.filter((v) => escolhas.votos.includes(v)),
+      tipo: estilo.tipo === escolhas.tipo,
+    };
+    const pontos = (emComum.categoria ? P.categoria : 0) + (emComum.forma ? P.forma : 0) + (emComum.gatilho ? P.gatilho : 0)
+      + emComum.votos.length * P.voto + (emComum.tipo ? P.tipo : 0);
+    return { ...estilo, pontos, emComum, ordem };
+  }).sort((a, b) => b.pontos - a.pontos || a.ordem - b.ordem);
+
+  const vistos = new Set();
+  return ranking.filter((e) => !vistos.has(e.id) && vistos.add(e.id)).slice(0, quantos);
 }
 
 // Texto automático, para quem não escrever a própria descrição

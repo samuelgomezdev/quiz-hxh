@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Fundo from "./componentes/Fundo.jsx";
+import Trilha from "./componentes/Trilha.jsx";
 import { VERSOES } from "./lib/dados.js";
 import { useRota } from "./lib/rota.js";
 import Creditos from "./telas/Creditos.jsx";
@@ -48,7 +49,9 @@ export default function App() {
       <footer className="rodape">
         <a href="#/creditos">Créditos e licença</a>
         <span>Dados e imagens da Hunterpedia</span>
+        <span>Trilha sonora oficial via Spotify</span>
       </footer>
+      <Trilha tela={tela || "inicio"} versao={versao} />
     </>
   );
 }

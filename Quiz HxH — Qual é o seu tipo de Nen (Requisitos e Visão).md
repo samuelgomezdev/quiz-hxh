@@ -57,7 +57,7 @@ A posição no hexágono vira o campo `posicao_hexagono` (0 a 5), e a distância
 
 ## Requisitos funcionais
 
-São oito requisitos do MVP e nove adicionados depois (RF09 a RF17), cada um com um critério de aceite que pode virar teste.
+São oito requisitos do MVP e onze adicionados depois (RF09 a RF19), cada um com um critério de aceite que pode virar teste.
 
 | ID | Requisito | Critério de aceite |
 | --- | --- | --- |
@@ -78,6 +78,8 @@ São oito requisitos do MVP e nove adicionados depois (RF09 a RF17), cada um com
 | RF15 | Marcar feitos e gerar a Licença Hunter | Especialidade, estrelas e organização são sempre as mesmas para as mesmas respostas; o cartão mostra o que falta para a próxima estrela |
 | RF16 | Mostrar Hunters reais da especialidade e membros da organização | Os Hunters vêm do campo `occupation` da Hunterpedia, com retrato e estrelas |
 | RF17 | Ligar as etapas numa jornada | A licença tem cartão próprio na página inicial e também abre depois do Hatsu; vinda do Hatsu, o cartão mostra o tipo e o nome do Hatsu |
+| RF18 | Mostrar na carta do poder quem tem um estilo parecido na obra | Materialização + objeto + votos de alvo e de vida leva ao Kurapika (Chain Jail); a carta mostra o retrato, o que há em comum e onde o poder se afasta, mais dois parecidos, sem repetir personagem |
+| RF19 | Tocar a trilha sonora oficial, com uma faixa para cada situação do site | Nada é pedido ao Spotify antes do primeiro clique; ao trocar de tela com a música tocando, entra a faixa da nova tela; aberto, o player não cobre os botões a 375 px |
 
 ## Requisitos não funcionais e restrições
 
@@ -94,6 +96,7 @@ A restrição que mais pesa é a licença: todo texto vindo da Hunterpedia exige
 | RNF07 | Desempenho | Resultado exibido em menos de 1 s após a última resposta |
 | RNF08 | Usabilidade | Funciona em celular, com largura mínima de 360 px |
 | RNF09 | Manutenção | Código e base no GitHub (samuelgomezdev); site publicado no GitHub Pages |
+| RNF10 | Licença | A trilha sonora toca pelo player oficial do Spotify; nenhum arquivo de áudio fica no repositório, e a página de créditos cita compositor e gravadora |
 
 [Licenciamento na Fandom](https://www.fandom.com/Licensing)
 
@@ -114,6 +117,8 @@ O modelo separa o que vem da wiki (Personagem, Fonte) do que é autoral (Pergunt
 | Vivencia | Autoral | id, nome, texto, hatsu\[tipo\] = (nome, efeito, origem do nome) |
 | Motivacao · Alcance · Voto | Autoral | id, texto, efeito; Voto também tem regra e peso (1 a 3) |
 | Referencia | Autoral | personagem\_id, vivencia\_id, tipo\_nen\_id, habilidade, historia |
+| Estilo | Autoral | personagem\_id, tipo\_nen\_id, habilidade, categoria, forma, gatilho (ou à vontade), votos\[\], resumo: um Hatsu da obra descrito com as peças do construtor |
+| Faixa | Autoral | tela (e versão) → faixa da trilha oficial no Spotify |
 | Hatsu | Calculado | nome, tipo, efeito, vivência, motivação, alcance, voto, referência |
 | Forma · Gatilho | Autoral | id, nome, frase; Forma também tem as categorias em que é natural |
 | Poder | Calculado + nome e descrição do usuário | tipo, categoria, forma, gatilho, vivência, votos (até 3), eficiência, potência, risco, comentários |
@@ -122,7 +127,7 @@ O modelo separa o que vem da wiki (Personagem, Fonte) do que é autoral (Pergunt
 | Organizacao | Autoral | id, nome, descrição, afiliações da wiki que a representam |
 | Licenca | Calculado | especialidade, licenciado, estrelas, faltam\[\], organização, troféus |
 
-Relações: uma Pergunta tem várias Opções; cada Opção tem um Peso para cada TipoNen; cada Personagem tem um TipoNen e uma Fonte. Um Hatsu combina um TipoNen com uma Vivencia, uma Motivacao, um Alcance e um Voto. Um Poder combina dois TipoNen (o do usuário e a categoria) com uma Forma, um Gatilho, uma Vivencia opcional e até três Votos. Uma Licenca combina Feitos com uma Especialidade e uma Organizacao; Personagens com a mesma especialidade ou afiliação aparecem no cartão.
+Relações: uma Pergunta tem várias Opções; cada Opção tem um Peso para cada TipoNen; cada Personagem tem um TipoNen e uma Fonte. Um Hatsu combina um TipoNen com uma Vivencia, uma Motivacao, um Alcance e um Voto. Um Poder combina dois TipoNen (o do usuário e a categoria) com uma Forma, um Gatilho, uma Vivencia opcional e até três Votos, e é comparado com os Estilos da obra. Uma Licenca combina Feitos com uma Especialidade e uma Organizacao; Personagens com a mesma especialidade ou afiliação aparecem no cartão.
 
 Formato do MVP: arquivos JSON versionados no repositório. Um banco (SQLite ou Postgres) entra só se surgir um requisito que peça.
 
@@ -490,3 +495,42 @@ Regra em `motor/poder.mjs` (`nomeSugerido`), com 1 teste novo. Total: 45 testes.
 
 - [x] Testado no navegador: carta gerada sem nome sai como "Raiken", com a origem
 
+## Fase 12: estilo parecido e trilha sonora (17/10/2026)
+
+**Quem tem um estilo parecido.** A carta do poder criado mostra o Hatsu da obra mais parecido, com o retrato do personagem. Mostra também o que os dois têm em comum, onde o poder se afasta e mais dois parecidos. Os Hatsus da obra estão em `conteudo/estilos.mjs`, descritos com as mesmas peças do construtor: categoria, forma, gatilho e votos. São 39 Hatsus de 36 personagens, com todos os tipos representados. O gatilho fica vazio ("à vontade") quando o Hatsu não depende de um.
+
+Regra em `motor/poder.mjs` (`estilosParecidos`):
+
+| Em comum | Pontos |
+| --- | --- |
+| Categoria | 3 |
+| Forma | 2 |
+| Gatilho | 1 |
+| Cada voto | 1 |
+| O tipo do usuário é o do personagem | 1 |
+
+Empate fica com a ordem do arquivo. Um personagem com vários Hatsus (Kurapika, Genthru) aparece uma vez só, pelo mais parecido.
+
+**Trilha sonora.** Um botão fixo no canto abre o player do Spotify com faixas da trilha oficial do anime de 2011 (Yoshihisa Hirano, VAP). Cada situação tem a sua faixa:
+
+| Tela | Faixa |
+| --- | --- |
+| Início e telas sem faixa própria | The World of Adventurers |
+| Créditos | Kujirato Yori |
+| Quiz da Trupe | Riot |
+| Resultado e Hatsu da Trupe | Genei no Banka |
+| Quiz do Zodíaco | Mystic Land |
+| Resultado e Hatsu do Zodíaco | Hunter yo Eien Nare! |
+| Feitos | Hunter ☆ March |
+| Licença | Yume wo Oikakete |
+| Crie o seu poder | Ikkiuchi! |
+
+O player usa a iFrame API do Spotify. Quando a pessoa troca de tela com a música tocando, a faixa nova entra no lugar sem recarregar o player. A API só é carregada no primeiro clique, e esconder o player não para a música. Sem conta do Spotify conectada, o player toca uma prévia de cada faixa. Os créditos ganharam uma seção sobre a trilha.
+
+**Testes.** 4 novos: os estilos existem na base com o mesmo tipo e peças válidas, o caso do Kurapika, o caso do Kastro (clone fora do próprio tipo) e todas as categorias com alguém, sem repetir personagem. Total: 49 testes.
+
+- [x] Testado no navegador: carta com Materialização + objeto + votos de alvo e vida mostra Kurapika (Chain Jail), Shizuku e Kortopi
+- [x] Testado no navegador: o player abre com a faixa da tela, troca para Riot ao entrar no quiz da Trupe e, aberto, não cobre os botões a 375 px
+- [ ] Ouvir a troca de faixa com a música tocando, no celular e no computador (no navegador de teste, o play do Spotify não iniciou o som)
+- [x] 39 Hatsus de `conteudo/estilos.mjs` revisados pelo Samuel (17/10/2026)
+- [x] Faixas de cada tela (`FAIXAS` em `web/src/componentes/Trilha.jsx`) revisadas pelo Samuel (17/10/2026)

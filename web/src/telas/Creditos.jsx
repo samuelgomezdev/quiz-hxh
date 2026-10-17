@@ -33,6 +33,12 @@ export default function Creditos() {
         Fandom: o site guarda só o endereço. As imagens pertencem a Yoshihiro Togashi, Shueisha e aos estúdios do
         anime, e aparecem aqui apenas para identificar os personagens.
       </p>
+      <h2 className="subtitulo">Trilha sonora</h2>
+      <p>
+        As faixas são da trilha oficial do anime de 2011, composta por Yoshihisa Hirano e lançada pela VAP. Elas tocam
+        pelo player do Spotify, que só carrega depois que você abre a trilha; nenhum áudio fica neste site. Sem uma
+        conta do Spotify conectada, o player toca uma prévia de cada faixa.
+      </p>
       <button className="botao botao--secundario" onClick={() => ir("")}>Voltar ao início</button>
     </main>
   );

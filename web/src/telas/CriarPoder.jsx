@@ -8,10 +8,12 @@ import { useState } from "react";
 import { VIVENCIAS, VOTOS } from "../../../conteudo/hatsu.mjs";
 import { FORMAS, GATILHOS } from "../../../conteudo/poder.mjs";
 import {
-  avaliarPoder, codificarPoder, nomeSugerido, decodificarPoder, descreverPoder, eficiencia, MAX_DESCRICAO, MAX_NOME, MAX_VOTOS,
+  avaliarPoder, codificarPoder, nomeSugerido, decodificarPoder, descreverPoder, eficiencia, estilosParecidos,
+  MAX_DESCRICAO, MAX_NOME, MAX_VOTOS,
 } from "../../../motor/poder.mjs";
 import { HEXAGONO } from "../../../motor/pontuacao.mjs";
-import { nomesDosTipos } from "../lib/dados.js";
+import Retrato from "../componentes/Retrato.jsx";
+import { nomesDosTipos, personagemPorId } from "../lib/dados.js";
 import { ir, linkAbsoluto } from "../lib/rota.js";
 
 const PADRAO = { tipo: "intensificacao", categoria: "intensificacao", forma: "corpo", gatilho: "toque", vivencia: null, votos: [] };
@@ -184,6 +186,63 @@ function Construtor({ inicial, nomeInicial, descricaoInicial }) {
   );
 }
 
+const nomeDoGatilho = (id) => (id ? GATILHOS.find((g) => g.id === id).nome.toLowerCase() : "à vontade");
+
+// O que o poder criado tem em comum com um Hatsu da obra, e no que se afasta
+function comparar(escolhas, estilo) {
+  const c = estilo.emComum;
+  const comum = [
+    c.categoria && nomesDosTipos[estilo.categoria],
+    c.forma && FORMAS.find((f) => f.id === estilo.forma).nome.toLowerCase(),
+    c.gatilho && nomeDoGatilho(estilo.gatilho),
+    ...c.votos.map((id) => `voto: ${VOTOS.find((v) => v.id === id).texto.replace(/\.$/, "").toLowerCase()}`),
+  ].filter(Boolean);
+  const diferente = [
+    !c.categoria && `categoria: ${nomesDosTipos[escolhas.categoria]} no seu, ${nomesDosTipos[estilo.categoria]} em ${estilo.habilidade}`,
+    !c.forma && `forma: ${FORMAS.find((f) => f.id === escolhas.forma).nome.toLowerCase()} no seu, ${FORMAS.find((f) => f.id === estilo.forma).nome.toLowerCase()} em ${estilo.habilidade}`,
+    !c.gatilho && `gatilho: ${nomeDoGatilho(escolhas.gatilho)} no seu, ${nomeDoGatilho(estilo.gatilho)} em ${estilo.habilidade}`,
+  ].filter(Boolean);
+  return { comum, diferente };
+}
+
+function Parecidos({ escolhas }) {
+  const [principal, ...outros] = estilosParecidos(escolhas).map((e) => ({ ...e, personagem: personagemPorId[e.id] }));
+  const { comum, diferente } = comparar(escolhas, principal);
+
+  return (
+    <section className="secao">
+      <h2 className="subtitulo">Quem tem um estilo parecido</h2>
+      <a className="referencia" href={principal.personagem.url} target="_blank" rel="noreferrer">
+        <Retrato src={principal.personagem.imagem} nome={principal.personagem.nome} className="referencia__retrato" />
+        <span className="referencia__texto">
+          <span className="referencia__nome">{principal.personagem.nome} · {principal.habilidade}</span>
+          <span>{principal.resumo}</span>
+        </span>
+      </a>
+      <dl className="parecido__comparacao">
+        {comum.length > 0 && (<div><dt>Em comum</dt><dd>{comum.join(" · ")}</dd></div>)}
+        {diferente.length > 0 && (<div><dt>Onde o seu se afasta</dt><dd><ul>{diferente.map((d) => <li key={d}>{d}</li>)}</ul></dd></div>)}
+      </dl>
+      {outros.length > 0 && (
+        <>
+          <p className="parecido__outros-titulo">Também parecidos</p>
+          <div className="parecido__outros">
+            {outros.map((e) => (
+              <a key={e.id} className="referencia referencia--menor" href={e.personagem.url} target="_blank" rel="noreferrer">
+                <Retrato src={e.personagem.imagem} nome={e.personagem.nome} className="referencia__retrato" />
+                <span className="referencia__texto">
+                  <span className="referencia__nome">{e.personagem.nome}</span>
+                  <span>{e.habilidade}</span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </>
+      )}
+    </section>
+  );
+}
+
 function Carta({ escolhas, nome, descricao }) {
   const [copiado, setCopiado] = useState(false);
   const avaliacao = avaliarPoder(escolhas);
@@ -235,6 +294,8 @@ function Carta({ escolhas, nome, descricao }) {
           </div>
         </dl>
       </article>
+
+      <Parecidos escolhas={escolhas} />
 
       <section className="secao">
         <h2 className="subtitulo">O que o Nen diz</h2>

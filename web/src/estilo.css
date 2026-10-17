@@ -426,6 +426,16 @@ p { margin: 0 0 1rem; max-width: 36em; }
 .referencia__relacao { color: var(--destaque); font-weight: 700; }
 .referencia__nome { font-family: var(--titulo); font-weight: 700; font-size: 1.2rem; }
 .referencia:hover .referencia__nome { color: var(--destaque); }
+.parecido__comparacao { margin: 1rem 0 0; display: grid; gap: 0.75rem; }
+.parecido__comparacao div { border-top: 1px solid var(--linha); padding-top: 0.6rem; }
+.parecido__comparacao dt { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--tinta-suave); }
+.parecido__comparacao dd { margin: 0.2rem 0 0; }
+.parecido__comparacao ul { margin: 0; padding-left: 1.1rem; }
+.parecido__outros-titulo { margin: 1.25rem 0 0.5rem; font-weight: 700; }
+.parecido__outros { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 0.75rem; }
+.referencia--menor { align-items: center; gap: 0.75rem; }
+.referencia--menor .referencia__retrato { width: 3.5rem; border-width: 2px; }
+.referencia--menor .referencia__nome { font-size: 1rem; }
 .resultado__acoes--junto { margin-top: 0.5rem; }
 
 /* Mais caminhos na página inicial: Licença Hunter e Crie o seu poder */
@@ -525,3 +535,26 @@ p { margin: 0 0 1rem; max-width: 36em; }
 .medidor__valor { font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
 .carta__medidores { margin: 1rem 0 0.25rem; }
 .carta__votos { margin: 0; padding-left: 1.1rem; }
+
+/* Trilha sonora: botão fixo no canto, player do Spotify acima dele */
+.trilha {
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 20;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem;
+  width: min(22rem, calc(100vw - 2rem)); pointer-events: none;
+}
+.trilha > * { pointer-events: auto; }
+.trilha__player { width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgb(0 0 0 / 0.3); background: var(--papel); }
+.trilha__faixa { margin: 0; padding: 0.4rem 0.75rem; font-size: 0.8rem; color: var(--tinta-suave); }
+.trilha__player[hidden] { display: none; }
+.trilha__player iframe { display: block; border: 0; }
+.trilha__botao {
+  font: inherit; font-weight: 700; font-size: 0.9rem;
+  padding: 0.5rem 1rem; min-height: 2.75rem; border-radius: 999px;
+  border: 2px solid var(--acao); background: var(--papel); color: var(--acao); cursor: pointer;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
+}
+.trilha--aberta .trilha__botao, .trilha__botao:hover { background: var(--acao); color: var(--texto-acao); }
+/* espaço para o botão fixo não cobrir o rodapé */
+.rodape { padding-bottom: 4.5rem; }
+/* com o player aberto, a página ganha espaço embaixo para ele não cobrir os botões */
+body:has(.trilha--aberta) { padding-bottom: 8.5rem; }
