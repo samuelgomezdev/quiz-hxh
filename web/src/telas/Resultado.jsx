@@ -8,6 +8,7 @@ import { decodificar } from "../lib/codigo.js";
 import {
   KANJI_DO_SIGNO, membrosDoTipo, nomesDosTipos, perguntasDa, personagensDoTipo, SINAL_DA_AGUA, tipoPorId, VERSOES,
 } from "../lib/dados.js";
+import { useFocoDaTrilha } from "../lib/trilha.js";
 import { ir, linkAbsoluto } from "../lib/rota.js";
 
 function Personagem({ p }) {
@@ -39,6 +40,10 @@ export default function Resultado({ versao, codigo }) {
     const t = setTimeout(() => setRevelado(true), 500);
     return () => clearTimeout(t);
   }, []);
+
+  // Trilha: os membros da versão com o mesmo tipo de Nen (o primeiro com faixa própria)
+  const tipoDaTrilha = respostas ? calcularResultado(perguntas, respostas).principal : null;
+  useFocoDaTrilha({ momento: "resultado", personagens: tipoDaTrilha ? membrosDoTipo(versao, tipoDaTrilha).map((m) => m.id) : [] });
 
   if (!respostas) {
     return (

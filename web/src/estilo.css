@@ -545,7 +545,8 @@ p { margin: 0 0 1rem; max-width: 36em; }
 .trilha > * { pointer-events: auto; }
 .trilha__player { width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgb(0 0 0 / 0.3); background: var(--papel); }
 .trilha__faixa { margin: 0; padding: 0.4rem 0.75rem; font-size: 0.8rem; color: var(--tinta-suave); }
-.trilha__player[hidden] { display: none; }
+/* escondido, o player sai da vista mas continua renderizado (com display: none o Spotify para) */
+.trilha__player--fora { position: fixed; left: -200vw; bottom: 0; width: 22rem; visibility: visible; pointer-events: none; }
 .trilha__player iframe { display: block; border: 0; }
 .trilha__botao {
   font: inherit; font-weight: 700; font-size: 0.9rem;
@@ -558,3 +559,4 @@ p { margin: 0 0 1rem; max-width: 36em; }
 .rodape { padding-bottom: 4.5rem; }
 /* com o player aberto, a página ganha espaço embaixo para ele não cobrir os botões */
 body:has(.trilha--aberta) { padding-bottom: 8.5rem; }
+.trilha__traducao { font-style: italic; }

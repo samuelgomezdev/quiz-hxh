@@ -7,6 +7,7 @@ import { ESPECIALIDADES, FEITOS, ORGANIZACOES, PERGUNTAS_ORGANIZACAO } from "../
 import { codificarLicenca } from "../../../motor/licenca.mjs";
 import { embaralhar } from "../lib/embaralhar.js";
 import { caminhoDaJornada, lerJornada } from "../lib/jornada.js";
+import { useFocoDaTrilha } from "../lib/trilha.js";
 import { ir } from "../lib/rota.js";
 
 const GERAIS = FEITOS.filter((f) => !f.especialidade);
@@ -43,6 +44,15 @@ export default function Feitos({ versao, codigo, codigoHatsu }) {
   const perguntaOrg = PERGUNTAS_ORGANIZACAO[passo - 2];
   const ultimo = passo === total - 1;
   const podeAvancar = passo === 0 || (passo === 1 && caca) || (perguntaOrg && org[perguntaOrg.id]) || ultimo;
+
+  // Trilha: na trajetória, o personagem do último feito marcado (o paralelo na obra);
+  // na caçada, a espreita; nas perguntas de organização, uma faixa só, para não denunciar
+  // a organização de cada opção (a dela toca no cartão da licença)
+  const etapa = passo === 0 ? "trajetoria" : passo === 1 ? "caca" : perguntaOrg ? "organizacao" : "nome";
+  useFocoDaTrilha({
+    momento: etapa,
+    personagens: etapa === "trajetoria" ? [...feitos].reverse().map((id) => FEITOS.find((f) => f.id === id)?.paralelo.id).filter(Boolean) : [],
+  });
 
   function alternar(id) {
     setFeitos((atual) => (atual.includes(id) ? atual.filter((f) => f !== id) : [...atual, id]));

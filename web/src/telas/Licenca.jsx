@@ -7,6 +7,7 @@ import CartaoLicenca, { Estrelas } from "../componentes/CartaoLicenca.jsx";
 import Retrato from "../componentes/Retrato.jsx";
 import { huntersDaEspecialidade, membrosDaOrganizacao, nomesDosTipos, personagemPorId } from "../lib/dados.js";
 import { caminhoDaJornada, lerJornada } from "../lib/jornada.js";
+import { useFocoDaTrilha } from "../lib/trilha.js";
 import { ir, linkAbsoluto } from "../lib/rota.js";
 import { prefillDoHatsu } from "./CriarPoder.jsx";
 
@@ -34,6 +35,8 @@ export default function Licenca({ codigo, nome, versao, codigoQuiz, codigoHatsu 
   const jornada = useMemo(() => lerJornada(versao, codigoQuiz, codigoHatsu), [versao, codigoQuiz, codigoHatsu]);
   const [copiado, setCopiado] = useState(false);
   const [mostrarLink, setMostrarLink] = useState(false);
+  // Trilha: a faixa da organização do cartão
+  useFocoDaTrilha({ organizacao: respostas ? calcularLicenca(respostas).organizacao.id : undefined });
 
   if (!respostas) {
     return (

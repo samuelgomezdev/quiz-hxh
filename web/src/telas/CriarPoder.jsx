@@ -14,6 +14,7 @@ import {
 import { HEXAGONO } from "../../../motor/pontuacao.mjs";
 import Retrato from "../componentes/Retrato.jsx";
 import { nomesDosTipos, personagemPorId } from "../lib/dados.js";
+import { useFocoDaTrilha } from "../lib/trilha.js";
 import { ir, linkAbsoluto } from "../lib/rota.js";
 
 const PADRAO = { tipo: "intensificacao", categoria: "intensificacao", forma: "corpo", gatilho: "toque", vivencia: null, votos: [] };
@@ -81,6 +82,7 @@ function Construtor({ inicial, nomeInicial, descricaoInicial }) {
   const avaliacao = avaliarPoder(e);
   const sugerido = nomeSugerido(e);
   const mudar = (campo) => (valor) => setE((atual) => ({ ...atual, [campo]: valor }));
+  useFocoDaTrilha({ momento: "montar" });
 
   function alternarVoto(id) {
     setE((atual) => {
@@ -248,6 +250,8 @@ function Carta({ escolhas, nome, descricao }) {
   const avaliacao = avaliarPoder(escolhas);
   const caminho = caminhoDoPoder("poder", escolhas, nome, descricao);
   const sugerido = nomeSugerido(escolhas);
+  // Trilha: o personagem de estilo mais parecido
+  useFocoDaTrilha({ momento: "carta", personagens: estilosParecidos(escolhas).map((e) => e.id) });
 
   async function copiarLink() {
     try {

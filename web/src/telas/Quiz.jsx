@@ -4,6 +4,7 @@ import Retrato, { preCarregar } from "../componentes/Retrato.jsx";
 import { codificar } from "../lib/codigo.js";
 import { KANJI_DO_SIGNO, membroPorNome, perguntasDa, VERSOES } from "../lib/dados.js";
 import { embaralhar } from "../lib/embaralhar.js";
+import { useFocoDaTrilha } from "../lib/trilha.js";
 import { ir } from "../lib/rota.js";
 
 // Quem inspira a pergunta: retrato + tatuagem da Aranha (Trupe) ou ideograma do signo (Zodíaco)
@@ -35,6 +36,10 @@ export default function Quiz({ versao }) {
   useEffect(() => {
     tituloRef.current?.focus();
   }, [indice]);
+
+  // Trilha: a faixa do membro que inspira a pergunta (ou a do grupo dele)
+  const membroAtual = membroPorNome[perguntas[indice]?.membro_tema]?.id;
+  useFocoDaTrilha({ momento: "pergunta", personagens: membroAtual ? [membroAtual] : [] });
 
   // Baixa já os retratos de todas as perguntas, para não esperar a cada troca
   useEffect(() => {

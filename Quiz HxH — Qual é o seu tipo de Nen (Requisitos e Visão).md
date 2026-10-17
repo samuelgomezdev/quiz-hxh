@@ -79,7 +79,7 @@ São oito requisitos do MVP e onze adicionados depois (RF09 a RF19), cada um com
 | RF16 | Mostrar Hunters reais da especialidade e membros da organização | Os Hunters vêm do campo `occupation` da Hunterpedia, com retrato e estrelas |
 | RF17 | Ligar as etapas numa jornada | A licença tem cartão próprio na página inicial e também abre depois do Hatsu; vinda do Hatsu, o cartão mostra o tipo e o nome do Hatsu |
 | RF18 | Mostrar na carta do poder quem tem um estilo parecido na obra | Materialização + objeto + votos de alvo e de vida leva ao Kurapika (Chain Jail); a carta mostra o retrato, o que há em comum e onde o poder se afasta, mais dois parecidos, sem repetir personagem |
-| RF19 | Tocar a trilha sonora oficial, com uma faixa para cada situação do site | Nada é pedido ao Spotify antes do primeiro clique; ao trocar de tela com a música tocando, entra a faixa da nova tela; aberto, o player não cobre os botões a 375 px |
+| RF19 | Tocar a trilha sonora oficial, com a faixa escolhida por regra para cada situação do site | A faixa segue, nesta ordem, o personagem em foco, o grupo dele, a organização ou versão e o momento da tela; a licença da Família Zoldyck toca “Ansatsu Ikka no Yakata” e a da Trupe toca “Requiem Aranea”; toda pergunta do quiz tem a faixa do membro ou do grupo dele; nada é pedido ao Spotify antes do primeiro clique; ao trocar de tela com a música tocando, entra a faixa da nova tela; aberto, o player não cobre os botões a 375 px |
 
 ## Requisitos não funcionais e restrições
 
@@ -118,7 +118,7 @@ O modelo separa o que vem da wiki (Personagem, Fonte) do que é autoral (Pergunt
 | Motivacao · Alcance · Voto | Autoral | id, texto, efeito; Voto também tem regra e peso (1 a 3) |
 | Referencia | Autoral | personagem\_id, vivencia\_id, tipo\_nen\_id, habilidade, historia |
 | Estilo | Autoral | personagem\_id, tipo\_nen\_id, habilidade, categoria, forma, gatilho (ou à vontade), votos\[\], resumo: um Hatsu da obra descrito com as peças do construtor |
-| Faixa | Autoral | tela (e versão) → faixa da trilha oficial no Spotify |
+| Faixa | Autoral | id, id no Spotify, nome, volume da trilha (1 a 3), tradução do título; ligada a um personagem, a um grupo (faixas de pergunta, resultado e membro) ou a um momento de tela |
 | Hatsu | Calculado | nome, tipo, efeito, vivência, motivação, alcance, voto, referência |
 | Forma · Gatilho | Autoral | id, nome, frase; Forma também tem as categorias em que é natural |
 | Poder | Calculado + nome e descrição do usuário | tipo, categoria, forma, gatilho, vivência, votos (até 3), eficiência, potência, risco, comentários |
@@ -531,6 +531,96 @@ O player usa a iFrame API do Spotify. Quando a pessoa troca de tela com a músic
 
 - [x] Testado no navegador: carta com Materialização + objeto + votos de alvo e vida mostra Kurapika (Chain Jail), Shizuku e Kortopi
 - [x] Testado no navegador: o player abre com a faixa da tela, troca para Riot ao entrar no quiz da Trupe e, aberto, não cobre os botões a 375 px
-- [ ] Ouvir a troca de faixa com a música tocando, no celular e no computador (no navegador de teste, o play do Spotify não iniciou o som)
 - [x] 39 Hatsus de `conteudo/estilos.mjs` revisados pelo Samuel (17/10/2026)
-- [x] Faixas de cada tela (`FAIXAS` em `web/src/componentes/Trilha.jsx`) revisadas pelo Samuel (17/10/2026)
+- [x] Faixas de cada tela revisadas pelo Samuel (17/10/2026); trocadas por regras na fase 13
+
+## Correção: trilha que parava (17/10/2026)
+
+**Problema relatado.** Era preciso clicar para o som começar, e a faixa não mudava sozinha: a cada tela era preciso clicar de novo.
+
+**Causas.**
+
+1. Abrir a trilha só carregava o player; o play ficava por conta da pessoa.
+2. "Esconder trilha" usava `display: none`. Escondido assim, o player do Spotify parava de responder depois da troca de faixa e ficava mudo.
+3. O play era pedido logo depois de trocar a faixa, antes de a faixa nova terminar de carregar.
+4. Sem conta do Spotify conectada, cada faixa é uma prévia de uns 25 s. Quando acabava, o player parava.
+
+**Correção.**
+
+- O clique que abre a trilha já começa a tocar.
+- Escondido, o player só sai da vista e continua renderizado.
+- A troca de faixa espera o aviso "ready" do Spotify e só então dá o play, se a música estava tocando.
+- Quando a faixa termina, ela recomeça. Uma pausa feita pela pessoa no meio da faixa é respeitada.
+
+- [x] Testado no navegador: abrir a trilha toca sem outro clique; com o player escondido, a troca para o quiz do Zodíaco carregou Mystic Land e continuou tocando; no fim da prévia, a faixa recomeçou sozinha
+- [ ] Confirmar no celular, no site publicado
+
+## Fase 13: regras da trilha sonora (17/10/2026)
+
+**Pedido.** A faixa não pode parecer aleatória. Quem é da Família Zoldyck não deve ouvir uma música alegre, e quem é da Trupe não deve ouvir a música dos Zoldyck. A faixa tem que seguir os personagens semelhantes e o Nen de cada momento, inclusive nos feitos.
+
+**Regra.** Cada tela diz ao player o que está em foco, e o motor escolhe a faixa do mais específico para o mais geral:
+
+1. **Personagem com faixa própria:** o primeiro dos personagens em foco cujo nome ou marca está no título de uma faixa.
+2. **Grupo do personagem:** se nenhum tem faixa própria, a faixa do grupo do primeiro que tem grupo.
+3. **Organização ou versão:** a da licença, ou a versão do quiz (Trupe ou Zodíaco).
+4. **Momento da tela:** sem personagem nem grupo, a faixa do momento; por fim, a do início.
+
+| Tela | O que está em foco |
+| --- | --- |
+| Quiz | o membro que inspira a pergunta: a faixa muda a cada pergunta |
+| Resultado | os membros da versão com o mesmo tipo de Nen |
+| Perguntas do Hatsu | a versão (faixa de pergunta) |
+| Carta do Hatsu | o personagem de referência |
+| Feitos, trajetória | o paralelo na obra do último feito marcado (ex.: prova difícil → Gon) |
+| Feitos, caçada | a espreita da presa |
+| Feitos, organização | uma faixa só, “Nakama to Iu Koto.”; reagir a cada opção denunciaria a organização dela, que a pergunta esconde de propósito |
+| Licença | a organização do cartão |
+| Crie o seu poder | montar: poder latente; carta: o personagem de estilo mais parecido |
+
+**Faixas.** Todas foram escolhidas pelo título, com a tradução da Hunterpedia, nos três volumes da trilha oficial.
+
+| Nível | Quem ou o quê | Faixa | Título |
+| --- | --- | --- | --- |
+| Personagem | Killua | Ginpatsu no Shōnen | “O garoto de cabelo prateado” |
+| Personagem | Kurapika | Hiiro no Hitomi no Aika | “O lamento dos olhos escarlates” |
+| Personagem | Leorio | All I Need Is MONEY! | o motivo que ele dá no Exame |
+| Personagem | Gon | Go on, Gon! | “Vai em frente, Gon!” |
+| Personagem | Hisoka | Kijutsushi no Baire | “A dança do mágico” |
+| Personagem | Chrollo | Gyakujūji no Otoko | “O homem da cruz invertida” |
+| Personagem | Nobunaga | Iai no Kyōjin | “O louco do iaidō” |
+| Personagem | Uvogin | Sono Kyōkan, Ryoryoku Zetsurin | “Esse bandido, de força sem igual” |
+| Personagem | Ging | Chichi no Senaka | “As costas do meu pai” |
+| Personagem | Netero | Legend of the Martial Artist | “A lenda do artista marcial” |
+| Personagem | Meruem | Elegy of the Dynast | “Elegia do soberano” |
+| Personagem | Genthru | Who’s the Bomber? | o apelido dele em Greed Island |
+| Grupo | Trupe Fantasma | Genei no Banka (membros), Kumo no Canzone (perguntas do Hatsu), Requiem Aranea (resultado e licença) | “A elegia do fantasma”, “A canção das aranhas”, “Réquiem da aranha” |
+| Grupo | Família Zoldyck | Ansatsu Ikka no Yakata | “A mansão da família de assassinos” |
+| Grupo | Zodíaco | Hunter yo Eien Nare! | “Que você seja Hunter para sempre!” |
+| Grupo | Associação Hunter (inclui os Hunters com licença sem grupo mais próprio) | Hunter ☆ March | “Marcha dos Hunters” |
+| Grupo | Expedição de Beyond Netero | Beyond the Seas | “Além dos mares” |
+| Grupo | Guarda Real de Kakin | Kōkai | “Viagem por mar”, como a do navio de Kakin |
+| Grupo | Guarda Real das Formigas (Neferpitou, Shaiapouf, Menthuthuyoupi) | In the Palace - Agitato | “No palácio” |
+| Grupo | Formigas Quimera (Welfin, Ikalgo, Cheetu, Leol, Colt) | Soldier Ants | “Formigas soldado” |
+| Grupo | Greed Island (Genthru, Razor, Biscuit) | G・I Theme | o tema de Greed Island |
+| Momento | Início | The World of Adventurers | “O mundo dos aventureiros” |
+| Momento | Feitos: trajetória sem feito com paralelo | Yume wo Oikakete | “Correndo atrás de um sonho” |
+| Momento | Feitos: caçada | Koshitantan... | “Espreitando a presa...” |
+| Momento | Feitos: organização | Nakama to Iu Koto. | “Isso que chamam de companheiros.” |
+| Momento | Feitos: nome no cartão | Hunter ☆ Parade | “Desfile dos Hunters” |
+| Momento | Crie o seu poder: montar | Latent Power | “Poder latente” |
+| Momento | Crie o seu poder: carta sem personagem com faixa | Realized Capacity | “Capacidade realizada” |
+| Momento | Créditos | Kujira-tō Yori | “Da Ilha Baleia” |
+
+Essas regras substituem a tabela da fase 12: Riot, Mystic Land e Ikkiuchi! saíram, porque o título delas não liga a nenhum personagem, grupo ou momento.
+
+**Onde fica.** Faixas, personagens e grupos em `conteudo/trilha.mjs`; a regra em `motor/trilha.mjs` (`faixaDaSituacao`); cada tela declara o foco com `useFocoDaTrilha` (`web/src/lib/trilha.js`). O player mostra a faixa, a tradução e o porquê (ex.: “Tocando Iai no Kyōjin · tema de Nobunaga Hazama”).
+
+**Formigas Quimera.** Antes desta fase, elas só apareciam como referência: Neferpitou no Hatsu; Neferpitou, Shaiapouf, Menthuthuyoupi e Welfin no estilo parecido; e os personagens com tipo na lista do resultado. Agora também têm faixa: o Rei, a Guarda Real e os soldados. Ainda não têm organização na licença nem versão do quiz. Na base, o campo de afiliação delas está vazio, então o ETL ainda não sabe quem é Formiga, e a lista do grupo foi escrita à mão.
+
+**Testes.** `test/trilha.test.mjs` tem 8 testes: faixas válidas e sem repetição; personagens das regras existem na base, cada um num grupo só; toda pergunta do quiz tem a faixa do membro ou do grupo dele; licença Zoldyck e Trupe; resultado e Hatsu pelo personagem semelhante; Formigas Quimera; feitos; telas sem foco. Total: 57 testes.
+
+- [x] Testado no navegador: no quiz da Trupe, a faixa muda a cada pergunta (Chrollo, Nobunaga e depois Genei no Banka para Feitan e Machi); nos feitos, marcar a prova difícil toca o tema do Gon e marcar a sobrevivência toca o do Killua; caçada e organização com as faixas delas; carta do poder parecida com o Kurapika toca o tema dele, a 375 px
+- [x] Faixas, traduções e grupos de `conteudo/trilha.mjs` revisados pelo Samuel (17/10/2026)
+- [x] Validado pelo Samuel no navegador, na jornada inteira: quiz da Trupe (a faixa muda por membro), resultado de Especialização com o tema do Chrollo, Hatsu com o tema do Killua, feitos (Gon, caçada, organização sem denunciar a opção, nome), licença Zoldyck, poder com o tema do Gon, créditos e quiz do Zodíaco (Kurapika, Zodíaco, Leorio)
+- [ ] Decidir como as Formigas Quimera entram (organização na licença, versão do quiz ou as duas)

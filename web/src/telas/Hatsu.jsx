@@ -8,6 +8,7 @@ import { calcularResultado } from "../../../motor/pontuacao.mjs";
 import Retrato from "../componentes/Retrato.jsx";
 import { decodificar } from "../lib/codigo.js";
 import { nomesDosTipos, perguntasDa, personagemPorId } from "../lib/dados.js";
+import { useFocoDaTrilha } from "../lib/trilha.js";
 import { ir, linkAbsoluto } from "../lib/rota.js";
 import { prefillDoHatsu } from "./CriarPoder.jsx";
 
@@ -16,6 +17,7 @@ function Perguntas({ versao, codigo, tipo }) {
   const [escolhas, setEscolhas] = useState({});
   const tituloRef = useRef(null);
   useEffect(() => tituloRef.current?.focus(), [indice]);
+  useFocoDaTrilha({ momento: "pergunta" });
 
   const pergunta = PERGUNTAS_HATSU[indice];
   const escolhida = escolhas[pergunta.id];
@@ -95,6 +97,7 @@ function Carta({ versao, codigo, codigoHatsu, hatsu }) {
   const [copiado, setCopiado] = useState(false);
   const [mostrarLink, setMostrarLink] = useState(false);
   const ref = hatsu.referencia;
+  useFocoDaTrilha({ momento: "resultado", personagens: ref ? [ref.id] : [] });
   const personagem = ref && personagemPorId[ref.id];
   const link = linkAbsoluto(`hatsu/${versao}/${codigo}/${codigoHatsu}`);
 
