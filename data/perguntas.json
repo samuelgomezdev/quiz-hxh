@@ -1,0 +1,1195 @@
+[
+  {
+    "id": "trupe-01",
+    "versao": "trupe",
+    "ordem": 1,
+    "membro_tema": "Chrollo Lucilfer",
+    "membro_posicao": "#0",
+    "desempate": false,
+    "texto": "Você comanda um grupo e o plano principal falha no meio do caminho. Qual é a sua reação?",
+    "opcoes": [
+      {
+        "id": "trupe-01-a",
+        "texto": "Sigo em frente e resolvo na raça. Recuar não é opção.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "trupe-01-b",
+        "texto": "Improviso algo novo na hora. Ninguém espera, nem eu.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "trupe-01-c",
+        "texto": "Já tinha um plano B pronto. Sempre tenho.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      },
+      {
+        "id": "trupe-01-d",
+        "texto": "Reorganizo as peças: cada um vai para onde rende mais.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-02",
+    "versao": "trupe",
+    "ordem": 2,
+    "membro_tema": "Nobunaga Hazama",
+    "membro_posicao": "#1",
+    "desempate": false,
+    "texto": "Um companheiro de longa data morre pelas mãos de um inimigo. O que você faz?",
+    "opcoes": [
+      {
+        "id": "trupe-02-a",
+        "texto": "Choro sem vergonha e juro que vou acertar as contas.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "trupe-02-b",
+        "texto": "Explodo na hora. Quero o culpado agora, não amanhã.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "trupe-02-c",
+        "texto": "Guardo para mim. Ninguém precisa ver o que sinto.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      },
+      {
+        "id": "trupe-02-d",
+        "texto": "Fico em silêncio e estudo o inimigo até saber como vencê-lo.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-03",
+    "versao": "trupe",
+    "ordem": 3,
+    "membro_tema": "Feitan Portor",
+    "membro_posicao": "#2",
+    "desempate": false,
+    "texto": "Numa briga, alguém te acerta em cheio. O que acontece com você?",
+    "opcoes": [
+      {
+        "id": "trupe-03-a",
+        "texto": "Dou risada, finjo que não doeu e espero ele baixar a guarda.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "trupe-03-b",
+        "texto": "Fico frio e calculo como virar o jogo a meu favor.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      },
+      {
+        "id": "trupe-03-c",
+        "texto": "A raiva sobe na hora e eu devolvo com o dobro de força.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "trupe-03-d",
+        "texto": "A dor me deixa mais perigoso, de um jeito que só eu sei usar.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-04",
+    "versao": "trupe",
+    "ordem": 4,
+    "membro_tema": "Machi Komacine",
+    "membro_posicao": "#3",
+    "desempate": false,
+    "texto": "Você tem um pressentimento forte, mas nenhuma prova. O que faz?",
+    "opcoes": [
+      {
+        "id": "trupe-04-a",
+        "texto": "Confio no instinto e ajo. Ele quase nunca erra.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "trupe-04-b",
+        "texto": "Comento com os outros só pelo prazer de ver a reação deles.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "trupe-04-c",
+        "texto": "Procuro provas antes de mexer um dedo.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      },
+      {
+        "id": "trupe-04-d",
+        "texto": "Uso o pressentimento como argumento para guiar a decisão do grupo.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-05",
+    "versao": "trupe",
+    "ordem": 5,
+    "membro_tema": "Hisoka Morow",
+    "membro_posicao": "#4",
+    "desempate": false,
+    "texto": "Você conhece alguém com um potencial enorme, mas ainda verde. O que faz?",
+    "opcoes": [
+      {
+        "id": "trupe-05-a",
+        "texto": "Treino junto. Gosto de ver gente crescer do meu lado.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "trupe-05-b",
+        "texto": "Desafio de cara. Quero ver do que essa pessoa é capaz agora.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "trupe-05-c",
+        "texto": "Observo de longe e espero o dia em que ela estiver pronta.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      },
+      {
+        "id": "trupe-05-d",
+        "texto": "Anoto tudo o que ela faz. Um dia isso vai ser útil.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-06",
+    "versao": "trupe",
+    "ordem": 6,
+    "membro_tema": "Phinks Magcub",
+    "membro_posicao": "#5",
+    "desempate": false,
+    "texto": "Quanto mais você se prepara, mais forte fica, mas a preparação é longa e repetitiva. Como encara?",
+    "opcoes": [
+      {
+        "id": "trupe-06-a",
+        "texto": "Invento um jogo para a repetição ficar divertida.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "trupe-06-b",
+        "texto": "Monto um método para render o máximo com o mínimo de esforço.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      },
+      {
+        "id": "trupe-06-c",
+        "texto": "Fico impaciente e quero pular logo para a parte boa.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "trupe-06-d",
+        "texto": "Faço no meu ritmo, de um jeito que ninguém entende.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-07",
+    "versao": "trupe",
+    "ordem": 7,
+    "membro_tema": "Shalnark",
+    "membro_posicao": "#6",
+    "desempate": false,
+    "texto": "Uma discussão esquenta no grupo e pode virar briga. Qual é o seu papel?",
+    "opcoes": [
+      {
+        "id": "trupe-07-a",
+        "texto": "Falo na cara o que penso, e depois a gente segue.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "trupe-07-b",
+        "texto": "Solto uma piada para mudar o clima.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "trupe-07-c",
+        "texto": "Fico de fora, observando quem tem razão.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      },
+      {
+        "id": "trupe-07-d",
+        "texto": "Proponho tirar no cara ou coroa e todo mundo aceita o resultado.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-08",
+    "versao": "trupe",
+    "ordem": 8,
+    "membro_tema": "Franklin Bordeau",
+    "membro_posicao": "#7",
+    "desempate": false,
+    "texto": "Você e seu grupo estão cercados por muitos inimigos fracos. O que faz?",
+    "opcoes": [
+      {
+        "id": "trupe-08-a",
+        "texto": "Vou para a frente e derrubo um por um.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "trupe-08-b",
+        "texto": "Ataco em todas as direções. Quantidade se resolve com volume.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "trupe-08-c",
+        "texto": "Resolvo de um jeito que ninguém do grupo esperaria.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      },
+      {
+        "id": "trupe-08-d",
+        "texto": "Preparo uma armadilha e deixo eles virem até mim.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-09",
+    "versao": "trupe",
+    "ordem": 9,
+    "membro_tema": "Shizuku Murasaki",
+    "membro_posicao": "#8",
+    "desempate": false,
+    "texto": "Alguém diz que te conhece, mas você esqueceu completamente o nome dessa pessoa. E agora?",
+    "opcoes": [
+      {
+        "id": "trupe-09-a",
+        "texto": "Finjo que lembro e vou levando a conversa.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "trupe-09-b",
+        "texto": "Faço perguntas até a pessoa dizer o próprio nome sem perceber.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      },
+      {
+        "id": "trupe-09-c",
+        "texto": "Admito na hora. Não tenho paciência para teatro.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "trupe-09-d",
+        "texto": "Nem me preocupo. Se esqueci, não devia ser importante.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-10",
+    "versao": "trupe",
+    "ordem": 10,
+    "membro_tema": "Pakunoda",
+    "membro_posicao": "#9",
+    "desempate": false,
+    "texto": "Você poderia descobrir os segredos de alguém só tocando nessa pessoa. Usaria?",
+    "opcoes": [
+      {
+        "id": "trupe-10-a",
+        "texto": "Não. Prefiro perguntar e ouvir a resposta.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "trupe-10-b",
+        "texto": "Usaria, mas só para brincar com o que descobrisse.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "trupe-10-c",
+        "texto": "Só se tivesse certeza de que é necessário e seguro.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      },
+      {
+        "id": "trupe-10-d",
+        "texto": "Sem dúvida. Informação é a melhor ferramenta que existe.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-11",
+    "versao": "trupe",
+    "ordem": 11,
+    "membro_tema": "Bonolenov Ndongo",
+    "membro_posicao": "#10",
+    "desempate": false,
+    "texto": "Que lugar suas origens e tradições ocupam na sua vida?",
+    "opcoes": [
+      {
+        "id": "trupe-11-a",
+        "texto": "Carrego com orgulho e não escondo de ninguém.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "trupe-11-b",
+        "texto": "Vivo o presente. O passado não me prende.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "trupe-11-c",
+        "texto": "Transformei tudo em algo só meu, que ninguém mais entende.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      },
+      {
+        "id": "trupe-11-d",
+        "texto": "Guardo e preservo cada detalhe, como um arquivo.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-12",
+    "versao": "trupe",
+    "ordem": 12,
+    "membro_tema": "Uvogin",
+    "membro_posicao": "#11",
+    "desempate": false,
+    "texto": "Qual é o seu estilo numa luta?",
+    "opcoes": [
+      {
+        "id": "trupe-12-a",
+        "texto": "Confundir. O adversário nunca sabe o que vem a seguir.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "trupe-12-b",
+        "texto": "Controlar o ritmo e fazer o outro lutar do meu jeito.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      },
+      {
+        "id": "trupe-12-c",
+        "texto": "Atacar de longe, com tudo, sem esperar.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "trupe-12-d",
+        "texto": "Um estilo próprio, impossível de copiar.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "trupe-13",
+    "versao": "trupe",
+    "ordem": 13,
+    "membro_tema": "Kortopi",
+    "membro_posicao": "#12",
+    "desempate": true,
+    "texto": "No seu grupo, qual papel é naturalmente seu?",
+    "opcoes": [
+      {
+        "id": "trupe-13-a",
+        "texto": "Linha de frente: sou quem segura o tranco.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "trupe-13-b",
+        "texto": "Curinga: ninguém sabe o que eu vou fazer.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "trupe-13-c",
+        "texto": "Ferramentas: eu crio o que estiver faltando.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      },
+      {
+        "id": "trupe-13-d",
+        "texto": "Peça única: faço o que ninguém mais faz.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      },
+      {
+        "id": "trupe-13-e",
+        "texto": "Estratégia: decido quem vai para onde.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      },
+      {
+        "id": "trupe-13-f",
+        "texto": "Apoio de longe: ataco e dou cobertura.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-01",
+    "versao": "zodiaco",
+    "ordem": 1,
+    "membro_tema": "Kurapika",
+    "membro_posicao": "Rato",
+    "desempate": false,
+    "texto": "Você pode ter um poder enorme, mas cada uso encurta sua vida. Aceitaria?",
+    "opcoes": [
+      {
+        "id": "zodiaco-01-a",
+        "texto": "Aceito, se for para proteger quem eu amo. Simples assim.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-01-b",
+        "texto": "Aceito, e decido na hora quando vale a pena usar.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-01-c",
+        "texto": "Só com regras rígidas que eu mesmo definiria antes.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-01-d",
+        "texto": "Aceito e planejo cada uso para tirar o máximo de cada segundo.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-02",
+    "versao": "zodiaco",
+    "ordem": 2,
+    "membro_tema": "Mizaistom Nana",
+    "membro_posicao": "Boi",
+    "desempate": false,
+    "texto": "Você presencia uma injustiça clara. Como reage?",
+    "opcoes": [
+      {
+        "id": "zodiaco-02-a",
+        "texto": "Intervenho na hora, sem pensar duas vezes.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-02-b",
+        "texto": "Perco a paciência e falo alto na frente de todo mundo.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-02-c",
+        "texto": "Resolvo do meu jeito, longe dos olhos dos outros.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-02-d",
+        "texto": "Reúno provas antes. Justiça sem prova não se sustenta.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-03",
+    "versao": "zodiaco",
+    "ordem": 3,
+    "membro_tema": "Kanzai",
+    "membro_posicao": "Tigre",
+    "desempate": false,
+    "texto": "Riem de você por não saber algo que \"todo mundo sabe\". O que faz?",
+    "opcoes": [
+      {
+        "id": "zodiaco-03-a",
+        "texto": "Rio junto e invento uma resposta absurda de propósito.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-03-b",
+        "texto": "Mudo de assunto para algo em que eu sou bom.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      },
+      {
+        "id": "zodiaco-03-c",
+        "texto": "Me irrito e mando todo mundo calar a boca.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-03-d",
+        "texto": "Não ligo. Eu sei o que importa para mim.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-04",
+    "versao": "zodiaco",
+    "ordem": 4,
+    "membro_tema": "Pyon",
+    "membro_posicao": "Coelho",
+    "desempate": false,
+    "texto": "Você está numa reunião longa e chata. O que está fazendo?",
+    "opcoes": [
+      {
+        "id": "zodiaco-04-a",
+        "texto": "Prestando atenção, mesmo entediado. Prometi estar ali.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-04-b",
+        "texto": "Fazendo comentários que só alguns entendem.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-04-c",
+        "texto": "Anotando tudo. Um detalhe pode ser importante depois.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-04-d",
+        "texto": "Mexendo no celular, mas já combinando votos por mensagem.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-05",
+    "versao": "zodiaco",
+    "ordem": 5,
+    "membro_tema": "Botobai Gigante",
+    "membro_posicao": "Dragão",
+    "desempate": false,
+    "texto": "Seu mentor deixa um último pedido antes de partir. O que você faz?",
+    "opcoes": [
+      {
+        "id": "zodiaco-05-a",
+        "texto": "Cumpro à risca, custe o que custar.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-05-b",
+        "texto": "Começo agora. Não dá para esperar.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-05-c",
+        "texto": "Cumpro do meu jeito, mesmo que ninguém entenda.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-05-d",
+        "texto": "Estudo o pedido até ter certeza do que ele quis dizer.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-06",
+    "versao": "zodiaco",
+    "ordem": 6,
+    "membro_tema": "Gel",
+    "membro_posicao": "Serpente",
+    "desempate": false,
+    "texto": "Surge a chance de explorar um lugar desconhecido e muito perigoso. Você vai?",
+    "opcoes": [
+      {
+        "id": "zodiaco-06-a",
+        "texto": "Vou. O imprevisível é a melhor parte.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-06-b",
+        "texto": "Vou, se eu puder montar a equipe e o plano.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      },
+      {
+        "id": "zodiaco-06-c",
+        "texto": "Vou na hora, antes que mudem de ideia.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-06-d",
+        "texto": "Só vou se alguém que eu admiro for também.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-07",
+    "versao": "zodiaco",
+    "ordem": 7,
+    "membro_tema": "Saccho Kobayakawa",
+    "membro_posicao": "Cavalo",
+    "desempate": false,
+    "texto": "Uma regra parece injusta, mas é a regra. O que você faz?",
+    "opcoes": [
+      {
+        "id": "zodiaco-07-a",
+        "texto": "Sigo a regra. Palavra dada é palavra cumprida.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-07-b",
+        "texto": "Acho uma brecha e me divirto com ela.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-07-c",
+        "texto": "Leio a regra inteira de novo. Quase sempre há um detalhe que muda tudo.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-07-d",
+        "texto": "Uso a própria regra para chegar onde eu quero.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-08",
+    "versao": "zodiaco",
+    "ordem": 8,
+    "membro_tema": "Ginta",
+    "membro_posicao": "Carneiro",
+    "desempate": false,
+    "texto": "Você vê alguém maltratando um animal. Qual é sua reação?",
+    "opcoes": [
+      {
+        "id": "zodiaco-08-a",
+        "texto": "Paro aquilo na hora, com as próprias mãos se precisar.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-08-b",
+        "texto": "Fico furioso e grito antes de pensar.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-08-c",
+        "texto": "Tomo uma atitude que essa pessoa nunca vai esquecer.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-08-d",
+        "texto": "Registro tudo e denuncio a quem pode punir de verdade.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-09",
+    "versao": "zodiaco",
+    "ordem": 9,
+    "membro_tema": "Saiyu",
+    "membro_posicao": "Macaco",
+    "desempate": false,
+    "texto": "Você discorda de alguém poderoso numa reunião. O que faz?",
+    "opcoes": [
+      {
+        "id": "zodiaco-09-a",
+        "texto": "Provoco com ironia. Quero ver a reação.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-09-b",
+        "texto": "Fico quieto agora e articulo apoio para derrubar a ideia depois.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      },
+      {
+        "id": "zodiaco-09-c",
+        "texto": "Falo na lata, na frente de todos.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-09-d",
+        "texto": "Nem discuto. Faço o que acho certo e pronto.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-10",
+    "versao": "zodiaco",
+    "ordem": 10,
+    "membro_tema": "Cluck",
+    "membro_posicao": "Galo",
+    "desempate": false,
+    "texto": "Como você mais gosta de se expressar?",
+    "opcoes": [
+      {
+        "id": "zodiaco-10-a",
+        "texto": "Pelo esporte e pelo esforço físico.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-10-b",
+        "texto": "Pela dança ou pela atuação: cada dia um personagem.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-10-c",
+        "texto": "Por algo que eu construo com as mãos.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-10-d",
+        "texto": "Pela conversa. Convencer é uma arte.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-11",
+    "versao": "zodiaco",
+    "ordem": 11,
+    "membro_tema": "Cheadle Yorkshire",
+    "membro_posicao": "Cão",
+    "desempate": false,
+    "texto": "Numa crise, ninguém assume o comando. O que você faz?",
+    "opcoes": [
+      {
+        "id": "zodiaco-11-a",
+        "texto": "Assumo e vou na frente.",
+        "tipo_principal": "intensificacao",
+        "pesos": {
+          "intensificacao": 3,
+          "transformacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-11-b",
+        "texto": "Dou ordens rápidas. Depois a gente acerta os detalhes.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-11-c",
+        "texto": "Espero. Se for para eu liderar, o grupo vai perceber.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-11-d",
+        "texto": "Assumo, mas só depois de entender bem o problema.",
+        "tipo_principal": "materializacao",
+        "pesos": {
+          "materializacao": 3,
+          "especializacao": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "zodiaco-12",
+    "versao": "zodiaco",
+    "ordem": 12,
+    "membro_tema": "Leorio Paradinight",
+    "membro_posicao": "Javali",
+    "desempate": true,
+    "texto": "Por que você quer ser Hunter?",
+    "opcoes": [
+      {
+        "id": "zodiaco-12-a",
+        "texto": "Pela aventura e pelas surpresas do caminho.",
+        "tipo_principal": "transformacao",
+        "pesos": {
+          "transformacao": 3,
+          "materializacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-12-b",
+        "texto": "Pelo dinheiro e pelas portas que a licença abre.",
+        "tipo_principal": "manipulacao",
+        "pesos": {
+          "manipulacao": 3,
+          "emissao": 1
+        }
+      },
+      {
+        "id": "zodiaco-12-c",
+        "texto": "Porque não aguento ficar parado vendo o mundo passar.",
+        "tipo_principal": "emissao",
+        "pesos": {
+          "emissao": 3,
+          "intensificacao": 1
+        }
+      },
+      {
+        "id": "zodiaco-12-d",
+        "texto": "Por um motivo que só eu entendo.",
+        "tipo_principal": "especializacao",
+        "pesos": {
+          "especializacao": 3,
+          "manipulacao": 1
+        }
+      }
+    ]
+  }
+]
