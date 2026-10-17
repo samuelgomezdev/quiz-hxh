@@ -436,7 +436,7 @@ Organização: a mais escolhida entre Associação Hunter, Zodíaco, Expedição
 - [x] Testado no navegador: feitos pela jornada do Killua até o cartão (2 estrelas, Informação, Associação Hunter), construtor preenchido pelo Hatsu e carta do poder, inclusive a 375 px
 - [x] Textos dos 21 feitos e dos paralelos revisados pelo Samuel (17/10/2026)
 - [x] Decidido: o nome no cartão continua indo no link
-- [ ] Atualizar as capturas do README com a licença e o construtor
+- [x] Capturas da licença e do construtor no README (`docs/licenca.png` e `docs/criar-poder.png`), feitas no site publicado com as imagens da Fandom bloqueadas, como as anteriores
 
 ## Fase 10: nomes dos Hatsus
 

@@ -8,6 +8,10 @@ Um quiz de Hunter × Hunter que faz o papel do Teste da Água: suas respostas re
 | --- | --- | --- |
 | [![Tela inicial com o copo do Teste da Água e a escolha entre os testes](docs/inicio.png)](https://samuelgomezdev.github.io/quiz-hxh/) | [![Pergunta inspirada em Chrollo Lucilfer, no tema preto e carmesim da Trupe](docs/quiz-trupe.png)](https://samuelgomezdev.github.io/quiz-hxh/#/quiz/trupe) | [![Pergunta inspirada em Kurapika, no tema azul-noite e dourado do Zodíaco](docs/quiz-zodiaco.png)](https://samuelgomezdev.github.io/quiz-hxh/#/quiz/zodiaco) |
 
+| Licença Hunter | Crie o seu poder |
+| --- | --- |
+| [![Cartão de licença com duas estrelas, especialidade Informação, organização Associação Hunter e o Hatsu Raijin](docs/licenca.png)](https://samuelgomezdev.github.io/quiz-hxh/#/feitos) | [![Carta do poder Kintsugi, de Especialização, com eficiência de 100% e potência de 93%](docs/criar-poder.png)](https://samuelgomezdev.github.io/quiz-hxh/#/poder) |
+
 - **Dois testes:** 13 perguntas inspiradas nos membros da Trupe Fantasma ou 12 nos signos do Zodíaco, cada um com identidade visual própria.
 - **Resultado com base na obra:** o copo reage como no Teste da Água, o hexágono mostra a afinidade e a lista traz os personagens do mesmo tipo, com link para a Hunterpedia e a fonte de cada tipo.
 - **Hatsu e "Crie o seu poder":** a habilidade nasce do tipo e da vivência, e o construtor avalia o poder que você montar pela teoria do Nen.
