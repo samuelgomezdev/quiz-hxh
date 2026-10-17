@@ -355,3 +355,12 @@ São 20 referências; o tipo de cada uma é conferido por teste contra a base da
 - [x] Testado no navegador do resultado até a carta, nos temas Trupe e Zodíaco e a 375 px
 - [ ] Revisar os textos dos 72 Hatsus e das referências jogando o site
 - [ ] Decidir se a vivência pode ter mais de uma escolha (ex.: eletricidade + música)
+
+## Apresentação do repositório (16/10/2026)
+
+O README abre com o link do site e três capturas de tela, e o "About" do GitHub ganhou descrição, site e tópicos, para quem chega ao repositório jogar com um clique.
+
+- Capturas em `docs/` (início, Trupe e Zodíaco), feitas no site publicado com as imagens da Fandom bloqueadas: os retratos continuam fora do repositório, como diz a seção de licença
+- Nenhuma mudança de comportamento no sistema; testes seguem em 32
+
+- [ ] Atualizar as capturas quando o visual mudar

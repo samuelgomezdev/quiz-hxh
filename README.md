@@ -1,6 +1,18 @@
 # Quiz HxH — Qual é o seu tipo de Nen?
 
-Projeto de estudo de Análise e Desenvolvimento de Sistemas: um quiz que descobre o seu tipo de Nen e mostra personagens de Hunter × Hunter do mesmo tipo, com dados da [Hunterpedia](https://hunterxhunter.fandom.com/wiki/Hunterpedia).
+**[▶ Jogar agora: samuelgomezdev.github.io/quiz-hxh](https://samuelgomezdev.github.io/quiz-hxh/)**
+
+Um quiz de Hunter × Hunter que faz o papel do Teste da Água: suas respostas revelam o seu tipo de Nen, a afinidade com os outros cinco tipos e os personagens que compartilham a sua aura. Depois, você pode desenvolver o seu próprio Hatsu a partir do que viveu.
+
+| Início | Teste Trupe Fantasma | Teste Zodíaco |
+| --- | --- | --- |
+| [![Tela inicial com o copo do Teste da Água e a escolha entre os testes](docs/inicio.png)](https://samuelgomezdev.github.io/quiz-hxh/) | [![Pergunta inspirada em Chrollo Lucilfer, no tema preto e carmesim da Trupe](docs/quiz-trupe.png)](https://samuelgomezdev.github.io/quiz-hxh/#/quiz/trupe) | [![Pergunta inspirada em Kurapika, no tema azul-noite e dourado do Zodíaco](docs/quiz-zodiaco.png)](https://samuelgomezdev.github.io/quiz-hxh/#/quiz/zodiaco) |
+
+- **Dois testes:** 13 perguntas inspiradas nos membros da Trupe Fantasma ou 12 nos signos do Zodíaco, cada um com identidade visual própria.
+- **Resultado com base na obra:** o copo reage como no Teste da Água, o hexágono mostra a afinidade e a lista traz os personagens do mesmo tipo, com link para a Hunterpedia e a fonte de cada tipo.
+- **Resultado compartilhável:** o link guarda as respostas e recalcula o resultado ao abrir.
+
+Projeto de estudo de Análise e Desenvolvimento de Sistemas: requisitos, ETL a partir da API da [Hunterpedia](https://hunterxhunter.fandom.com/wiki/Hunterpedia), modelagem de dados, motor de pontuação testado, interface em React e publicação automática com GitHub Actions.
 
 ## Estrutura
 
@@ -31,6 +43,7 @@ web/               site em React (Vite)
   src/telas/       Início, Quiz, Resultado, Hatsu e Créditos
   src/componentes/ CopoDagua (Teste da Água), Hexagono (afinidade), Aranha, Fundo (decoração por tema) e Retrato
   src/lib/         rota por hash, código do link de resultado, embaralhamento
+docs/              capturas de tela do README
 scripts/preparar-web.mjs  copia para web/src/dados só o que o site usa
 .github/workflows/pages.yml  testes + build + publicação no GitHub Pages
 test/              testes com node:test, a partir de casos reais da wiki
