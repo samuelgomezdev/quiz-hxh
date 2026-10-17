@@ -153,7 +153,7 @@ function Construtor({ inicial, nomeInicial, descricaoInicial }) {
           <label className="campo" htmlFor="nome-poder">
             <span className="chips__legenda">7. Nome do poder</span>
             <input id="nome-poder" className="campo__entrada" value={nome} maxLength={MAX_NOME} required autoComplete="off"
-              placeholder="Ex.: Kintsugi, Gleipnir, Smoke on the Water" onChange={(ev) => setNome(ev.target.value)} />
+              placeholder="Ex.: Kintsugi, Zugzwang, Tatara" onChange={(ev) => setNome(ev.target.value)} />
           </label>
           <label className="campo" htmlFor="descricao-poder">
             <span className="chips__ajuda">Descrição, opcional. Sem ela, o site escreve uma a partir das peças.</span>

@@ -366,7 +366,7 @@ São 20 referências; o tipo de cada uma é conferido por teste contra a base da
 **Testes.** O motor (`motor/hatsu.mjs`) tem 6 testes novos: as 72 combinações, o caso do Killua, o voto ligado à motivação, as referências contra a base e o código do link. Total: 32 testes.
 
 - [x] Testado no navegador do resultado até a carta, nos temas Trupe e Zodíaco e a 375 px
-- [ ] Revisar os textos dos 72 Hatsus e das referências jogando o site
+- [x] Textos dos 72 Hatsus revisados (ver fase 10)
 - [ ] Decidir se a vivência pode ter mais de uma escolha (ex.: eletricidade + música)
 
 ## Apresentação do repositório (16/10/2026)
@@ -444,16 +444,23 @@ Os 72 nomes em português soavam como tradução literal ("Corrente Viva", "Fio 
 
 | Língua ou fonte | Exemplos |
 | --- | --- |
-| Japonês | Raijin, Kongōshin, Kintsugi, Bunraku, Hanabi, Dokodemo Door (Doraemon), Black Jack (Tezuka) |
-| Latim | Plus Ultra, Alea Iacta Est, Deus ex Machina, Ex Cathedra, Scientia Potentia Est |
-| Alemão | Kugelblitz, Zugzwang, Doppelgänger, Leitmotiv |
-| Mitologia | Gleipnir (nórdica), Geas (irlandesa), Argus, Ariadne, Orpheus, Hephaestus (grega), Agni (védica) |
-| Música, livros e cinema | Smoke on the Water (Deep Purple, o mesmo do Hatsu do Morel), Eye of the Tiger, Ace of Spades, Poppy Field (O Mágico de Oz), Shylock, Babette's Feast |
-| Outras | Rien ne Va Plus (francês), Quattro Stagioni (italiano), Skrik (norueguês), Ofrenda (espanhol do México), Pranayama (sânscrito), sudo e Ctrl+Z (computação) |
+| Japonês | Raijin, Kongōshin, Kintsugi, Bunraku, Raku, Tatara, Takagari, Butsudan, Chokin, Hanabi |
+| Latim | Plus Ultra, Alea Iacta Est, Deus ex Machina, Ex Cathedra, Compassio, Scientia Potentia Est |
+| Alemão | Kugelblitz, Zugzwang, Leitmotiv |
+| Francês e italiano | Mise en Scène, Déjà Vu, Triage, Fortissimo, Quattro Stagioni |
+| Mitologia | Argus, Atlas, Hephaestus, Asclepius (grega), Agni (védica) |
+| Música, livros e cinema | Eye of the Tiger, Ace of Spades, Poppy Field (O Mágico de Oz), Babette's Feast |
+| Outras | Royal Flush, Skrik (norueguês), Ofrenda (“oferenda” em espanhol), Pranayama (sânscrito), sudo e Ctrl+Z (computação) |
 
 Cada Hatsu agora tem três campos: nome, efeito e a origem do nome, que aparece em itálico logo abaixo do nome na carta (ex.: "Kintsugi: a arte japonesa de consertar cerâmica quebrada com ouro"). Um teste novo garante que os 72 nomes são diferentes entre si. Total: 44 testes.
 
-- [ ] Revisar os 72 nomes e origens jogando o site
+**Revisão do Samuel (17/10/2026).** 22 Hatsus mudaram:
+
+- Parecidos demais com poderes da obra ganharam efeito próprio: os fios da Machi (agora Raku, argila), a antena do Shalnark (sudo agora comanda só máquinas), a roleta do Kite (Royal Flush), o livro do Chrollo (Mise en Scène), as correntes e o juramento do Kurapika (Butsudan e Déjà Vu), o Hakoware do Knuckle (Chokin), as cópias do Kortopi (Dōgu), a massagem da Biscuit (Plaster of Paris), o portal do Leorio (Triage), o Doctor Blythe da Neferpitou (Compassio), a fumaça do Morel (Tatara), a dor que vira calor do Feitan (Salamander), as abelhas da Ponzu (Takagari), o coração da Melody (Leitmotiv e Fortissimo), o Bungee Gum do Hisoka (Wild Card) e o Godspeed do Killua (Raijin agora salta de alvo em alvo).
+- Referências trocadas por outras mais concretas, da cultura e da história reais: Dolittle virou Takagari (falcoaria japonesa), Akashic Notes virou Atlas.
+- Quattro Stagioni ganhou a quarta estação (outono); Stradivarius ganhou um efeito mais claro; a origem de Ofrenda agora explica que é “oferenda” em espanhol.
+
+- [x] Nomes e origens revisados em `conteudo/hatsu.mjs`
 
 ## Correção: retratos no quiz (17/10/2026)
 
