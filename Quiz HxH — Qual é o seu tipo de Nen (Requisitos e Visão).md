@@ -473,5 +473,5 @@ Cada Hatsu agora tem três campos: nome, efeito e a origem do nome, que aparece 
 - Ao abrir o quiz, os retratos das 13 ou 12 perguntas são baixados de uma vez, e o da pergunta atual tem prioridade alta.
 
 - [x] Testado a 375 px: as 13 imagens da Trupe baixam na primeira pergunta; uma falha simulada tenta de novo e carrega; com duas falhas aparecem as iniciais, e a pergunta seguinte volta a mostrar a imagem
-- [ ] Confirmar no celular do Samuel, no site publicado
+- [x] Confirmado pelo Samuel no celular, no site publicado (17/10/2026)
 
