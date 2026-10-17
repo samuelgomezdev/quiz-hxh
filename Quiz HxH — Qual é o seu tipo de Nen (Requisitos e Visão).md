@@ -455,3 +455,23 @@ Cada Hatsu agora tem três campos: nome, efeito e a origem do nome, que aparece 
 
 - [ ] Revisar os 72 nomes e origens jogando o site
 
+## Correção: retratos no quiz (17/10/2026)
+
+**Problema relatado.** No celular, a imagem do membro que inspira a pergunta não aparecia; no computador, demorava a aparecer.
+
+**Causas.**
+
+1. Bug no componente `Retrato`: depois de uma falha, ele guardava "falhou" e não tentava mais. Como o mesmo componente é reaproveitado de uma pergunta para a outra, todas as perguntas seguintes ficavam com as iniciais.
+2. A Fandom às vezes responde 403 a pedidos de imagem sem a origem do site, e o site pedia as imagens sem ela (`referrerPolicy="no-referrer"`). Nos testes com curl, o mesmo endereço deu 403 sem origem e 200 com a origem do GitHub Pages.
+3. Cada imagem só começava a baixar quando a pergunta aparecia (carregamento preguiçoso), daí a demora.
+
+**Correção.**
+
+- A falha vale só para aquele endereço; com outro personagem, o retrato tenta de novo.
+- Na primeira falha, uma nova tentativa com outro endereço (`&tentativa=1`); as iniciais só aparecem se falhar duas vezes.
+- O site volta a mandar a origem (padrão do navegador), e o `index.html` abre a conexão com o CDN da Fandom antes (`preconnect`).
+- Ao abrir o quiz, os retratos das 13 ou 12 perguntas são baixados de uma vez, e o da pergunta atual tem prioridade alta.
+
+- [x] Testado a 375 px: as 13 imagens da Trupe baixam na primeira pergunta; uma falha simulada tenta de novo e carrega; com duas falhas aparecem as iniciais, e a pergunta seguinte volta a mostrar a imagem
+- [ ] Confirmar no celular do Samuel, no site publicado
+

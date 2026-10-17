@@ -1,6 +1,6 @@
 import { useMemo, useRef, useEffect, useState } from "react";
 import Aranha from "../componentes/Aranha.jsx";
-import Retrato from "../componentes/Retrato.jsx";
+import Retrato, { preCarregar } from "../componentes/Retrato.jsx";
 import { codificar } from "../lib/codigo.js";
 import { KANJI_DO_SIGNO, membroPorNome, perguntasDa, VERSOES } from "../lib/dados.js";
 import { embaralhar } from "../lib/embaralhar.js";
@@ -11,7 +11,7 @@ function Membro({ versao, nome, posicao }) {
   const membro = membroPorNome[nome];
   return (
     <div className="membro">
-      <Retrato src={membro?.imagem} nome={nome} className="membro__retrato" />
+      <Retrato src={membro?.imagem} nome={nome} className="membro__retrato" prioridade />
       <span className="membro__emblema" aria-hidden="true">
         {versao === "trupe" ? <Aranha numero={posicao.replace("#", "")} /> : <span lang="ja">{KANJI_DO_SIGNO[posicao]}</span>}
       </span>
@@ -35,6 +35,11 @@ export default function Quiz({ versao }) {
   useEffect(() => {
     tituloRef.current?.focus();
   }, [indice]);
+
+  // Baixa já os retratos de todas as perguntas, para não esperar a cada troca
+  useEffect(() => {
+    preCarregar(perguntas.map((p) => membroPorNome[p.membro_tema]?.imagem));
+  }, [perguntas]);
 
   if (!perguntas.length) {
     return (
