@@ -648,3 +648,41 @@ Essas regras substituem a tabela da fase 12: Riot, Mystic Land e Ikkiuchi! saír
 - [x] Testado no navegador: com o bloqueio simulado, o aviso aparece, o toque no player começa a música, a troca de tela mantém a música e mostra "Tocar esta", e o toque troca a faixa; sem bloqueio, começa e troca sozinho; no fim da prévia, a faixa recomeça sem recarregar
 - [ ] Confirmar no celular e no computador do Samuel e do irmão, no site publicado
 - [ ] Confirmar que `.../quiz-hxh/poder` redireciona para `.../quiz-hxh/#/poder` no site publicado
+
+## Análise de causa raiz: trilha que não começa nem troca sozinha (17/10/2026)
+
+**Sintoma.** No Opera (computador do Samuel e celular do irmão), a trilha quase sempre começa e troca sozinha. No Brave, não começa e pede um clique a cada tela. O pedido é que a música comece ao entrar no site e troque sozinha em qualquer navegador.
+
+**Por quês.**
+
+1. O Brave não toca sem clique porque o navegador bloqueia som que a pessoa não pediu.
+2. O clique nos botões do site não conta porque o som toca dentro do player do Spotify, uma página de outro site embutida na nossa. Chrome e Opera deixam o site passar a permissão para o player (`allow="autoplay"`); o Brave pergunta ou bloqueia site por site e não passa.
+3. Cada tela pede um clique novo porque o Spotify recarrega o player inteiro para trocar de faixa, e o clique dado pertencia ao player antigo.
+4. Não dá para trocar sem recarregar: a API do Spotify não tem comando para isso.
+5. Não dá para tocar a música direto da nossa página porque seria preciso hospedar os arquivos, e a trilha tem direitos autorais.
+
+**Causas raiz.**
+
+1. **Regra dos navegadores (não muda):** nenhum navegador deixa um site começar o som antes do primeiro toque na página. O mais perto de "começar ao entrar" é começar no primeiro clique em qualquer lugar.
+2. **Arquitetura (pode mudar):** a música mora num player de terceiro que se recarrega a cada faixa.
+3. **Teste (pode mudar):** o navegador de testes do Claude não aplica a regra de autoplay; ele só simula. A validação real é no navegador do Samuel.
+
+**Opções.**
+
+| Opção | Começa no primeiro clique | Troca sozinha no Brave | Faixa inteira | Pode |
+| --- | --- | --- | --- | --- |
+| A. Spotify, começando no primeiro clique em qualquer lugar | Chrome e Opera, sim; Brave, não | não | não (prévia sem conta) | sim |
+| B. Player do YouTube com os envios oficiais, trocando o vídeo no mesmo player | provavelmente | provavelmente | sim | sim, se houver envios oficiais que permitam incorporar |
+| C. Arquivos de música no próprio site | sim | sim | sim | não: a trilha oficial não pode ser copiada |
+
+**Decisão.** Opção A agora; depois, um teste da opção B para o Samuel avaliar no Brave.
+
+**Opção A, feita.**
+
+- A música começa no primeiro clique ou tecla em qualquer lugar do site, com o painel fechado. Antes disso, nada é pedido ao Spotify.
+- Um botão de silenciar (🔊/🔇) fica sempre ao lado de "Trilha sonora". Silenciar pausa a música, e a escolha fica guardada no aparelho: com o som desligado, os cliques no site não iniciam nada. Ligar de novo volta a tocar.
+- Onde o navegador bloqueia, o botão da trilha passa a dizer "Toque para ouvir" e abre o painel com o player.
+
+- [x] Testado no navegador: o clique em "Trupe Fantasma" começou o tema do Chrollo com o painel fechado; silenciar pausou e ficou guardado; depois de recarregar, cliques não pediram nada ao Spotify; ligar o som voltou a tocar
+- [ ] Confirmar no Opera e no Brave do Samuel
+- [ ] Teste da opção B (YouTube) para avaliar no Brave

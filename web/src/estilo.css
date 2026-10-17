@@ -567,3 +567,9 @@ body:has(.trilha--aberta) { padding-bottom: 8.5rem; }
   padding: 0.35rem 0.7rem; border-radius: 999px; border: 2px solid var(--acao); background: var(--acao); color: var(--texto-acao);
 }
 .trilha__aviso { margin: 0; padding: 0.4rem 0.75rem; font-size: 0.8rem; font-weight: 700; color: var(--acao); }
+.trilha__botoes { display: flex; gap: 0.5rem; }
+.trilha__som {
+  font-size: 1.1rem; width: 2.75rem; height: 2.75rem; border-radius: 50%; cursor: pointer;
+  border: 2px solid var(--acao); background: var(--papel); box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
+}
+.trilha__som[aria-pressed="true"] { opacity: 0.75; }

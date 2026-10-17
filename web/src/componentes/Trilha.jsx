@@ -11,7 +11,9 @@
 //     música ao trocar de tela: mostra a faixa da tela nova com um botão para trocar
 // Quando a faixa acaba (sem conta do Spotify, é uma prévia de uns 30 s), ela volta ao início
 // sem recarregar o player, o que funciona nos dois casos.
-// Nada é pedido ao Spotify antes do primeiro clique.
+// Nenhum navegador deixa o som começar antes do primeiro toque na página. Por isso a música
+// começa no primeiro clique ou tecla em qualquer lugar do site (antes disso, nada é pedido
+// ao Spotify). O botão de silenciar fica sempre à vista, e a escolha fica guardada no aparelho.
 // Esconder só tira o player da vista: com display: none, o Spotify para de responder.
 import { useEffect, useRef, useState } from "react";
 import { faixaDaSituacao } from "../../../motor/trilha.mjs";
@@ -29,6 +31,22 @@ function motivo({ personagem, grupo }) {
 const API = "https://open.spotify.com/embed/iframe-api/v1";
 const PERTO_DO_FIM = 1500; // ms antes do fim em que a faixa conta como terminada
 const ESPERA_DO_PLAY = 6000; // ms para o play pedido pelo site começar; depois disso, o navegador bloqueou
+const CHAVE_SILENCIO = "trilha-silenciada";
+
+function lerSilencio() {
+  try {
+    return localStorage.getItem(CHAVE_SILENCIO) === "1";
+  } catch {
+    return false;
+  }
+}
+function guardarSilencio(mudo) {
+  try {
+    localStorage.setItem(CHAVE_SILENCIO, mudo ? "1" : "0");
+  } catch {
+    // sem armazenamento (aba anônima, por exemplo): a escolha vale só nesta visita
+  }
+}
 
 // Carrega a iFrame API do Spotify uma vez só
 let apiPronta;
@@ -50,6 +68,7 @@ export default function Trilha({ tela, versao }) {
   const [carregado, setCarregado] = useState(false);
   const [noPlayer, setNoPlayer] = useState(atual); // a faixa que está no player
   const [pedirToque, setPedirToque] = useState(false); // "toque ▶ no player"
+  const [mudo, setMudo] = useState(lerSilencio);
 
   const alvo = useRef(null);
   const controle = useRef(null);
@@ -60,6 +79,11 @@ export default function Trilha({ tela, versao }) {
   const uriAtual = useRef(atual.uri);
   const podeSozinho = useRef(null); // null: ainda não se sabe; true; false
   const uriNoPlayer = useRef(atual.uri); // para ignorar avisos atrasados da faixa anterior
+  const caixa = useRef(null);
+  const iniciado = useRef(false);
+  const silenciado = useRef(mudo);
+  const faixaAtual = useRef(atual);
+  faixaAtual.current = atual;
 
   // Pede o play e confere se começou; se não começar, o navegador bloqueou o play do site
   function tentarTocar(c) {
@@ -89,24 +113,27 @@ export default function Trilha({ tela, versao }) {
   // Fim da faixa: volta ao início sem recarregar o player (assim o toque dado continua valendo)
   function recomecar(c) {
     clearTimeout(fim.current.timer);
+    if (silenciado.current) return;
     c.seek(0);
     c.resume();
   }
 
-  function alternar() {
-    setAberto((a) => !a);
-    if (carregado) return;
+  // Cria o player (uma vez só) e, se o som não foi silenciado, já dá o play
+  function iniciar() {
+    if (iniciado.current) return;
+    iniciado.current = true;
+    deveTocar.current = !silenciado.current;
     setCarregado(true);
     carregarApi().then((IFrameAPI) => {
       // a API troca o elemento pelo iframe; por isso ele é criado fora do React
       const el = document.createElement("div");
       alvo.current.appendChild(el);
-      setNoPlayer(atual);
+      setNoPlayer(faixaAtual.current);
       uriNoPlayer.current = uriAtual.current;
       IFrameAPI.createController(el, { uri: uriAtual.current, width: "100%", height: 80 }, (c) => {
         controle.current = c;
         c.addListener("ready", () => {
-          if (deveTocar.current) tentarTocar(c);
+          if (deveTocar.current && !silenciado.current) tentarTocar(c);
         });
         c.addListener("playback_update", ({ data }) => {
           if (data.playingURI && data.playingURI !== uriNoPlayer.current) return;
@@ -133,6 +160,47 @@ export default function Trilha({ tela, versao }) {
     });
   }
 
+  function alternar() {
+    setAberto((a) => !a);
+    iniciar();
+  }
+
+  function alternarSom() {
+    const novo = !silenciado.current;
+    silenciado.current = novo;
+    setMudo(novo);
+    guardarSilencio(novo);
+    const c = controle.current;
+    if (novo) {
+      clearTimeout(espera.current.timer);
+      clearTimeout(fim.current.timer);
+      deveTocar.current = false;
+      setPedirToque(false);
+      c?.pause();
+    } else if (c) {
+      tentarTocar(c);
+    } else {
+      iniciar();
+    }
+  }
+
+  // A música começa no primeiro clique ou tecla em qualquer lugar do site
+  // (menos nos botões da própria trilha, que cuidam de si)
+  useEffect(() => {
+    if (mudo) return;
+    function primeiroToque(evento) {
+      if (caixa.current?.contains(evento.target)) return;
+      iniciar();
+    }
+    const opcoes = { capture: true };
+    document.addEventListener("pointerdown", primeiroToque, opcoes);
+    document.addEventListener("keydown", primeiroToque, opcoes);
+    return () => {
+      document.removeEventListener("pointerdown", primeiroToque, opcoes);
+      document.removeEventListener("keydown", primeiroToque, opcoes);
+    };
+  }, [mudo]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // Trocou de tela: se o navegador deixa (ou a música está parada), troca a faixa;
   // se não deixa e está tocando, mantém a música e oferece a troca com um toque
   useEffect(() => {
@@ -144,14 +212,14 @@ export default function Trilha({ tela, versao }) {
       return setNoPlayer(atual);
     }
     if (podeSozinho.current === false && tocando.current) return;
-    carregar(c, atual, tocando.current);
+    carregar(c, atual, tocando.current && !silenciado.current);
   }, [atual.uri]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const outraFaixa = carregado && noPlayer.uri !== atual.uri;
   const porque = motivo(atual.motivo);
 
   return (
-    <aside className={`trilha ${aberto ? "trilha--aberta" : ""}`} aria-label="Trilha sonora">
+    <aside ref={caixa} className={`trilha ${aberto ? "trilha--aberta" : ""}`} aria-label="Trilha sonora">
       <div className={`trilha__player ${aberto ? "" : "trilha__player--fora"}`} aria-hidden={!aberto}>
         {outraFaixa ? (
           <div className="trilha__troca">
@@ -176,9 +244,16 @@ export default function Trilha({ tela, versao }) {
         )}
         <div ref={alvo} />
       </div>
-      <button type="button" className="trilha__botao" onClick={alternar} aria-expanded={aberto}>
-        <span aria-hidden="true">♪</span> {aberto ? "Esconder trilha" : "Trilha sonora"}
-      </button>
+      <div className="trilha__botoes">
+        <button type="button" className="trilha__som" onClick={alternarSom} aria-pressed={mudo}
+          aria-label={mudo ? "Ligar o som da trilha" : "Silenciar a trilha"} title={mudo ? "Ligar o som" : "Silenciar"}>
+          <span aria-hidden="true">{mudo ? "🔇" : "🔊"}</span>
+        </button>
+        <button type="button" className="trilha__botao" onClick={alternar} aria-expanded={aberto}>
+          <span aria-hidden="true">♪</span>{" "}
+          {aberto ? "Esconder trilha" : pedirToque ? "Toque para ouvir" : "Trilha sonora"}
+        </button>
+      </div>
     </aside>
   );
 }
